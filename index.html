@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Catalogue communautaire des liens Amazon et partenaires partagés dans les descriptions YouTube de Le Hussard."
+    >
+    <title>La Cantine du Hussard | Liens de lecture</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23211a13'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23fff8ea'%3ELH%3C/text%3E%3C/svg%3E"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&family=Manrope:wght@500;650;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar" aria-label="Navigation principale">
+          <a class="brand" href="#top" aria-label="Retour en haut">
+            <span class="brand-mark">LH</span>
+            <span>La Cantine du Hussard</span>
+          </a>
+          <a class="channel-link" href="https://www.youtube.com/@LeHussard" target="_blank" rel="noreferrer">
+            Voir la chaîne
+          </a>
+        </nav>
+
+        <section class="hero-grid" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">Bibliothèque de liens Amazon</p>
+            <h1>Les livres cités par Le Hussard.</h1>
+            <p class="lede">
+              Une étagère simple pour retrouver les liens Amazon présents dans ses descriptions,
+              avec la vidéo source en retrait pour garder le contexte sans voler la vedette aux livres.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#catalogue">Explorer les liens</a>
+              <a class="ghost-button" href="#method">Comment c'est mis à jour</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Résumé du catalogue">
+            <span class="stamp">Mise à jour</span>
+            <strong id="updatedAt">Chargement...</strong>
+            <div class="stats-grid">
+              <div>
+                <span id="amazonCount">0</span>
+                <p>liens Amazon</p>
+              </div>
+              <div>
+                <span id="videoCount">0</span>
+                <p>vidéos sources</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </header>
+
+      <main>
+        <section class="notice" aria-label="Transparence">
+          <strong>Transparence :</strong>
+          ce site n'est pas officiel. Il référence des liens publics trouvés dans les descriptions
+          YouTube. Les liens Amazon peuvent être affiliés et permettre de soutenir Le Hussard.
+        </section>
+
+        <section class="partners" aria-label="Autres partenariats">
+          <div>
+            <p class="eyebrow">Autres partenariats</p>
+            <h2>Les liens utiles hors Amazon</h2>
+          </div>
+          <div class="partner-grid">
+            <a class="partner-card" href="https://www.lagiberne.fr/" target="_blank" rel="noreferrer">
+              <span>Maison d'édition</span>
+              <strong>La Giberne</strong>
+              <small>Livres et catalogue du Hussard.</small>
+            </a>
+            <a class="partner-card" href="https://www.agathos-livres.fr/" target="_blank" rel="noreferrer">
+              <span>Librairie indépendante</span>
+              <strong>Agathos</strong>
+              <small>Code souvent cité : LEHUSSARD.</small>
+            </a>
+            <a class="partner-card" href="https://passculture.app/lieu/138285" target="_blank" rel="noreferrer">
+              <span>Pass Culture</span>
+              <strong>La Giberne</strong>
+              <small>Accès Pass Culture pour les plus jeunes.</small>
+            </a>
+            <a class="partner-card" href="https://lagiberne.fr/?ref=IDEOCHOCMARS" target="_blank" rel="noreferrer">
+              <span>Opération partenaire</span>
+              <strong>IdeoChoc</strong>
+              <small>Lien repéré dans ses descriptions.</small>
+            </a>
+          </div>
+        </section>
+
+        <section class="toolbar" id="catalogue" aria-label="Filtres du catalogue">
+          <div>
+            <p class="eyebrow">Catalogue</p>
+            <h2>Rechercher un livre ou une référence</h2>
+          </div>
+          <div class="controls">
+            <label class="search-box">
+              <span>Recherche</span>
+              <input id="searchInput" type="search" placeholder="Ex: Tolkien, Bovary, Onfray...">
+            </label>
+          </div>
+        </section>
+
+        <section class="results-meta" aria-live="polite">
+          <span id="resultCount">0 liens trouvés</span>
+        </section>
+
+        <section class="book-grid" id="bookGrid" aria-label="Liens Amazon"></section>
+
+        <section class="charge" id="method" aria-label="Cri de ralliement">
+          <p class="eyebrow">Cri de ralliement</p>
+          <h2>CHARGEEEEZ</h2>
+          <p>Direction les rayonnages, sabre au clair et panier Amazon en bandoulière.</p>
+        </section>
+      </main>
+    </div>
+
+    <template id="bookCardTemplate">
+      <article class="book-card">
+        <div class="book-spine" aria-hidden="true"></div>
+        <div class="book-body">
+          <p class="book-kicker">Lien Amazon</p>
+          <h3></h3>
+          <a class="amazon-link" target="_blank" rel="noreferrer">Ouvrir le lien Amazon</a>
+        </div>
+        <a class="source-link" target="_blank" rel="noreferrer">
+          <span>Source YouTube</span>
+          <strong></strong>
+        </a>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

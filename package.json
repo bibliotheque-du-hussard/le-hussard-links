@@ -1,0 +1,10 @@
+{
+  "name": "le-hussard-links",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "update-data": "node scripts/update-data.mjs"
+  }
+}
