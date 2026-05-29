@@ -1,4 +1,4 @@
-# La Cantine du Hussard
+# La Bibliothèque du Hussard
 
 Static community catalog for Amazon links found in Le Hussard's public YouTube descriptions.
 

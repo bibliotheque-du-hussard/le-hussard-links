@@ -93,11 +93,6 @@ function getVideos(initialData, seen = new Set()) {
   return videos;
 }
 
-function decodeShortDescription(html) {
-  const match = html.match(/"shortDescription":"((?:\\.|[^"\\])*)"/);
-  return match ? JSON.parse(`"${match[1]}"`) : "";
-}
-
 function cleanUrl(url) {
   return url.replace(/[),.;!?:]+$/, "");
 }
@@ -187,8 +182,35 @@ async function fetchContinuation({ key, context, token }) {
   return response.json();
 }
 
-async function getAllVideos(channelHtml) {
-  const client = extractClientConfig(channelHtml);
+async function fetchVideoDescription({ key, context, videoId }) {
+  const response = await fetch(`https://www.youtube.com/youtubei/v1/next?key=${key}`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "accept-language": "fr-FR,fr;q=0.9,en;q=0.8",
+      "user-agent": "Mozilla/5.0 affiliate-link-catalog/1.0",
+    },
+    body: JSON.stringify({ context, videoId }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Video details request failed ${response.status}: ${videoId}`);
+  }
+
+  const data = await response.json();
+  return (
+    data.engagementPanels?.find((panel) => panel.engagementPanelSectionListRenderer)
+      ?.engagementPanelSectionListRenderer?.content?.structuredDescriptionContentRenderer?.items?.find(
+        (item) => item.expandableVideoDescriptionBodyRenderer,
+      )?.expandableVideoDescriptionBodyRenderer?.attributedDescriptionBodyText?.content ||
+    data.contents?.twoColumnWatchNextResults?.results?.results?.contents?.find(
+      (item) => item.videoSecondaryInfoRenderer,
+    )?.videoSecondaryInfoRenderer?.attributedDescription?.content ||
+    ""
+  );
+}
+
+async function getAllVideos(channelHtml, client) {
   const seen = new Set();
   let data = extractInitialData(channelHtml);
   let token = getContinuationToken(data);
@@ -206,14 +228,15 @@ async function getAllVideos(channelHtml) {
 
 async function main() {
   const channelHtml = await fetchText(channel.videosUrl);
-  const videos = await getAllVideos(channelHtml);
+  const client = extractClientConfig(channelHtml);
+  const videos = await getAllVideos(channelHtml, client);
   const collected = [];
   console.log(`Found ${videos.length} videos. Collecting descriptions...`);
 
   for (const [index, video] of videos.entries()) {
     await sleep(waitMs);
-    const html = await fetchText(video.youtubeUrl);
-    const links = extractLinks(decodeShortDescription(html));
+    const description = await fetchVideoDescription({ ...client, videoId: video.id });
+    const links = extractLinks(description);
 
     if (links.length > 0) {
       collected.push({ ...video, links });
