@@ -97,6 +97,29 @@ function cleanUrl(url) {
   return url.replace(/[),.;!?:]+$/, "");
 }
 
+function tidyLabel(label) {
+  const isCallToAction = /\b(?:acheter|cliquez|c['’]est par ici|via ce lien|procurer|pas encore lu|voulez|foncez)\b/i.test(label);
+  const quoteMatch = label.match(/["“](.+?)["”](?:\s+(?:de|d['’])\s+([^,!.?()]+))?/i);
+  if (isCallToAction && quoteMatch) {
+    return [quoteMatch[1], quoteMatch[2]].filter(Boolean).join(", ");
+  }
+
+  return label
+    .replace(/^si vous n['’]avez pas encore lu\s+/i, "")
+    .replace(/^si vous voulez (?:re)?découvrir\s+/i, "")
+    .replace(/^pour (?:acheter|voir)\s+/i, "")
+    .replace(/^vous pouvez vous procurer leur édition collector de\s+/i, "")
+    .replace(/^foncez vous procurer\s+/i, "")
+    .replace(/^vous procurer\s+/i, "")
+    .replace(/^acheter\s+/i, "")
+    .replace(/^se procurer\s+/i, "")
+    .replace(/^bonus\s*:\s*/i, "")
+    .replace(/,?\s*(?:cliquez ici|c['’]est par ici|via ce lien)\s*$/i, "")
+    .replace(/^céline et son voyage$/i, "Voyage au bout de la nuit, Céline")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function prettifyLabel(line, rawUrl) {
   const label = line
     .replace(rawUrl, "")
@@ -106,7 +129,7 @@ function prettifyLabel(line, rawUrl) {
     .replace(/\s{2,}/g, " ")
     .trim();
 
-  return label || new URL(cleanUrl(rawUrl)).hostname.replace(/^www\./, "");
+  return tidyLabel(label) || new URL(cleanUrl(rawUrl)).hostname.replace(/^www\./, "");
 }
 
 function linkType(url) {
@@ -182,16 +205,36 @@ async function fetchContinuation({ key, context, token }) {
   return response.json();
 }
 
-async function fetchVideoDescription({ key, context, videoId }) {
-  const response = await fetch(`https://www.youtube.com/youtubei/v1/next?key=${key}`, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "accept-language": "fr-FR,fr;q=0.9,en;q=0.8",
-      "user-agent": "Mozilla/5.0 affiliate-link-catalog/1.0",
-    },
-    body: JSON.stringify({ context, videoId }),
-  });
+async function fetchVideoDescription({ key, context, videoId }, retries = 3) {
+  let response;
+
+  try {
+    response = await fetch(`https://www.youtube.com/youtubei/v1/next?key=${key}`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "accept-language": "fr-FR,fr;q=0.9,en;q=0.8",
+        "user-agent": "Mozilla/5.0 affiliate-link-catalog/1.0",
+      },
+      body: JSON.stringify({ context, videoId }),
+    });
+  } catch (error) {
+    if (retries > 0) {
+      const delay = (4 - retries) * 5_000;
+      console.log(`Video details request failed for ${videoId}. Waiting ${delay / 1000}s before retrying...`);
+      await sleep(delay);
+      return fetchVideoDescription({ key, context, videoId }, retries - 1);
+    }
+
+    throw error;
+  }
+
+  if ((response.status === 429 || response.status >= 500) && retries > 0) {
+    const delay = (4 - retries) * 10_000;
+    console.log(`Video details request returned ${response.status} for ${videoId}. Waiting ${delay / 1000}s before retrying...`);
+    await sleep(delay);
+    return fetchVideoDescription({ key, context, videoId }, retries - 1);
+  }
 
   if (!response.ok) {
     throw new Error(`Video details request failed ${response.status}: ${videoId}`);

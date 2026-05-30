@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T16:27:32.730Z",
+  "generatedAt": "2026-05-30T01:58:36.491Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
@@ -450,7 +450,7 @@
           "type": "amazon"
         },
         {
-          "label": "BONUS : Pour voir \"Le Magnifique\", c'est par ici",
+          "label": "Le Magnifique",
           "url": "https://amzn.to/4iwazYB",
           "type": "amazon"
         }
@@ -699,12 +699,12 @@
           "type": "amazon"
         },
         {
-          "label": "Si vous voulez aussi les \"spin-off\" d'Ubu, un volume pas cher regroupe tout",
+          "label": "spin-off",
           "url": "https://amzn.to/3KDbeKP",
           "type": "amazon"
         },
         {
-          "label": "Bonus : Rhinocéros, de Ionesco (largement inspiré par Jarry)",
+          "label": "Rhinocéros, de Ionesco (largement inspiré par Jarry)",
           "url": "https://amzn.to/48MPPsz",
           "type": "amazon"
         }
@@ -1192,7 +1192,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=P3pkMsKGJUE",
       "links": [
         {
-          "label": "Vous pouvez vous procurer leur édition collector de \"L'Orange mécanique\" pour pas cher via ce lien",
+          "label": "L'Orange mécanique",
           "url": "https://amzn.to/3FKjfLu",
           "type": "amazon"
         }
@@ -1348,7 +1348,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=VYjDB565138",
       "links": [
         {
-          "label": "Vous pouvez vous procurer leur édition collector de \"24 heures de la vie d'une femme\" à moins de 10 euros via ce lien",
+          "label": "24 heures de la vie d'une femme",
           "url": "https://amzn.to/3Qr9CDq",
           "type": "amazon"
         },
@@ -1891,12 +1891,12 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=G1l1lzMk9zc",
       "links": [
         {
-          "label": "Foncez vous procurer \"Julia\" en cliquant juste là",
+          "label": "Julia",
           "url": "https://amzn.to/3Bgn8FM",
           "type": "amazon"
         },
         {
-          "label": "Si vous n'avez pas encore lu \"1984\" de George Orwell, c'est le moment de vous rattraper",
+          "label": "1984, George Orwell",
           "url": "https://amzn.to/3MW2ptn",
           "type": "amazon"
         }
@@ -2322,7 +2322,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=qZdtoTULQwg",
       "links": [
         {
-          "label": "Vous procurer \"S'Anomaliser\"",
+          "label": "S'Anomaliser",
           "url": "https://amzn.to/4aUvVKj",
           "type": "amazon"
         }
@@ -3123,7 +3123,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=2u5nSpguyUg",
       "links": [
         {
-          "label": "Se procurer Révoltée",
+          "label": "Révoltée",
           "url": "https://amzn.to/3AP1o05",
           "type": "amazon"
         }
@@ -3919,7 +3919,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Sg5Rz8NfEf4",
       "links": [
         {
-          "label": "Pour acheter Les Enfants de Húrin",
+          "label": "Les Enfants de Húrin",
           "url": "https://amzn.to/3tapoY0",
           "type": "amazon"
         }
@@ -4026,7 +4026,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=CbNrnBYB_LM",
       "links": [
         {
-          "label": "Acheter \"À l'ouest rien de nouveau\" : (Foncez les gars !)",
+          "label": "À l'ouest rien de nouveau",
           "url": "https://amzn.to/3TkWYFS",
           "type": "amazon"
         }
@@ -4052,7 +4052,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=HARb8IVrtGo",
       "links": [
         {
-          "label": "Acheter \"Sur les chemins noirs\"",
+          "label": "Sur les chemins noirs",
           "url": "https://amzn.to/3SSpTkg",
           "type": "amazon"
         },
@@ -4067,7 +4067,7 @@
           "type": "amazon"
         },
         {
-          "label": "Bonus : Fragments d'Héraclite (le livre préféré de Sylvain Tesson)",
+          "label": "Fragments d'Héraclite (le livre préféré de Sylvain Tesson)",
           "url": "https://amzn.to/3ycIkZ0",
           "type": "amazon"
         }
@@ -4152,12 +4152,12 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=7sV3gG3kWQ8",
       "links": [
         {
-          "label": "Pour acheter le livre : (ou https://amzn.to/3KNXCIE, ça revient au même)",
+          "label": "le livre : (ou https://amzn.to/3KNXCIE, ça revient au même)",
           "url": "https://amzn.to/3RHV2Gx",
           "type": "amazon"
         },
         {
-          "label": "Pour acheter le livre : https://amzn.to/3RHV2Gx (ou ça revient au même)",
+          "label": "le livre : https://amzn.to/3RHV2Gx (ou ça revient au même)",
           "url": "https://amzn.to/3KNXCIE",
           "type": "amazon"
         }
@@ -4316,7 +4316,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=QZ74dsnQL88",
       "links": [
         {
-          "label": "Si vous voulez redécouvrir Céline et son Voyage, cliquez ici",
+          "label": "Voyage au bout de la nuit, Céline",
           "url": "https://amzn.to/3ynZFyI",
           "type": "amazon"
         }
@@ -4581,7 +4581,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=hRmENesPkJQ",
       "links": [
         {
-          "label": "L'Étranger, d'Albert Camus, c'est par ici",
+          "label": "L'Étranger, d'Albert Camus",
           "url": "https://amzn.to/3Osq8Qv",
           "type": "amazon"
         }
@@ -4648,7 +4648,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=d2DX_t4vD6A",
       "links": [
         {
-          "label": "Acheter le roman",
+          "label": "le roman",
           "url": "https://amzn.to/3RTk3zh",
           "type": "amazon"
         }
