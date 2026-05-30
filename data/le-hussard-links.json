@@ -4293,17 +4293,17 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=nIuZYsseDqU",
       "links": [
         {
-          "label": "Perceval en version de poche : (ou https://amzn.to/3IaSVHI, ça revient au même)",
+          "label": "Perceval",
           "url": "https://amzn.to/3OBkLzb",
           "type": "amazon"
         },
         {
-          "label": "Perceval en version de poche : https://amzn.to/3OBkLzb (ou ça revient au même)",
+          "label": "Perceval",
           "url": "https://amzn.to/3IaSVHI",
           "type": "amazon"
         },
         {
-          "label": "Perceval en version scolaire, pour commencer en douceur",
+          "label": "Perceval",
           "url": "https://amzn.to/3OK8CrF",
           "type": "amazon"
         }
