@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "npx --yes serve .",
-    "update-data": "node scripts/update-data.mjs"
+    "update-data": "node scripts/update-data.mjs --mode=incremental",
+    "update-data:full": "node scripts/update-data.mjs --mode=full",
+    "update-data:incremental": "node scripts/update-data.mjs --mode=incremental",
+    "update-data:candidates": "node scripts/update-data.mjs --mode=incremental --candidate-out=/tmp/le-hussard-candidates.json --candidate-only"
   }
 }

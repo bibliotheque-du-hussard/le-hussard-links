@@ -14,11 +14,13 @@
       "links": [
         {
           "label": "L'Iliade",
+          "author": "Homère",
           "url": "https://amzn.to/4dHmJf1",
           "type": "amazon"
         },
         {
           "label": "l'Odyssée",
+          "author": "Homère",
           "url": "https://amzn.to/4v5X9Yg",
           "type": "amazon"
         }
@@ -32,13 +34,15 @@
       "links": [
         {
           "label": "Illusions perdues",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/4btxKRn",
           "type": "amazon"
         },
         {
           "label": "Lettres à la NRF",
           "url": "https://amzn.to/4c1htmT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -51,25 +55,30 @@
         {
           "label": "Tristan et Iseut",
           "url": "https://amzn.to/4diNmbq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Béroul"
         },
         {
           "label": "Madame Bovary",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/3RNY3Ks",
           "type": "amazon"
         },
         {
           "label": "Jane Eyre",
+          "author": "Charlotte Brontë",
           "url": "https://amzn.to/42JI1DT",
           "type": "amazon"
         },
         {
           "label": "Les Hauts de Hurlevent",
+          "author": "Emily Brontë",
           "url": "https://amzn.to/4ufhYjV",
           "type": "amazon"
         },
         {
           "label": "Le fantôme de l'opéra",
+          "author": "Gaston Leroux",
           "url": "https://amzn.to/3RweKdk",
           "type": "amazon"
         }
@@ -83,16 +92,19 @@
       "links": [
         {
           "label": "Le Seigneur des Anneaux",
+          "author": "J. R. R. Tolkien",
           "url": "https://amzn.to/4ryGlH4",
           "type": "amazon"
         },
         {
           "label": "Les Enfants de Hùrin",
+          "author": "J. R. R. Tolkien",
           "url": "https://amzn.to/4rzVjNi",
           "type": "amazon"
         },
         {
           "label": "Les Confessions de Saint-Augustin",
+          "author": "Saint Augustin",
           "url": "https://amzn.to/4bxvEyF",
           "type": "amazon"
         }
@@ -105,7 +117,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=wOHblo9XyKU",
       "links": [
         {
-          "label": "2084, de Boualem Sansal",
+          "label": "2084",
+          "author": "Boualem Sansal",
           "url": "https://amzn.to/42RkQHX",
           "type": "amazon"
         }
@@ -120,22 +133,26 @@
         {
           "label": "Le Devoir de violence",
           "url": "https://amzn.to/4aZeKdg",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yambo Ouologuem"
         },
         {
           "label": "Frères d'âmes",
           "url": "https://amzn.to/4cyOpUA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "David Diop"
         },
         {
           "label": "En attendant le vote des bêtes sauvages",
           "url": "https://amzn.to/46SkjYB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ahmadou Kourouma"
         },
         {
           "label": "La plus secrète mémoire des hommes",
           "url": "https://amzn.to/4lf9sh6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Mohamed Mbougar Sarr"
         }
       ]
     },
@@ -148,15 +165,18 @@
         {
           "label": "Sur les chemins noirs",
           "url": "https://amzn.to/4ep8yxn",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
           "label": "Le Parti d'Edgar Winger",
           "url": "https://amzn.to/4t97Mbj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Patrice Jean"
         },
         {
           "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/3OYv85G",
           "type": "amazon"
         }
@@ -171,22 +191,26 @@
         {
           "label": "L'Adieu aux armes",
           "url": "https://amzn.to/4u5swlW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         },
         {
           "label": "Pour qui sonne le glas",
           "url": "https://amzn.to/4rQz8mQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         },
         {
           "label": "Le Vieil Homme et la Mer",
           "url": "https://amzn.to/4aQ0qSU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         },
         {
           "label": "Les Neiges du Kilimandjaro",
           "url": "https://amzn.to/4aYRcUr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         }
       ]
     },
@@ -199,17 +223,20 @@
         {
           "label": "Le Feu",
           "url": "https://amzn.to/48VZhK0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Henri Barbusse"
         },
         {
           "label": "L'Enfant de volupté",
           "url": "https://amzn.to/4aDkSZ2",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gabriele D'Annunzio"
         },
         {
           "label": "Poésies",
           "url": "https://amzn.to/4q3Slk4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Rimbaud"
         }
       ]
     },
@@ -220,7 +247,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=SK-aW9iqCRc",
       "links": [
         {
-          "label": "La Grève, d'Ayn Rand",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/41JG9ul",
           "type": "amazon"
         }
@@ -234,18 +262,21 @@
       "links": [
         {
           "label": "Le Comte de Monte Cristo",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3OYOlDC",
           "type": "amazon"
         },
         {
           "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/4ctwYF5",
           "type": "amazon"
         },
         {
           "label": "Les Réprouvés",
           "url": "https://amzn.to/4aAjiXu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernst von Salomon"
         }
       ]
     },
@@ -258,7 +289,8 @@
         {
           "label": "La Route de la servitude",
           "url": "https://amzn.to/4trJWZU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Friedrich Hayek"
         }
       ]
     },
@@ -269,19 +301,22 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=UjYUalBVIS4",
       "links": [
         {
-          "label": "L'Ethique",
+          "label": "L'Éthique",
           "url": "https://amzn.to/4ko3dHt",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Baruch Spinoza"
         },
         {
           "label": "La Violence et le Sacré",
           "url": "https://amzn.to/4kbc674",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "René Girard"
         },
         {
           "label": "Psychologie des foules",
           "url": "https://amzn.to/4rn6tVH",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gustave Le Bon"
         }
       ]
     },
@@ -294,7 +329,8 @@
         {
           "label": "Siddhartha",
           "url": "https://amzn.to/3LUJORA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Hermann Hesse"
         }
       ]
     },
@@ -307,22 +343,26 @@
         {
           "label": "Surveiller et punir",
           "url": "https://amzn.to/4bq97Fy",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Michel Foucault"
         },
         {
           "label": "L'Orange mécanique",
           "url": "https://amzn.to/4qm94PM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Anthony Burgess"
         },
         {
           "label": "L'Astragale",
           "url": "https://amzn.to/3Z6Bst5",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albertine Sarrazin"
         },
         {
           "label": "Féérie pour une autre fois",
           "url": "https://amzn.to/4qONWkS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -335,20 +375,24 @@
         {
           "label": "Écriture. Mémoires d'un métier",
           "url": "https://amzn.to/4jtTFu4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stephen King"
         },
         {
-          "label": "Zola, Le Ventre de Paris",
+          "label": "Le Ventre de Paris",
+          "author": "Émile Zola",
           "url": "https://amzn.to/4qxvTzA",
           "type": "amazon"
         },
         {
-          "label": "Flaubert, Salammbô",
+          "label": "Salammbô",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/3NeijTk",
           "type": "amazon"
         },
         {
-          "label": "Céline, Mort à Crédit",
+          "label": "Mort à Crédit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/4pq85N4",
           "type": "amazon"
         }
@@ -361,22 +405,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=XRejIYP2Mp0",
       "links": [
         {
-          "label": "Yourcenar, Mémoires d'Hadrien",
+          "label": "Mémoires d'Hadrien",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3L7XCaZ",
           "type": "amazon"
         },
         {
-          "label": "Sarrazin, L'Astragale",
+          "label": "L'Astragale",
+          "author": "Albertine Sarrazin",
           "url": "https://amzn.to/44Gj7Xf",
           "type": "amazon"
         },
         {
-          "label": "Colette, Le Blé en herbe",
+          "label": "Le Blé en herbe",
+          "author": "Colette",
           "url": "https://amzn.to/4pSEHjL",
           "type": "amazon"
         },
         {
-          "label": "Karen Blixen, La Ferme africaine",
+          "label": "La Ferme africaine",
+          "author": "Karen Blixen",
           "url": "https://amzn.to/44JTV22",
           "type": "amazon"
         }
@@ -391,25 +439,30 @@
         {
           "label": "L'Opium des intellectuels",
           "url": "https://amzn.to/45b7Q13",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Raymond Aron"
         },
         {
           "label": "Démocratie et Totalitarisme",
           "url": "https://amzn.to/4adQ0xW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Raymond Aron"
         },
         {
           "label": "Mémoires",
           "url": "https://amzn.to/3YqJKM6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Raymond Aron"
         },
         {
           "label": "Le Spectateur engagé",
           "url": "https://amzn.to/3Oihf1t",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Raymond Aron"
         },
         {
-          "label": "La Route de la servitude, de Friedrich Hayek",
+          "label": "La Route de la servitude",
+          "author": "Friedrich Hayek",
           "url": "https://amzn.to/3OihkCj",
           "type": "amazon"
         }
@@ -424,7 +477,8 @@
         {
           "label": "Technique du coup d'État",
           "url": "https://amzn.to/4pBU7sB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Curzio Malaparte"
         }
       ]
     },
@@ -436,23 +490,27 @@
       "links": [
         {
           "label": "Madame Bovary",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/49RjJN6",
           "type": "amazon"
         },
         {
-          "label": "Fictions, de Borges",
+          "label": "Fictions",
+          "author": "Jorge Luis Borges",
           "url": "https://amzn.to/4q1KOC7",
           "type": "amazon"
         },
         {
-          "label": "Don Quichotte, Cervantès",
+          "label": "Don Quichotte",
           "url": "https://amzn.to/3KAG8nt",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Miguel de Cervantes"
         },
         {
           "label": "Le Magnifique",
           "url": "https://amzn.to/4iwazYB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Philippe de Broca"
         }
       ]
     },
@@ -465,17 +523,20 @@
         {
           "label": "La Servitude volontaire",
           "url": "https://amzn.to/3XiA59V",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Étienne de La Boétie"
         },
         {
           "label": "La Notion de politique",
           "url": "https://amzn.to/43JA16Q",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Carl Schmitt"
         },
         {
           "label": "Le Guépard",
           "url": "https://amzn.to/3XcSAwz",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Giuseppe Tomasi di Lampedusa"
         }
       ]
     },
@@ -488,82 +549,98 @@
         {
           "label": "Avant la lettre",
           "url": "https://amzn.to/4ra9sBU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Naufragé du “A”",
           "url": "https://amzn.to/3JFzAUl",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Piano sauvage",
           "url": "https://amzn.to/43DBT0S",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Château suspendu",
           "url": "https://amzn.to/3JExNyP",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Voyage de l'incrédule",
           "url": "https://amzn.to/4nUbuTz",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Simbabbad de Batbad",
           "url": "https://amzn.to/4peBQke",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "L’Île des brigadiers",
           "url": "https://amzn.to/49Xo8Ok",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "À l’heure du second “T”",
           "url": "https://amzn.to/3XAIyFq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "L’Arche du “A”",
           "url": "https://amzn.to/3JEzeNJ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "L’Âne en atoll",
           "url": "https://amzn.to/3X1faYU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "La Mémémoire",
           "url": "https://amzn.to/4i8B2LB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Chat à neuf queues",
           "url": "https://amzn.to/48iy5Vg",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Secret de Félicien",
           "url": "https://amzn.to/4oKYn8x",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "L’Enfer des épouvantails",
           "url": "https://amzn.to/3LHWv1L",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Diable du peintre",
           "url": "https://amzn.to/44hAFZh",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         },
         {
           "label": "Le Train où vont les choses",
           "url": "https://amzn.to/4r63BNQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fred"
         }
       ]
     },
@@ -576,7 +653,8 @@
         {
           "label": "Propos sur le bonheur",
           "url": "https://amzn.to/49f3ol4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alain"
         }
       ]
     },
@@ -587,24 +665,28 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=siACq8KM99o",
       "links": [
         {
-          "label": "Aurélien (roman)",
+          "label": "Aurélien",
           "url": "https://amzn.to/4hE80mF",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis Aragon"
         },
         {
-          "label": "La Semaine sainte (roman)",
+          "label": "La Semaine sainte",
           "url": "https://amzn.to/480TlOj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis Aragon"
         },
         {
-          "label": "Les Yeux d'Elsa (poésie)",
+          "label": "Les Yeux d'Elsa",
           "url": "https://amzn.to/4qV74ie",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis Aragon"
         },
         {
-          "label": "Le Crève-Coeur (poésie)",
+          "label": "Le Crève-Cœur",
           "url": "https://amzn.to/4hIMGMT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis Aragon"
         }
       ]
     },
@@ -615,22 +697,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=tYk955O8Fzo",
       "links": [
         {
-          "label": "Don Quichotte, Cervantès",
+          "label": "Don Quichotte",
           "url": "https://amzn.to/49tTpIm",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Miguel de Cervantes"
         },
         {
-          "label": "Généalogie de la morale, Nietzsche",
+          "label": "Généalogie de la morale",
+          "author": "Friedrich Nietzsche",
           "url": "https://amzn.to/4hvxkLK",
           "type": "amazon"
         },
         {
-          "label": "Perceval, Chrétien de Troyes",
+          "label": "Perceval",
           "url": "https://amzn.to/49of9W9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Chrétien de Troyes"
         },
         {
-          "label": "Arsène Lupin, gentleman cambrioleur, Maurice Leblanc",
+          "label": "Arsène Lupin, gentleman cambrioleur",
+          "author": "Maurice Leblanc",
           "url": "https://amzn.to/4qtKD3n",
           "type": "amazon"
         }
@@ -645,17 +731,20 @@
         {
           "label": "Chevaucher le tigre",
           "url": "https://amzn.to/3IUelxF",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Julius Evola"
         },
         {
           "label": "Révolte contre le monde moderne",
           "url": "https://amzn.to/4osqPvp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Julius Evola"
         },
         {
-          "label": "Les Hommes au milieu des ruines (attention, stocks fréquemment limités)",
+          "label": "Les Hommes au milieu des ruines",
           "url": "https://amzn.to/43nLnwV",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Julius Evola"
         }
       ]
     },
@@ -666,22 +755,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=_oP0Hv_3d-Y",
       "links": [
         {
-          "label": "La Chartreuse de Parme, de Stendhal",
+          "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/48tTWKe",
           "type": "amazon"
         },
         {
-          "label": "Guerre et Paix, de Tolstoï : (tome 1) et https://amzn.to/3KLtIsK (tome 2)",
+          "label": "Guerre et Paix, tome 1",
           "url": "https://amzn.to/3KV6FeZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Tolstoï"
         },
         {
-          "label": "Guerre et Paix, de Tolstoï : https://amzn.to/3KV6FeZ (tome 1) et (tome 2)",
+          "label": "Guerre et Paix, tome 2",
           "url": "https://amzn.to/3KLtIsK",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Tolstoï"
         },
         {
-          "label": "Le Colonel Chabert, de Balzac",
+          "label": "Le Colonel Chabert",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/42FosNo",
           "type": "amazon"
         }
@@ -694,17 +787,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Mtp8OFAv9t0",
       "links": [
         {
-          "label": "Ubu Roi, d'Alfred Jarry",
+          "label": "Ubu Roi",
+          "author": "Alfred Jarry",
           "url": "https://amzn.to/3VRTPk0",
           "type": "amazon"
         },
         {
-          "label": "spin-off",
+          "label": "Tout Ubu",
           "url": "https://amzn.to/3KDbeKP",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alfred Jarry"
         },
         {
-          "label": "Rhinocéros, de Ionesco (largement inspiré par Jarry)",
+          "label": "Rhinocéros",
+          "author": "Eugène Ionesco",
           "url": "https://amzn.to/48MPPsz",
           "type": "amazon"
         }
@@ -719,25 +815,30 @@
         {
           "label": "Sur le théâtre de marionnettes",
           "url": "https://amzn.to/46KZUnu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Heinrich von Kleist"
         },
         {
           "label": "L'Homme qui plantait des arbres",
           "url": "https://amzn.to/48G1OrU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
           "label": "La Naissance de la tragédie",
           "url": "https://amzn.to/3VGLJdT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Friedrich Nietzsche"
         },
         {
-          "label": "À la Recherche du temps perdu (tome 1 - Du côté de chez Sawnn)",
+          "label": "Du côté de chez Swann",
           "url": "https://amzn.to/3IIUUHJ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         },
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/42XiPtV",
           "type": "amazon"
         }
@@ -750,17 +851,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=RRI6xFsw4IU",
       "links": [
         {
-          "label": "Camus, L'Homme révolté",
+          "label": "L'Homme révolté",
+          "author": "Albert Camus",
           "url": "https://amzn.to/3VisjMg",
           "type": "amazon"
         },
         {
-          "label": "Dostoïevski, Les Carnets du sous-sol",
+          "label": "Les Carnets du sous-sol",
+          "author": "Fiodor Dostoïevski",
           "url": "https://amzn.to/47FgY0b",
           "type": "amazon"
         },
         {
-          "label": "Bernanos, La France contre les robots",
+          "label": "La France contre les robots",
+          "author": "Georges Bernanos",
           "url": "https://amzn.to/47K8OUk",
           "type": "amazon"
         }
@@ -775,27 +879,32 @@
         {
           "label": "Le Poney Rouge",
           "url": "https://amzn.to/4g9QfLe",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "John Steinbeck"
         },
         {
           "label": "Des souris et des hommes",
           "url": "https://amzn.to/4m9VLPs",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "John Steinbeck"
         },
         {
           "label": "La Coupe d'Or",
           "url": "https://amzn.to/41HRQC6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "John Steinbeck"
         },
         {
           "label": "Les Raisins de la colère",
           "url": "https://amzn.to/4pbWX7x",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "John Steinbeck"
         },
         {
           "label": "À l'Est d'Eden",
           "url": "https://amzn.to/4pfq0ay",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "John Steinbeck"
         }
       ]
     },
@@ -806,32 +915,38 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=mRihiybXV20",
       "links": [
         {
-          "label": "Nietzsche, Ainsi parlait Zarathoustra",
+          "label": "Ainsi parlait Zarathoustra",
+          "author": "Friedrich Nietzsche",
           "url": "https://amzn.to/4mEEb7d",
           "type": "amazon"
         },
         {
-          "label": "Cioran, Syllogismes de l'amertume",
+          "label": "Syllogismes de l'amertume",
+          "author": "Emil Cioran",
           "url": "https://amzn.to/3HFCCa5",
           "type": "amazon"
         },
         {
-          "label": "Stendhal, La Chartreuse de Parme",
+          "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/46g4k6u",
           "type": "amazon"
         },
         {
-          "label": "Husymans, À rebours",
+          "label": "À rebours",
+          "author": "Joris-Karl Huysmans",
           "url": "https://amzn.to/45Yt165",
           "type": "amazon"
         },
         {
-          "label": "Jünger, Eumeswil",
+          "label": "Eumeswil",
+          "author": "Ernst Jünger",
           "url": "https://amzn.to/4lUXHLE",
           "type": "amazon"
         },
         {
-          "label": "Jünger, Sur les falaises de marbre",
+          "label": "Sur les falaises de marbre",
+          "author": "Ernst Jünger",
           "url": "https://amzn.to/4lSEvxS",
           "type": "amazon"
         }
@@ -844,32 +959,38 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=WX-8x2hXczU",
       "links": [
         {
-          "label": "Albert Camus, L'Homme révolté",
+          "label": "L'Homme révolté",
+          "author": "Albert Camus",
           "url": "https://amzn.to/4fF8Miu",
           "type": "amazon"
         },
         {
-          "label": "Dostoïevski, Les Démons",
+          "label": "Les Démons",
+          "author": "Fiodor Dostoïevski",
           "url": "https://amzn.to/3Hh3BIS",
           "type": "amazon"
         },
         {
-          "label": "Orwell, 1984",
+          "label": "1984",
+          "author": "George Orwell",
           "url": "https://amzn.to/45C69cq",
           "type": "amazon"
         },
         {
-          "label": "René Girard, La Violence et le Sacré",
+          "label": "La Violence et le Sacré",
+          "author": "René Girard",
           "url": "https://amzn.to/45nD1Hi",
           "type": "amazon"
         },
         {
-          "label": "Philippe Muray, L'Empire du bien",
+          "label": "L'Empire du bien",
+          "author": "Philippe Muray",
           "url": "https://amzn.to/3V09AVw",
           "type": "amazon"
         },
         {
-          "label": "Raymond Aron, L'Opium des intellectuels",
+          "label": "L'Opium des intellectuels",
+          "author": "Raymond Aron",
           "url": "https://amzn.to/47tGKEn",
           "type": "amazon"
         }
@@ -882,32 +1003,38 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=-QYxG1io2L0",
       "links": [
         {
-          "label": "Hésiode, La Théogonie",
+          "label": "La Théogonie",
+          "author": "Hésiode",
           "url": "https://amzn.to/41g8456",
           "type": "amazon"
         },
         {
-          "label": "Goethe, Faust",
+          "label": "Faust",
+          "author": "Johann Wolfgang von Goethe",
           "url": "https://amzn.to/44UH914",
           "type": "amazon"
         },
         {
-          "label": "Mary Shelley, Frankenstein",
+          "label": "Frankenstein",
+          "author": "Mary Shelley",
           "url": "https://amzn.to/3H1m8sv",
           "type": "amazon"
         },
         {
-          "label": "Thoreau, Walden ou la vie dans les bois",
+          "label": "Walden ou la vie dans les bois",
+          "author": "Henry David Thoreau",
           "url": "https://amzn.to/45m81Gq",
           "type": "amazon"
         },
         {
-          "label": "Jules Verne, L'Île Mystérieuse",
+          "label": "L'Île Mystérieuse",
+          "author": "Jules Verne",
           "url": "https://amzn.to/4fgA6De",
           "type": "amazon"
         },
         {
-          "label": "Giono, L'Homme qui plantait des arbres",
+          "label": "L'Homme qui plantait des arbres",
+          "author": "Jean Giono",
           "url": "https://amzn.to/3H97wY2",
           "type": "amazon"
         }
@@ -922,17 +1049,20 @@
         {
           "label": "L'Homme qui plantait des arbres",
           "url": "https://amzn.to/46gBtzz",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
           "label": "Regain",
           "url": "https://amzn.to/3GVYYne",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
           "label": "Que ma joie demeure",
           "url": "https://amzn.to/4kV8qVZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         }
       ]
     },
@@ -943,22 +1073,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=XdOgjqxfvuQ",
       "links": [
         {
-          "label": "American Psycho, Brett Easton Ellis",
+          "label": "American Psycho",
+          "author": "Bret Easton Ellis",
           "url": "https://amzn.to/4kEkWsC",
           "type": "amazon"
         },
         {
-          "label": "Les Misérables, Victor Hugo",
+          "label": "Les Misérables",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/44N6uJ1",
           "type": "amazon"
         },
         {
-          "label": "Le Père Goriot, Balzac",
+          "label": "Le Père Goriot",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/4nRX0VK",
           "type": "amazon"
         },
         {
-          "label": "Les Racines du ciel, Romain Gary",
+          "label": "Les Racines du ciel",
+          "author": "Romain Gary",
           "url": "https://amzn.to/4kHQ9LI",
           "type": "amazon"
         }
@@ -971,12 +1105,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=_sRu0Da4Eg8",
       "links": [
         {
-          "label": "Le Parti d'Edgar Winger, de Patrice Jean",
+          "label": "Le Parti d'Edgar Winger",
+          "author": "Patrice Jean",
           "url": "https://amzn.to/3TVRzHf",
           "type": "amazon"
         },
         {
-          "label": "L'Orange mécanique, d'Anthony Burgess",
+          "label": "L'Orange mécanique",
+          "author": "Anthony Burgess",
           "url": "https://amzn.to/4ltULpl",
           "type": "amazon"
         }
@@ -989,22 +1125,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=8pehskqxqXY",
       "links": [
         {
-          "label": "Les Portes de la perception, Aldous Huxley",
+          "label": "Les Portes de la perception",
+          "author": "Aldous Huxley",
           "url": "https://amzn.to/3ZIrGy8",
           "type": "amazon"
         },
         {
-          "label": "Misérables Miracles, Henri Michaux",
+          "label": "Misérables Miracles",
+          "author": "Henri Michaux",
           "url": "https://amzn.to/3Ga9LK4",
           "type": "amazon"
         },
         {
-          "label": "Matière et Mémoire, Henri Bergson",
+          "label": "Matière et Mémoire",
+          "author": "Henri Bergson",
           "url": "https://amzn.to/3I91V3T",
           "type": "amazon"
         },
         {
-          "label": "Le Loup des steppes, Hermann Hesse",
+          "label": "Le Loup des steppes",
+          "author": "Hermann Hesse",
           "url": "https://amzn.to/4k4zIIX",
           "type": "amazon"
         }
@@ -1019,15 +1159,18 @@
         {
           "label": "Le Journal d'un fou",
           "url": "https://amzn.to/45qqWRT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Nicolas Gogol"
         },
         {
           "label": "Nouvelles de Pétersbourg",
           "url": "https://amzn.to/3HIdv68",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Nicolas Gogol"
         },
         {
-          "label": "Le Horla, de Maupassant",
+          "label": "Le Horla",
+          "author": "Guy de Maupassant",
           "url": "https://amzn.to/43Jy4Yo",
           "type": "amazon"
         }
@@ -1040,7 +1183,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=-tWdIl88J7o",
       "links": [
         {
-          "label": "Le Prince, de Machiavel",
+          "label": "Le Prince",
+          "author": "Nicolas Machiavel",
           "url": "https://amzn.to/45caQeC",
           "type": "amazon"
         }
@@ -1053,7 +1197,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ixLeRIelvjI",
       "links": [
         {
-          "label": "Les Villes invisibles, d'Italo Calvino",
+          "label": "Les Villes invisibles",
+          "author": "Italo Calvino",
           "url": "https://amzn.to/43WOD34",
           "type": "amazon"
         }
@@ -1068,7 +1213,8 @@
         {
           "label": "Le Complot contre l'Amérique",
           "url": "https://amzn.to/3ShLILQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Philip Roth"
         }
       ]
     },
@@ -1079,34 +1225,40 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=3PF6Pu4Ti0Y",
       "links": [
         {
-          "label": "Le Roi et L'Oiseau",
+          "label": "Le Roi et l'Oiseau",
           "url": "https://amzn.to/4jb7mfF",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Paul Grimault, Jacques Prévert"
         },
         {
           "label": "La Divine Comédie",
+          "author": "Dante Alighieri",
           "url": "https://amzn.to/4kokJtM",
           "type": "amazon"
         },
         {
           "label": "Rhinocéros",
+          "author": "Eugène Ionesco",
           "url": "https://amzn.to/4jZERCJ",
           "type": "amazon"
         },
         {
-          "label": "Paroles, de Prévert",
+          "label": "Paroles",
+          "author": "Jacques Prévert",
           "url": "https://amzn.to/3Fk03Ez",
           "type": "amazon"
         },
         {
           "label": "Ubu Roi",
           "url": "https://amzn.to/43A8HrM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alfred Jarry"
         },
         {
           "label": "Les Contes d'Andersen",
           "url": "https://amzn.to/3F8JECV",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Hans Christian Andersen"
         }
       ]
     },
@@ -1117,7 +1269,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=vkM6sS0Xyxk",
       "links": [
         {
-          "label": "Ubik, de Philip K. Dick",
+          "label": "Ubik",
+          "author": "Philip K. Dick",
           "url": "https://amzn.to/3H3WoLr",
           "type": "amazon"
         }
@@ -1130,7 +1283,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=CWp28kbD2QM",
       "links": [
         {
-          "label": "Le Désert des Tartares, de Dino Buzzati",
+          "label": "Le Désert des Tartares",
+          "author": "Dino Buzzati",
           "url": "https://amzn.to/4deeJ4E",
           "type": "amazon"
         }
@@ -1145,7 +1299,8 @@
         {
           "label": "2084",
           "url": "https://amzn.to/42RGBGW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Boualem Sansal"
         }
       ]
     },
@@ -1158,7 +1313,8 @@
         {
           "label": "Au revoir là-haut",
           "url": "https://amzn.to/3YErFdS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Lemaitre"
         }
       ]
     },
@@ -1169,17 +1325,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=mjx3LRyPcik",
       "links": [
         {
-          "label": "Alexis, de Marguerite Yourcenar",
+          "label": "Alexis",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/42imDVA",
           "type": "amazon"
         },
         {
-          "label": "La Grève, d'Ayn Rand",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/3RDn8od",
           "type": "amazon"
         },
         {
-          "label": "Ils étaient dix, d'Agatha Christie",
+          "label": "Ils étaient dix",
+          "author": "Agatha Christie",
           "url": "https://amzn.to/4i612FJ",
           "type": "amazon"
         }
@@ -1194,7 +1353,8 @@
         {
           "label": "L'Orange mécanique",
           "url": "https://amzn.to/3FKjfLu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Anthony Burgess"
         }
       ]
     },
@@ -1205,7 +1365,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=dl9sHrrIFek",
       "links": [
         {
-          "label": "Sur les chemins noirs, de Sylvain Tesson",
+          "label": "Sur les chemins noirs",
+          "author": "Sylvain Tesson",
           "url": "https://amzn.to/4iMyaU7",
           "type": "amazon"
         }
@@ -1220,12 +1381,14 @@
         {
           "label": "Le Hussard sur le toit",
           "url": "https://amzn.to/42bqa9d",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
-          "label": "En bonus, Un roi sans divertissement",
+          "label": "Un roi sans divertissement",
           "url": "https://amzn.to/4kNFGQf",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         }
       ]
     },
@@ -1236,7 +1399,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=OI4doCRDl6I",
       "links": [
         {
-          "label": "Cyrano de Bergerac, d'Edmond Rostand",
+          "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/4ksZUOR",
           "type": "amazon"
         }
@@ -1249,17 +1413,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=emiZ6LKsn7M",
       "links": [
         {
-          "label": "Le Hussard sur le toit, de Jean Giono",
+          "label": "Le Hussard sur le toit",
+          "author": "Jean Giono",
           "url": "https://amzn.to/43zEGIX",
           "type": "amazon"
         },
         {
-          "label": "Quatrevingt-treize, de Victor Hugo",
+          "label": "Quatrevingt-treize",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3DyVqWj",
           "type": "amazon"
         },
         {
-          "label": "Cyrano, d'Edmond Rostand",
+          "label": "Cyrano",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/4hnPWvi",
           "type": "amazon"
         }
@@ -1272,32 +1439,38 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=QbwUv9oObZA",
       "links": [
         {
-          "label": "Yourcenar, Mémoires d'Hadrien",
+          "label": "Mémoires d'Hadrien",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/41qBQUc",
           "type": "amazon"
         },
         {
-          "label": "Yourcenar, L'Œuvre au noir",
+          "label": "L'Œuvre au noir",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3QFNxl1",
           "type": "amazon"
         },
         {
-          "label": "Ayn Rand, La Source vive",
+          "label": "La Source vive",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/4h5cuRC",
           "type": "amazon"
         },
         {
-          "label": "Ayn Rand, La Grève",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/4i1Oyjg",
           "type": "amazon"
         },
         {
-          "label": "Rostand, Cyrano de Bergerac",
+          "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/41EWnpd",
           "type": "amazon"
         },
         {
-          "label": "Victor Hugo, Quatrevingt-treize",
+          "label": "Quatrevingt-treize",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/4i0zD8N",
           "type": "amazon"
         }
@@ -1310,34 +1483,40 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Fgq4Yo8Rv94",
       "links": [
         {
-          "label": "Tome 1",
+          "label": "Dune",
           "url": "https://amzn.to/3ESt21D",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         },
         {
-          "label": "Tome 2",
+          "label": "Le Messie de Dune",
           "url": "https://amzn.to/3QC8cWM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         },
         {
-          "label": "Tome 3",
+          "label": "Les Enfants de Dune",
           "url": "https://amzn.to/41gmCB6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         },
         {
-          "label": "Tome 4",
+          "label": "L’Empereur-Dieu de Dune",
           "url": "https://amzn.to/3EUikYD",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         },
         {
-          "label": "Tome 5",
+          "label": "Les Hérétiques de Dune",
           "url": "https://amzn.to/4hOl5t9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         },
         {
-          "label": "Tome 6",
+          "label": "La Maison des mères",
           "url": "https://amzn.to/4iaPOQM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         }
       ]
     },
@@ -1350,27 +1529,32 @@
         {
           "label": "24 heures de la vie d'une femme",
           "url": "https://amzn.to/3Qr9CDq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stefan Zweig"
         },
         {
           "label": "Le Joueur d'échec",
           "url": "https://amzn.to/4gXD7aN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stefan Zweig"
         },
         {
           "label": "Le Monde d'hier",
           "url": "https://amzn.to/415JNOx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stefan Zweig"
         },
         {
           "label": "Amok",
           "url": "https://amzn.to/413Pn3L",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stefan Zweig"
         },
         {
-          "label": "Les biographies de Zweig",
+          "label": "Biographies",
           "url": "https://amzn.to/416l24u",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stefan Zweig"
         }
       ]
     },
@@ -1381,22 +1565,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=1vP3wOTY39k",
       "links": [
         {
-          "label": "Le Chant du monde, de Giono",
+          "label": "Le Chant du monde",
+          "author": "Jean Giono",
           "url": "https://amzn.to/3CpQi6t",
           "type": "amazon"
         },
         {
-          "label": "Le Comte de Monte Cristo, de Dumas",
+          "label": "Le Comte de Monte Cristo",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/42HlGIe",
           "type": "amazon"
         },
         {
-          "label": "Cyrano de Bergerac, de Rostand",
+          "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/40YNK8A",
           "type": "amazon"
         },
         {
-          "label": "Sous le soleil de satan, de Bernanos",
+          "label": "Sous le soleil de satan",
+          "author": "Georges Bernanos",
           "url": "https://amzn.to/3CwtAtp",
           "type": "amazon"
         }
@@ -1411,17 +1599,20 @@
         {
           "label": "L'Argent",
           "url": "https://amzn.to/3PSdvBa",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Péguy"
         },
         {
           "label": "Notre Jeunesse",
           "url": "https://amzn.to/3EaJGcJ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Péguy"
         },
         {
           "label": "Jeanne d'Arc",
           "url": "https://amzn.to/3Wv2h9l",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Péguy"
         }
       ]
     },
@@ -1433,18 +1624,21 @@
       "links": [
         {
           "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/42ltZcx",
           "type": "amazon"
         },
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/4g3QExd",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "Les Cavaliers",
           "url": "https://amzn.to/3EfB83W",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Joseph Kessel"
         }
       ]
     },
@@ -1456,11 +1650,13 @@
       "links": [
         {
           "label": "Le Comte de Monte-Cristo, volume I",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3PzBm8Q",
           "type": "amazon"
         },
         {
           "label": "Le Comte de Monte-Cristo, volume II",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3DTXN5Q",
           "type": "amazon"
         }
@@ -1473,24 +1669,28 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=hmRvDyOvK04",
       "links": [
         {
-          "label": "amzn.to",
+          "label": "Solomon Kane",
           "url": "https://amzn.to/3DGDdG1",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert E. Howard"
         },
         {
-          "label": "Tome 1, Le Cimmérien",
+          "label": "Le Cimmérien",
           "url": "https://amzn.to/424u3NS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert E. Howard"
         },
         {
-          "label": "Tome 2, L'Heure du dragon",
+          "label": "L'Heure du dragon",
           "url": "https://amzn.to/3DLueDC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert E. Howard"
         },
         {
-          "label": "Tome 3, Les Clous rouges",
+          "label": "Les Clous rouges",
           "url": "https://amzn.to/3WaEThw",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert E. Howard"
         }
       ]
     },
@@ -1501,12 +1701,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=HE-pmUGgD98",
       "links": [
         {
-          "label": "Romain Gary, Les Racines du Ciel",
+          "label": "Les Racines du Ciel",
+          "author": "Romain Gary",
           "url": "https://amzn.to/4iOZ4uW",
           "type": "amazon"
         },
         {
-          "label": "Ayn Rand, La Grève",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/40dqpj7",
           "type": "amazon"
         }
@@ -1521,20 +1723,24 @@
         {
           "label": "Nous les vivants",
           "url": "https://amzn.to/4gPfz8t",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ayn Rand"
         },
         {
           "label": "Hymne",
           "url": "https://amzn.to/4gOnqDh",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ayn Rand"
         },
         {
           "label": "La Source vive",
           "url": "https://amzn.to/3VR1WNW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ayn Rand"
         },
         {
           "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/3PdufTf",
           "type": "amazon"
         }
@@ -1549,12 +1755,14 @@
         {
           "label": "Les Trois Mousquetaires",
           "url": "https://amzn.to/3VIrSeO",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         },
         {
-          "label": "Monte Cristo",
+          "label": "Le Comte de Monte-Cristo",
           "url": "https://amzn.to/49CR7F9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         }
       ]
     },
@@ -1567,22 +1775,26 @@
         {
           "label": "Les Cavaliers",
           "url": "https://amzn.to/3ZSNibq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Joseph Kessel"
         },
         {
           "label": "Fortune carrée",
           "url": "https://amzn.to/4gCLtov",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Joseph Kessel"
         },
         {
           "label": "L'Armée des ombres",
           "url": "https://amzn.to/3ZFqafp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Joseph Kessel"
         },
         {
           "label": "L'Équipage",
           "url": "https://amzn.to/3Dfw5A9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Joseph Kessel"
         }
       ]
     },
@@ -1593,19 +1805,22 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Oo9c5QO59t0",
       "links": [
         {
-          "label": "Voyage au bout de la nuit, Céline",
+          "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/41swuJA",
           "type": "amazon"
         },
         {
-          "label": "Vol de nuit, Saint-Exupéry",
+          "label": "Vol de nuit",
+          "author": "Antoine de Saint-Exupéry",
           "url": "https://amzn.to/3OL9RIH",
           "type": "amazon"
         },
         {
-          "label": "Le Feu, Barbusse",
+          "label": "Le Feu",
           "url": "https://amzn.to/4fft4wV",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Henri Barbusse"
         }
       ]
     },
@@ -1616,47 +1831,56 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=sIOt2oWJeu0",
       "links": [
         {
-          "label": "Perceval, de Chrétien de Troyes (version modernisée)",
+          "label": "Perceval ou le Conte du Graal (édition scolaire)",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/41evwjV",
           "type": "amazon"
         },
         {
-          "label": "Yvain, Le Chevalier au Lion, de Chrétien de Troyes (version modernisée)",
+          "label": "Yvain ou le Chevalier au lion (édition scolaire)",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/3B8Ci09",
           "type": "amazon"
         },
         {
-          "label": "Lancelot, de Chrétien de Troyes (version modernisée)",
+          "label": "Lancelot",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/4eZot27",
           "type": "amazon"
         },
         {
-          "label": "Perceval, de Chrétien de Troyes",
+          "label": "Perceval ou le Conte du Graal",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/3OzLuh5",
           "type": "amazon"
         },
         {
-          "label": "Yvain, Le Chevalier au Lion, de Chrétien de Troyes",
+          "label": "Le Chevalier au lion - Roman d'Yvain",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/3ZyWfGY",
           "type": "amazon"
         },
         {
-          "label": "Romans de la table ronde, de Chrétien de Troyes",
+          "label": "Romans de la table ronde",
+          "author": "Chrétien de Troyes",
           "url": "https://amzn.to/3OCZZAI",
           "type": "amazon"
         },
         {
-          "label": "Rabelais, Gargantua",
+          "label": "Gargantua",
+          "author": "François Rabelais",
           "url": "https://amzn.to/4i9F5Hb",
           "type": "amazon"
         },
         {
-          "label": "Rabelais, Pantagruel",
+          "label": "Pantagruel",
+          "author": "François Rabelais",
           "url": "https://amzn.to/4gy6jFV",
           "type": "amazon"
         },
         {
-          "label": "Tolkien, Les Enfants de Hùrin",
+          "label": "Les Enfants de Hùrin",
+          "author": "J. R. R. Tolkien",
           "url": "https://amzn.to/41adOyf",
           "type": "amazon"
         }
@@ -1669,7 +1893,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=YWjdx1rDj5s",
       "links": [
         {
-          "label": "Fahrenheit 451, de Ray Bradbury",
+          "label": "Fahrenheit 451",
+          "author": "Ray Bradbury",
           "url": "https://amzn.to/416LYCT",
           "type": "amazon"
         }
@@ -1682,22 +1907,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=kVGk8kpJvPI",
       "links": [
         {
-          "label": "Le Prince, Machiavel",
+          "label": "Le Prince",
+          "author": "Nicolas Machiavel",
           "url": "https://amzn.to/40GGJd2",
           "type": "amazon"
         },
         {
-          "label": "La Servitude volontaire, La Boétie",
+          "label": "La Servitude volontaire",
           "url": "https://amzn.to/3AoKGbG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Étienne de La Boétie"
         },
         {
-          "label": "Les Mémoires d'outre-tombe, Chateaubriand",
+          "label": "Mémoires d'outre-tombe",
           "url": "https://amzn.to/3ANsBUB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         },
         {
-          "label": "La Grève, Ayn Rand",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/40JtSXo",
           "type": "amazon"
         }
@@ -1710,7 +1939,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=h2Iw4PAO-WU",
       "links": [
         {
-          "label": "Rhinocéros, d'Eugène Ionesco",
+          "label": "Rhinocéros",
+          "author": "Eugène Ionesco",
           "url": "https://amzn.to/4frziLr",
           "type": "amazon"
         }
@@ -1723,32 +1953,38 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=JzG1im-6T2A",
       "links": [
         {
-          "label": "Ayn Rand, La Grève",
+          "label": "La Grève",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/4hheOWX",
           "type": "amazon"
         },
         {
-          "label": "Ayn Rand, La Source vive",
+          "label": "La Source vive",
+          "author": "Ayn Rand",
           "url": "https://amzn.to/3BW4Qdb",
           "type": "amazon"
         },
         {
-          "label": "Dante, La Divine Comédie",
+          "label": "La Divine Comédie",
+          "author": "Dante Alighieri",
           "url": "https://amzn.to/4hg7B9r",
           "type": "amazon"
         },
         {
-          "label": "Lovecraft, Le mythe de Cthulhu",
+          "label": "Le mythe de Cthulhu",
+          "author": "H. P. Lovecraft",
           "url": "https://amzn.to/48CNJK1",
           "type": "amazon"
         },
         {
-          "label": "Bram Stocker, Dracula",
+          "label": "Dracula",
+          "author": "Bram Stoker",
           "url": "https://amzn.to/4hng6jk",
           "type": "amazon"
         },
         {
-          "label": "Machiavel, Le Prince",
+          "label": "Le Prince",
+          "author": "Nicolas Machiavel",
           "url": "https://amzn.to/4f3iMkn",
           "type": "amazon"
         }
@@ -1761,7 +1997,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Zviy8kp46RI",
       "links": [
         {
-          "label": "Ravage, de René Barjavel",
+          "label": "Ravage",
+          "author": "René Barjavel",
           "url": "https://amzn.to/4fihKR9",
           "type": "amazon"
         }
@@ -1774,37 +2011,44 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=n8xtyMTe4ds",
       "links": [
         {
-          "label": "L'épopée de Gilgamesh",
+          "label": "L'Épopée de Gilgamesh",
           "url": "https://amzn.to/405pl1o",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Anonyme"
         },
         {
           "label": "L'Odyssée",
           "url": "https://amzn.to/3NpUvJ7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Homère"
         },
         {
           "label": "Perceval",
           "url": "https://amzn.to/400Gkln",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Chrétien de Troyes"
         },
         {
           "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/3U7COBM",
           "type": "amazon"
         },
         {
           "label": "Le Hussard sur le toit",
           "url": "https://amzn.to/3YkXqsS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
           "label": "L'Homme qui rit",
           "url": "https://amzn.to/4dHLJ3L",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3BK7gvA",
           "type": "amazon"
         }
@@ -1819,22 +2063,26 @@
         {
           "label": "La Tentation de l'Occident",
           "url": "https://amzn.to/3YeVPov",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "André Malraux"
         },
         {
           "label": "Le Pavillon d'or",
           "url": "https://amzn.to/40doz2r",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/4eWSoIB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "L'Œuvre au noir",
           "url": "https://amzn.to/484zduc",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         }
       ]
     },
@@ -1847,10 +2095,12 @@
         {
           "label": "Voyageur en automne",
           "url": "https://amzn.to/4dyw72v",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Renaud Camus"
         },
         {
-          "label": "Fictions, de Borges",
+          "label": "Fictions",
+          "author": "Jorge Luis Borges",
           "url": "https://amzn.to/4eOptX5",
           "type": "amazon"
         }
@@ -1865,20 +2115,24 @@
         {
           "label": "Martin Eden",
           "url": "https://amzn.to/3N4cEvZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jack London"
         },
         {
           "label": "Croc-Blanc",
           "url": "https://amzn.to/3N8ozce",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jack London"
         },
         {
           "label": "L'Appel de la forêt",
+          "author": "Jack London",
           "url": "https://amzn.to/3ZM61pr",
           "type": "amazon"
         },
         {
           "label": "Le Talon de fer",
+          "author": "Jack London",
           "url": "https://amzn.to/4gOcq9G",
           "type": "amazon"
         }
@@ -1893,12 +2147,14 @@
         {
           "label": "Julia",
           "url": "https://amzn.to/3Bgn8FM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sandra Newman"
         },
         {
-          "label": "1984, George Orwell",
+          "label": "1984",
           "url": "https://amzn.to/3MW2ptn",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "George Orwell"
         }
       ]
     },
@@ -1909,17 +2165,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=VTighBHl8IM",
       "links": [
         {
-          "label": "Carl von Clausewitz, De la guerre",
+          "label": "De la guerre",
           "url": "https://amzn.to/3MPN1il",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Carl von Clausewitz"
         },
         {
-          "label": "Kant, Projet de paix perpétuelle",
+          "label": "Projet de paix perpétuelle",
+          "author": "Emmanuel Kant",
           "url": "https://amzn.to/47Bb1PJ",
           "type": "amazon"
         },
         {
-          "label": "René Girard, Achever Clausewitz",
+          "label": "Achever Clausewitz",
+          "author": "René Girard",
           "url": "https://amzn.to/4e6zte8",
           "type": "amazon"
         }
@@ -1932,17 +2191,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=dfadcHVkLe0",
       "links": [
         {
-          "label": "Le Petit Prince, de Saint-Exupéry",
+          "label": "Le Petit Prince",
+          "author": "Antoine de Saint-Exupéry",
           "url": "https://amzn.to/4gjHOwx",
           "type": "amazon"
         },
         {
-          "label": "Micromégas, de Voltaire",
+          "label": "Micromégas",
+          "author": "Voltaire",
           "url": "https://amzn.to/3AY2UAF",
           "type": "amazon"
         },
         {
-          "label": "Alice au pays des merveilles, de Lewis Caroll",
+          "label": "Alice au pays des merveilles",
+          "author": "Lewis Carroll",
           "url": "https://amzn.to/4ekbB6N",
           "type": "amazon"
         }
@@ -1955,7 +2217,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=KgcBYlfC67w",
       "links": [
         {
-          "label": "Utoya, de Laurent Obertone",
+          "label": "Utoya",
+          "author": "Laurent Obertone",
           "url": "https://amzn.to/3T9mUqg",
           "type": "amazon"
         }
@@ -1968,7 +2231,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=qW8n3cxoMMs",
       "links": [
         {
-          "label": "Le Parti d'Edgar Winger, de Patrice Jean",
+          "label": "Le Parti d'Edgar Winger",
+          "author": "Patrice Jean",
           "url": "https://amzn.to/3XiczdM",
           "type": "amazon"
         }
@@ -1983,22 +2247,26 @@
         {
           "label": "Une Journée d'Ivan Denissovitch",
           "url": "https://amzn.to/4cB4dlU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Soljenitsyne"
         },
         {
           "label": "La Maison de Matriona",
           "url": "https://amzn.to/4dwruH3",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Soljenitsyne"
         },
         {
           "label": "L'Archipel du goulag",
           "url": "https://amzn.to/3yXbPBv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Soljenitsyne"
         },
         {
           "label": "Le Déclin du courage",
           "url": "https://amzn.to/3yI9b2B",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Soljenitsyne"
         }
       ]
     },
@@ -2009,17 +2277,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=J8AOfcIFlSk",
       "links": [
         {
-          "label": "Marguerite Yourcenar, Mémoires d'Hadrien",
+          "label": "Mémoires d'Hadrien",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3YObDiq",
           "type": "amazon"
         },
         {
-          "label": "Colette, Sido",
+          "label": "Sido",
+          "author": "Colette",
           "url": "https://amzn.to/3SKWcE2",
           "type": "amazon"
         },
         {
-          "label": "Georges Sand, La Mare au diable",
+          "label": "La Mare au diable",
+          "author": "George Sand",
           "url": "https://amzn.to/46ZLP5n",
           "type": "amazon"
         }
@@ -2034,32 +2305,38 @@
         {
           "label": "Don Quichotte, tome I",
           "url": "https://amzn.to/4bXsWB4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Miguel de Cervantes"
         },
         {
           "label": "Don Quichotte, tome II",
           "url": "https://amzn.to/4aEiH3C",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Miguel de Cervantes"
         },
         {
           "label": "Crime et Châtiment",
           "url": "https://amzn.to/3RaPAOy",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Seul à travers l'Atlantique",
           "url": "https://amzn.to/3R9f7rw",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alain Gerbault"
         },
         {
           "label": "Le désert des Tartares",
           "url": "https://amzn.to/4c2Z4Dy",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Dino Buzzati"
         },
         {
           "label": "Les Fleurs du Mal",
           "url": "https://amzn.to/45e02un",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Baudelaire"
         }
       ]
     },
@@ -2072,30 +2349,36 @@
         {
           "label": "La Mort en été",
           "url": "https://amzn.to/3yuGNRb",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
           "label": "Confession d'un masque",
           "url": "https://amzn.to/3wzIE6E",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
           "label": "Le Pavillon d'Or",
           "url": "https://amzn.to/4arWHsx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
-          "label": "La Mer de la fertilité (tout en un seul tome)",
+          "label": "La Mer de la fertilité",
           "url": "https://amzn.to/3V00lEC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
-          "label": "L'Ange en décomposition (le dernier roman de Mishima)",
+          "label": "L'Ange en décomposition",
           "url": "https://amzn.to/3KbWIpT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
-          "label": "Mishima ou la vision du vide, par Marguerite Yourcenar",
+          "label": "Mishima ou la vision du vide",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3wNPaqh",
           "type": "amazon"
         }
@@ -2108,22 +2391,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=JWQ34qS2xEI",
       "links": [
         {
-          "label": "Œdipe Roi, de Sophocle",
+          "label": "Œdipe Roi",
+          "author": "Sophocle",
           "url": "https://amzn.to/3KhpFAF",
           "type": "amazon"
         },
         {
-          "label": "Claude Gueux, de Victor Hugo",
+          "label": "Claude Gueux",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3WXci02",
           "type": "amazon"
         },
         {
-          "label": "Le Loup des steppes, de Hermann Hesse",
+          "label": "Le Loup des steppes",
+          "author": "Hermann Hesse",
           "url": "https://amzn.to/3V9svy2",
           "type": "amazon"
         },
         {
-          "label": "Mémoires d'Hadrien, de Marguerite Yourcenar",
+          "label": "Mémoires d'Hadrien",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3wI72my",
           "type": "amazon"
         }
@@ -2137,6 +2424,7 @@
       "links": [
         {
           "label": "À l'Ouest rien de nouveau",
+          "author": "Erich Maria Remarque",
           "url": "https://amzn.to/4dvwWKG",
           "type": "amazon"
         }
@@ -2151,40 +2439,48 @@
         {
           "label": "Dictionnaire superflu",
           "url": "https://amzn.to/44vrgfN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Desproges"
         },
         {
           "label": "Le Manuel",
           "url": "https://amzn.to/4bsXYAv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Desproges"
         },
         {
           "label": "Chroniques",
           "url": "https://amzn.to/4b8qp7c",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Desproges"
         },
         {
           "label": "Des Femmes qui tombent",
           "url": "https://amzn.to/4dzRguD",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Desproges"
         },
         {
-          "label": "Rabelais, Gargantua",
+          "label": "Gargantua",
+          "author": "François Rabelais",
           "url": "https://amzn.to/3UPRTIT",
           "type": "amazon"
         },
         {
-          "label": "Beaumarchais, Le Mariage de Figaro",
+          "label": "Le Mariage de Figaro",
+          "author": "Beaumarchais",
           "url": "https://amzn.to/44yDl3K",
           "type": "amazon"
         },
         {
-          "label": "Flaubert, Le Dictionnaire des idées reçues",
+          "label": "Le Dictionnaire des idées reçues",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/3US3Z4c",
           "type": "amazon"
         },
         {
-          "label": "Molière, Les Fourberies de Scapin",
+          "label": "Les Fourberies de Scapin",
+          "author": "Molière",
           "url": "https://amzn.to/4btXLx3",
           "type": "amazon"
         }
@@ -2199,12 +2495,14 @@
         {
           "label": "La Préparation du roman",
           "url": "https://amzn.to/3UNi6Yx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Roland Barthes"
         },
         {
           "label": "Le Journal de Jean-René Huguenin",
           "url": "https://amzn.to/4b5BDcC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean-René Huguenin"
         }
       ]
     },
@@ -2215,12 +2513,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=yyjzkPK-Nsc",
       "links": [
         {
-          "label": "Lysistrata, d'Aristophane",
+          "label": "Lysistrata",
+          "author": "Aristophane",
           "url": "https://amzn.to/49M1uoJ",
           "type": "amazon"
         },
         {
-          "label": "Alexis, de Yourcenar",
+          "label": "Alexis",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3IfRRD2",
           "type": "amazon"
         }
@@ -2234,13 +2534,15 @@
       "links": [
         {
           "label": "Illusions perdues",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/3WNbJpG",
           "type": "amazon"
         },
         {
           "label": "Splendeurs et misères des courtisanes",
           "url": "https://amzn.to/4btpFtu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Honoré de Balzac"
         }
       ]
     },
@@ -2251,34 +2553,40 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Xk-AadM_wn8",
       "links": [
         {
-          "label": "L'intégral de Maurice Barrès, volume 1",
+          "label": "L'intégrale de Maurice Barrès, volume 1",
           "url": "https://amzn.to/4ctWsz2",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Maurice Barrès"
         },
         {
-          "label": "L'intégral de Maurice Barrès, volume 2",
+          "label": "L'intégrale de Maurice Barrès, volume 2",
           "url": "https://amzn.to/3UepYB0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Maurice Barrès"
         },
         {
           "label": "Un Jardin sur l'Oronte",
           "url": "https://amzn.to/3QnyXyx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Maurice Barrès"
         },
         {
           "label": "Le Culte du Moi",
           "url": "https://amzn.to/4baNcPX",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Maurice Barrès"
         },
         {
-          "label": "La colline inspirée",
+          "label": "La Colline inspirée",
           "url": "https://amzn.to/3WjSaVS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Maurice Barrès"
         },
         {
-          "label": "L'essai de Jeremy Baneton sur Barrès",
+          "label": "Barrès",
           "url": "https://amzn.to/44m4ua3",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jeremy Baneton"
         }
       ]
     },
@@ -2290,28 +2598,33 @@
       "links": [
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3U6voPA",
           "type": "amazon"
         },
         {
-          "label": "Les Fables de La Fontaine",
+          "label": "Les Fables",
+          "author": "Jean de La Fontaine",
           "url": "https://amzn.to/3PPRHXu",
           "type": "amazon"
         },
         {
           "label": "Les Misérables",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3Jb2N5t",
           "type": "amazon"
         },
         {
           "label": "Les Fourberies de Scapin",
+          "author": "Molière",
           "url": "https://amzn.to/3VVWLNT",
           "type": "amazon"
         },
         {
           "label": "Les Fleurs du Mal",
           "url": "https://amzn.to/3vGucJx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Baudelaire"
         }
       ]
     },
@@ -2324,7 +2637,8 @@
         {
           "label": "S'Anomaliser",
           "url": "https://amzn.to/4aUvVKj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Étienne Le Reun"
         }
       ]
     },
@@ -2335,7 +2649,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=weDkuShNlqI",
       "links": [
         {
-          "label": "Le Grand Paris, d'Aurélien Bellanger",
+          "label": "Le Grand Paris",
+          "author": "Aurélien Bellanger",
           "url": "https://amzn.to/3VQu2dl",
           "type": "amazon"
         }
@@ -2348,27 +2663,32 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=pkLLEO7zca8",
       "links": [
         {
-          "label": "La nuit le jour et toutes les autres nuits, Michel Audiard",
+          "label": "La nuit le jour et toutes les autres nuits",
+          "author": "Michel Audiard",
           "url": "https://amzn.to/43lB9Mu",
           "type": "amazon"
         },
         {
-          "label": "Voyage au bout de la nuit, Céline",
+          "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3TF1u4R",
           "type": "amazon"
         },
         {
-          "label": "Poésies de Rimbaud",
+          "label": "Poésies",
+          "author": "Arthur Rimbaud",
           "url": "https://amzn.to/3Tlkunt",
           "type": "amazon"
         },
         {
-          "label": "Paroles, Prévert",
+          "label": "Paroles",
           "url": "https://amzn.to/3TltYPG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jacques Prévert"
         },
         {
-          "label": "Le Chien jaune, Simenon",
+          "label": "Le Chien jaune",
+          "author": "Georges Simenon",
           "url": "https://amzn.to/3PsELqe",
           "type": "amazon"
         }
@@ -2381,7 +2701,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Bj98dytn6fo",
       "links": [
         {
-          "label": "Le Parfum, de Patrick Süskind",
+          "label": "Le Parfum",
+          "author": "Patrick Süskind",
           "url": "https://amzn.to/3PgolkE",
           "type": "amazon"
         }
@@ -2394,27 +2715,32 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=dMDhC-NVTEQ",
       "links": [
         {
-          "label": "Les Fables de La Fontaine",
+          "label": "Les Fables",
+          "author": "Jean de La Fontaine",
           "url": "https://amzn.to/4bVGEFz",
           "type": "amazon"
         },
         {
-          "label": "Voyage au bout de la nuit, de Céline",
+          "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3P8y9wO",
           "type": "amazon"
         },
         {
-          "label": "Un Cœur simple, de Flaubert",
+          "label": "Un Cœur simple",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/3T2lI72",
           "type": "amazon"
         },
         {
-          "label": "Pensées, de Péguy",
+          "label": "Pensées",
+          "author": "Charles Péguy",
           "url": "https://amzn.to/48GIwik",
           "type": "amazon"
         },
         {
-          "label": "Knock, de Jules Romains",
+          "label": "Knock",
+          "author": "Jules Romains",
           "url": "https://amzn.to/4a081w6",
           "type": "amazon"
         }
@@ -2429,17 +2755,20 @@
         {
           "label": "Sueur de Sang",
           "url": "https://amzn.to/48EK4cE",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Bloy"
         },
         {
           "label": "Le Désespéré",
           "url": "https://amzn.to/3ImT7Et",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Bloy"
         },
         {
           "label": "La Femme pauvre",
           "url": "https://amzn.to/3IlQFy5",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Bloy"
         }
       ]
     },
@@ -2452,22 +2781,26 @@
         {
           "label": "Le Rouge et le Noir",
           "url": "https://amzn.to/3xENLCr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stendhal"
         },
         {
           "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/4aHrqTq",
           "type": "amazon"
         },
         {
           "label": "Lucien Leuwen",
           "url": "https://amzn.to/44cH4DY",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stendhal"
         },
         {
           "label": "De l'Amour",
           "url": "https://amzn.to/3JqQPVA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stendhal"
         }
       ]
     },
@@ -2480,12 +2813,14 @@
         {
           "label": "Le Journal de Jean-René Huguenin",
           "url": "https://amzn.to/48q02HR",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean-René Huguenin"
         },
         {
-          "label": "La Côte sauvage, son roman",
+          "label": "La Côte sauvage",
           "url": "https://amzn.to/3UInmNL",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean-René Huguenin"
         }
       ]
     },
@@ -2496,17 +2831,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=vn--Uuea6TA",
       "links": [
         {
-          "label": "Sylvain Tesson, Sur les chemins noirs",
+          "label": "Sur les chemins noirs",
+          "author": "Sylvain Tesson",
           "url": "https://amzn.to/3UGLZKv",
           "type": "amazon"
         },
         {
-          "label": "Patrick Modiano, Rue des boutiques obscures",
+          "label": "Rue des boutiques obscures",
+          "author": "Patrick Modiano",
           "url": "https://amzn.to/3SKOPeP",
           "type": "amazon"
         },
         {
-          "label": "Alain Mabanckou, Les Cigognes sont immortelles",
+          "label": "Les Cigognes sont immortelles",
+          "author": "Alain Mabanckou",
           "url": "https://amzn.to/3I4U7xa",
           "type": "amazon"
         }
@@ -2520,13 +2858,15 @@
       "links": [
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3UAkFxt",
           "type": "amazon"
         },
         {
           "label": "Mort à crédit",
           "url": "https://amzn.to/3SV0cCe",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -2539,17 +2879,20 @@
         {
           "label": "Le Château",
           "url": "https://amzn.to/3ubnRVx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Franz Kafka"
         },
         {
           "label": "Le Procès",
           "url": "https://amzn.to/3HDkLNa",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Franz Kafka"
         },
         {
           "label": "La Métamorphose",
           "url": "https://amzn.to/3UBC8WD",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Franz Kafka"
         }
       ]
     },
@@ -2560,19 +2903,22 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=0FzESIBOqXk",
       "links": [
         {
-          "label": "Alain Mabanckou, Mémoires de Porc-épic",
+          "label": "Mémoires de Porc-épic",
+          "author": "Alain Mabanckou",
           "url": "https://amzn.to/3S2SN22",
           "type": "amazon"
         },
         {
-          "label": "Ahmadou Kourouma En attendant le vote des bêtes sauvages",
+          "label": "En attendant le vote des bêtes sauvages",
           "url": "https://amzn.to/48Akarl",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ahmadou Kourouma"
         },
         {
-          "label": "Henry Stanley Morton, À la recherche de Livingstone",
+          "label": "À la recherche de Livingstone",
           "url": "https://amzn.to/3vLdesQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Henry Morton Stanley"
         }
       ]
     },
@@ -2583,39 +2929,46 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=GDv0Psp97S4",
       "links": [
         {
-          "label": "Sous le soleil",
+          "label": "Sous le soleil de Satan",
           "url": "https://amzn.to/47b7F45",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
           "label": "Journal d'un curé de campagne",
           "url": "https://amzn.to/3NIEpuN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
           "label": "Monsieur Ouine",
           "url": "https://amzn.to/47tWxQd",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
-          "label": "La Grande Peur",
+          "label": "La Grande Peur des bien-pensants",
           "url": "https://amzn.to/3RBcluk",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
-          "label": "Les grands cimetières",
+          "label": "Les Grands Cimetières sous la lune",
           "url": "https://amzn.to/3NGj9pf",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
           "label": "La France contre les robots",
           "url": "https://amzn.to/48rEoDg",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         },
         {
           "label": "Le Dialogue des carmélites",
           "url": "https://amzn.to/3RuCz1C",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Georges Bernanos"
         }
       ]
     },
@@ -2627,18 +2980,21 @@
       "links": [
         {
           "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/46ZskIt",
           "type": "amazon"
         },
         {
           "label": "Le Cid",
           "url": "https://amzn.to/4au0Ux6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Pierre Corneille"
         },
         {
           "label": "Hernani",
           "url": "https://amzn.to/3GMkyqH",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         }
       ]
     },
@@ -2649,7 +3005,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=dn4rAHRrUiU",
       "links": [
         {
-          "label": "Le Consentement, Vanessa Springora",
+          "label": "Le Consentement",
+          "author": "Vanessa Springora",
           "url": "https://amzn.to/3uKyVsT",
           "type": "amazon"
         }
@@ -2664,7 +3021,8 @@
         {
           "label": "La Confession d'un enfant du siècle",
           "url": "https://amzn.to/49HllGD",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alfred de Musset"
         }
       ]
     },
@@ -2675,24 +3033,28 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=7QeOEIhI-Dw",
       "links": [
         {
-          "label": "Pensées pour moi-même de Marc Aurèle",
+          "label": "Pensées pour moi-même",
           "url": "https://amzn.to/3sS6PLz",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marc Aurèle"
         },
         {
-          "label": "Pensées de Pascal",
+          "label": "Pensées",
           "url": "https://amzn.to/3uzJfDO",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Blaise Pascal"
         },
         {
-          "label": "Généalogie de la morale de Nietzsche",
+          "label": "Généalogie de la morale",
           "url": "https://amzn.to/49ThgiE",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Friedrich Nietzsche"
         },
         {
-          "label": "Matière et Mémoire de Bergson",
+          "label": "Matière et Mémoire",
           "url": "https://amzn.to/3N3TOoW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Henri Bergson"
         }
       ]
     },
@@ -2703,27 +3065,32 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=X4wNGkEP--0",
       "links": [
         {
-          "label": "La Divine Comédie, Dante",
+          "label": "La Divine Comédie",
+          "author": "Dante Alighieri",
           "url": "https://amzn.to/47mv6Ii",
           "type": "amazon"
         },
         {
-          "label": "Les Fleurs du Mal, Baudelaire",
+          "label": "Les Fleurs du Mal",
+          "author": "Charles Baudelaire",
           "url": "https://amzn.to/478mfKz",
           "type": "amazon"
         },
         {
-          "label": "Tout Rimbaud",
+          "label": "Œuvres complètes",
           "url": "https://amzn.to/3QyknDT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Rimbaud"
         },
         {
-          "label": "Les Fables de La Fontaine",
+          "label": "Les Fables",
+          "author": "Jean de La Fontaine",
           "url": "https://amzn.to/3QCbvNB",
           "type": "amazon"
         },
         {
-          "label": "La Légende des siècles, Victor Hugo",
+          "label": "La Légende des siècles",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/40zy1ek",
           "type": "amazon"
         }
@@ -2738,17 +3105,20 @@
         {
           "label": "Les Désarrois de l'élève Törless",
           "url": "https://amzn.to/3SM2zYL",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert Musil"
         },
         {
           "label": "L'Homme sans qualités, tome 1",
           "url": "https://amzn.to/3sc95Ny",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert Musil"
         },
         {
           "label": "L'Homme sans qualités, tome 2",
           "url": "https://amzn.to/47fBzVX",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Robert Musil"
         }
       ]
     },
@@ -2759,17 +3129,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=2kvuEWFz8uI",
       "links": [
         {
-          "label": "Malraux, La Tentation de l'Occident",
+          "label": "La Tentation de l'Occident",
+          "author": "André Malraux",
           "url": "https://amzn.to/3Slrxh7",
           "type": "amazon"
         },
         {
-          "label": "Malraux, La Condition humaine",
+          "label": "La Condition humaine",
+          "author": "André Malraux",
           "url": "https://amzn.to/3SqSgcp",
           "type": "amazon"
         },
         {
-          "label": "Tomasi di Lampedusa, Le Guépard",
+          "label": "Le Guépard",
+          "author": "Giuseppe Tomasi di Lampedusa",
           "url": "https://amzn.to/46PLMbm",
           "type": "amazon"
         }
@@ -2784,7 +3157,8 @@
         {
           "label": "Les Nuits de Paris",
           "url": "https://amzn.to/3RrrxM1",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Rétif de la Bretonne"
         }
       ]
     },
@@ -2795,17 +3169,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=tRgxEhGGons",
       "links": [
         {
-          "label": "L'école des femmes",
+          "label": "L'École des femmes",
           "url": "https://amzn.to/46mWG8c",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Molière"
         },
         {
-          "label": "Les précieuses ridicules",
+          "label": "Les Précieuses ridicules",
           "url": "https://amzn.to/3Fa823i",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Molière"
         },
         {
           "label": "Cyrano de Bergerac",
+          "author": "Edmond Rostand",
           "url": "https://amzn.to/48OGnm3",
           "type": "amazon"
         }
@@ -2818,14 +3195,16 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=soMU_MLtglg",
       "links": [
         {
-          "label": "Fables de La Fontaine",
+          "label": "Fables",
           "url": "https://amzn.to/3EYaGJB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean de La Fontaine"
         },
         {
           "label": "Contes et nouvelles en vers",
           "url": "https://amzn.to/3LMnvKF",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean de La Fontaine"
         }
       ]
     },
@@ -2836,17 +3215,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=u7K0ULXENqc",
       "links": [
         {
-          "label": "1984, Orwell",
+          "label": "1984",
+          "author": "George Orwell",
           "url": "https://amzn.to/48kYQGK",
           "type": "amazon"
         },
         {
-          "label": "Le Ventre de Paris, Zola",
+          "label": "Le Ventre de Paris",
+          "author": "Émile Zola",
           "url": "https://amzn.to/458zklq",
           "type": "amazon"
         },
         {
-          "label": "L'Étranger, Camus",
+          "label": "L'Étranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/44UWwDu",
           "type": "amazon"
         }
@@ -2861,17 +3243,20 @@
         {
           "label": "Vipère au poing",
           "url": "https://amzn.to/3t3D3Dj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Hervé Bazin"
         },
         {
-          "label": "Gastby Le Magnifique",
+          "label": "Gatsby le Magnifique",
           "url": "https://amzn.to/3PzrF9E",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "F. Scott Fitzgerald"
         },
         {
           "label": "Du côté de chez Swann",
           "url": "https://amzn.to/46oEw5z",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         }
       ]
     },
@@ -2882,14 +3267,16 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=st-CQDOFM_A",
       "links": [
         {
-          "label": "Montherlant, Pitié pour les femmes",
+          "label": "Pitié pour les femmes",
+          "author": "Henry de Montherlant",
           "url": "https://amzn.to/3EGCh1B",
           "type": "amazon"
         },
         {
           "label": "Belle du Seigneur",
           "url": "https://amzn.to/3EEJwaa",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Cohen"
         }
       ]
     },
@@ -2900,12 +3287,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=CVh0sihc8bY",
       "links": [
         {
-          "label": "Céline, Mort à crédit",
+          "label": "Mort à crédit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3Rjb2lq",
           "type": "amazon"
         },
         {
-          "label": "Faulkner, Le Bruit et la Fureur",
+          "label": "Le Bruit et la Fureur",
+          "author": "William Faulkner",
           "url": "https://amzn.to/3sRxHeo",
           "type": "amazon"
         }
@@ -2920,27 +3309,32 @@
         {
           "label": "Bel Ami",
           "url": "https://amzn.to/45VjScT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Guy de Maupassant"
         },
         {
           "label": "Le Horla",
+          "author": "Guy de Maupassant",
           "url": "https://amzn.to/3sKdN4I",
           "type": "amazon"
         },
         {
-          "label": "Les nouvelles de Médan",
+          "label": "Les Soirées de Médan",
           "url": "https://amzn.to/45Ufefs",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Collectif"
         },
         {
           "label": "Pierre et Jean",
           "url": "https://amzn.to/45BXupm",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Guy de Maupassant"
         },
         {
           "label": "Une vie",
           "url": "https://amzn.to/45WP2kk",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Guy de Maupassant"
         }
       ]
     },
@@ -2953,12 +3347,14 @@
         {
           "label": "La Place de l'étoile",
           "url": "https://amzn.to/3QYrY05",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Patrick Modiano"
         },
         {
           "label": "Rue des boutiques obscures",
           "url": "https://amzn.to/3PiAaaA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Patrick Modiano"
         }
       ]
     },
@@ -2971,12 +3367,14 @@
         {
           "label": "Pensées pour moi-même",
           "url": "https://amzn.to/3OqPzF1",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marc Aurèle"
         },
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/3KdzTm9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         }
       ]
     },
@@ -2987,14 +3385,16 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=CzEc3VX6-cE",
       "links": [
         {
-          "label": "Un peu de Montherlant",
+          "label": "Pitié pour les femmes",
           "url": "https://amzn.to/3PWRsdZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Henry de Montherlant"
         },
         {
-          "label": "Le chef-d'œuvre de Ouologuem",
+          "label": "Le Devoir de violence",
           "url": "https://amzn.to/3pRrjTe",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yambo Ouologuem"
         }
       ]
     },
@@ -3007,27 +3407,32 @@
         {
           "label": "Le Dictionnaire des idées reçues",
           "url": "https://amzn.to/3XKdjqQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gustave Flaubert"
         },
         {
           "label": "Bouvard et Pécuchet",
           "url": "https://amzn.to/44GYo37",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gustave Flaubert"
         },
         {
           "label": "Salammbô",
           "url": "https://amzn.to/3XIDBcS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gustave Flaubert"
         },
         {
           "label": "Madame Bovary",
+          "author": "Gustave Flaubert",
           "url": "https://amzn.to/3JQF5MO",
           "type": "amazon"
         },
         {
-          "label": "L'Education sentimentale",
+          "label": "L'Éducation sentimentale",
           "url": "https://amzn.to/3D8xcyu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gustave Flaubert"
         }
       ]
     },
@@ -3038,7 +3443,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Gi8PGwLifgc",
       "links": [
         {
-          "label": "Gatsby Le Magnifique, de Fitzgerald",
+          "label": "Gatsby Le Magnifique",
+          "author": "F. Scott Fitzgerald",
           "url": "https://amzn.to/44a8iKv",
           "type": "amazon"
         }
@@ -3051,7 +3457,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ysxyUwpsz7c",
       "links": [
         {
-          "label": "L'Astragale, d'Albertine Sarrazin",
+          "label": "L'Astragale",
+          "author": "Albertine Sarrazin",
           "url": "https://amzn.to/3P80nsE",
           "type": "amazon"
         }
@@ -3064,7 +3471,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=albedyk7Rhs",
       "links": [
         {
-          "label": "Le Camp des saints, de Jean Raspail",
+          "label": "Le Camp des saints",
+          "author": "Jean Raspail",
           "url": "https://amzn.to/45wjlyV",
           "type": "amazon"
         }
@@ -3077,12 +3485,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=u98IQO1rtKo",
       "links": [
         {
-          "label": "Stendhal, La Chartreuse de Parme",
+          "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
           "url": "https://amzn.to/42nNWM8",
           "type": "amazon"
         },
         {
-          "label": "Borges, Fictions",
+          "label": "Fictions",
+          "author": "Jorge Luis Borges",
           "url": "https://amzn.to/3Nea9YU",
           "type": "amazon"
         }
@@ -3097,20 +3507,24 @@
         {
           "label": "Hernani",
           "url": "https://amzn.to/3pnqUak",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Cromwell",
           "url": "https://amzn.to/44CQqZr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
-          "label": "Quatrevingt-treize (pour découvrir Victor Hugo côté romancier)",
+          "label": "Quatrevingt-treize",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3B4Xh0d",
           "type": "amazon"
         },
         {
-          "label": "Henri III et sa cour, d'Alexandre Dumas",
+          "label": "Henri III et sa cour",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3pnCLFj",
           "type": "amazon"
         }
@@ -3125,7 +3539,8 @@
         {
           "label": "Révoltée",
           "url": "https://amzn.to/3AP1o05",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Evguénia Iaroslavskaïa-Markon"
         }
       ]
     },
@@ -3138,27 +3553,32 @@
         {
           "label": "Pantagruel",
           "url": "https://amzn.to/3omPRSM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François Rabelais"
         },
         {
           "label": "Gargantua",
+          "author": "François Rabelais",
           "url": "https://amzn.to/41gPvM4",
           "type": "amazon"
         },
         {
           "label": "Le Tiers Livre",
           "url": "https://amzn.to/3oobrpZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François Rabelais"
         },
         {
           "label": "Le Quart Livre",
           "url": "https://amzn.to/40g8Mw1",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François Rabelais"
         },
         {
-          "label": "Le cinquième (ou quint) Livre",
+          "label": "Le Cinquième Livre",
           "url": "https://amzn.to/3A6bjyc",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François Rabelais"
         }
       ]
     },
@@ -3170,18 +3590,21 @@
       "links": [
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3Lo5Id0",
           "type": "amazon"
         },
         {
-          "label": "Jean Raspail",
+          "label": "Le Camp des saints",
           "url": "https://amzn.to/3Vi7hwB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Raspail"
         },
         {
           "label": "Sur les chemins noirs",
           "url": "https://amzn.to/40C5fZ8",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         }
       ]
     },
@@ -3192,12 +3615,14 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ME5jvum2Jkc",
       "links": [
         {
-          "label": "Maurice Genevoix, La Mort de près",
+          "label": "La Mort de près",
+          "author": "Maurice Genevoix",
           "url": "https://amzn.to/3Kr7Leu",
           "type": "amazon"
         },
         {
-          "label": "Maurice Genevoix, Ceux de 14 (pour les plus endurants d'entre vous)",
+          "label": "Ceux de 14",
+          "author": "Maurice Genevoix",
           "url": "https://amzn.to/3GAEexV",
           "type": "amazon"
         }
@@ -3210,7 +3635,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=wK8xBLWKrcE",
       "links": [
         {
-          "label": "Les Réprouvés, d'Ernst von Salomon",
+          "label": "Les Réprouvés",
+          "author": "Ernst von Salomon",
           "url": "https://amzn.to/40DN31S",
           "type": "amazon"
         }
@@ -3225,15 +3651,18 @@
         {
           "label": "Gatsby Le Magnifique",
           "url": "https://amzn.to/3lJnq0u",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "F. Scott Fitzgerald"
         },
         {
           "label": "Micromégas",
+          "author": "Voltaire",
           "url": "https://amzn.to/42NCYRM",
           "type": "amazon"
         },
         {
           "label": "Le Petit Prince",
+          "author": "Antoine de Saint-Exupéry",
           "url": "https://amzn.to/3LTB4J0",
           "type": "amazon"
         }
@@ -3248,22 +3677,26 @@
         {
           "label": "Candide",
           "url": "https://amzn.to/3n8ENIh",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Voltaire"
         },
         {
           "label": "Micromégas",
+          "author": "Voltaire",
           "url": "https://amzn.to/3Z2a8d1",
           "type": "amazon"
         },
         {
           "label": "Les Confessions",
           "url": "https://amzn.to/3YWCuFv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean-Jacques Rousseau"
         },
         {
           "label": "Le Contrat social",
           "url": "https://amzn.to/3n8bBkY",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean-Jacques Rousseau"
         }
       ]
     },
@@ -3274,7 +3707,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ebKja-9ubbM",
       "links": [
         {
-          "label": "Le Cid, de Corneille",
+          "label": "Le Cid",
+          "author": "Pierre Corneille",
           "url": "https://amzn.to/3mSarcX",
           "type": "amazon"
         }
@@ -3288,23 +3722,27 @@
       "links": [
         {
           "label": "L'Étranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/3msP2qS",
           "type": "amazon"
         },
         {
           "label": "La Chute",
           "url": "https://amzn.to/3kOOE5o",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
           "label": "Le Mythe de Sisyphe",
           "url": "https://amzn.to/3moYj2Z",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
           "label": "L'Homme révolté",
           "url": "https://amzn.to/3SUxQqr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         }
       ]
     },
@@ -3317,10 +3755,12 @@
         {
           "label": "Candide",
           "url": "https://amzn.to/3KDHsU7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Voltaire"
         },
         {
           "label": "Micromégas",
+          "author": "Voltaire",
           "url": "https://amzn.to/3KMgcmJ",
           "type": "amazon"
         }
@@ -3333,7 +3773,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=GeKgnTJXt4w",
       "links": [
         {
-          "label": "Dante, La Divine Comédie",
+          "label": "La Divine Comédie",
+          "author": "Dante Alighieri",
           "url": "https://amzn.to/3Ij0tbI",
           "type": "amazon"
         }
@@ -3348,27 +3789,32 @@
         {
           "label": "Cinq semaines en ballon",
           "url": "https://amzn.to/3I08fax",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jules Verne"
         },
         {
           "label": "Vingt mille lieues sous les mers",
           "url": "https://amzn.to/3jPfR7J",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jules Verne"
         },
         {
           "label": "Voyage au centre de la Terre",
           "url": "https://amzn.to/3xjYYF3",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jules Verne"
         },
         {
           "label": "Le Tour du monde en 80 jours",
           "url": "https://amzn.to/3IhgxvP",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jules Verne"
         },
         {
           "label": "De la Terre à la Lune",
           "url": "https://amzn.to/3xhyC6D",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jules Verne"
         }
       ]
     },
@@ -3379,24 +3825,28 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=jtIn76dXDos",
       "links": [
         {
-          "label": "Mémoires d'Outre-Tombe, volume I",
+          "label": "Mémoires d'outre-tombe, volume I",
           "url": "https://amzn.to/3Icl6aG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         },
         {
-          "label": "Mémoires d'Outre-Tombe, volume II",
+          "label": "Mémoires d'outre-tombe, volume II",
           "url": "https://amzn.to/3ROXP1H",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         },
         {
-          "label": "Illusions perdues, de Balzac",
+          "label": "Illusions perdues",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/3HTVXAn",
           "type": "amazon"
         },
         {
-          "label": "Le Vieil Homme et la mer, Hemingway",
+          "label": "Le Vieil Homme et la mer",
           "url": "https://amzn.to/3Ynx1Ij",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         }
       ]
     },
@@ -3408,13 +3858,15 @@
       "links": [
         {
           "label": "L'Iliade",
+          "author": "Homère",
           "url": "https://amzn.to/3RCPazz",
           "type": "amazon"
         },
         {
           "label": "L'Odyssée",
           "url": "https://amzn.to/3xnhBbv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Homère"
         }
       ]
     },
@@ -3425,104 +3877,124 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=O-sPqHWz4yA",
       "links": [
         {
-          "label": "02:18 : N° 1, Le Petit Prince",
+          "label": "Le Petit Prince",
           "url": "https://amzn.to/3XvR6vT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Antoine de Saint-Exupéry"
         },
         {
-          "label": "03:44 : N° 2, Une étude en rouge",
+          "label": "Une étude en rouge",
           "url": "https://amzn.to/3kAEzZk",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Conan Doyle"
         },
         {
-          "label": "04:36 : N° 3, La Couleur tombée du ciel",
+          "label": "La Couleur tombée du ciel",
           "url": "https://amzn.to/3GTEMyk",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "H. P. Lovecraft"
         },
         {
-          "label": "05:57 : N° 4, La Chute",
+          "label": "La Chute",
           "url": "https://amzn.to/3J8FBWA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
-          "label": "07:16 : N° 5, Le Vieil homme et la mer",
+          "label": "Le Vieil homme et la mer",
           "url": "https://amzn.to/3D9oBM7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         },
         {
-          "label": "07:56 : N° 6, Le Guépard",
+          "label": "Le Guépard",
           "url": "https://amzn.to/3ZU7jwl",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Giuseppe Tomasi di Lampedusa"
         },
         {
-          "label": "09:30 : N° 7, Le Loup des steppes",
+          "label": "Le Loup des steppes",
           "url": "https://amzn.to/3D8BmXA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Hermann Hesse"
         },
         {
-          "label": "10:50 : N° 8, Mémoires d’Hadrien",
+          "label": "Mémoires d’Hadrien",
           "url": "https://amzn.to/3wpztlu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
-          "label": "11:52 : N° 9, Le Château",
+          "label": "Le Château",
           "url": "https://amzn.to/3iST7Dj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Franz Kafka"
         },
         {
-          "label": "13:40 : N° 10, Le Meilleur des Mondes",
+          "label": "Le Meilleur des Mondes",
           "url": "https://amzn.to/3QZr4OW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Aldous Huxley"
         },
         {
-          "label": "14:52 : N° 11, Fictions",
+          "label": "Fictions",
           "url": "https://amzn.to/3kB3DiZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jorge Luis Borges"
         },
         {
-          "label": "15:50 : N° 12, Le Comte de Monte-Cristo",
+          "label": "Le Comte de Monte-Cristo",
           "url": "https://amzn.to/3XNr0Ee",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         },
         {
-          "label": "16:54 : N° 13, La Chartreuse de Parmes",
+          "label": "La Chartreuse de Parmes",
           "url": "https://amzn.to/3WyPxvA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stendhal"
         },
         {
-          "label": "18:01 : N° 14, Le Hussard sur le toit",
+          "label": "Le Hussard sur le toit",
           "url": "https://amzn.to/3QZZ6CM",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         },
         {
-          "label": "19:16 : N° 15, Voyage au bout de la nuit",
+          "label": "Voyage au bout de la nuit",
           "url": "https://amzn.to/3D6JRlC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
-          "label": "20:16 : N° 16, Illusions perdues",
+          "label": "Illusions perdues",
           "url": "https://amzn.to/3iSTq0V",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Honoré de Balzac"
         },
         {
-          "label": "21:12 : N° 17, Gargantua",
+          "label": "Gargantua",
           "url": "https://amzn.to/3H8ElAu",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François Rabelais"
         },
         {
-          "label": "22:13 : N° 18, Don Quichotte",
+          "label": "Don Quichotte",
           "url": "https://amzn.to/3DaSU54",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Miguel de Cervantes"
         },
         {
-          "label": "23:35 : N° 19, Les Misérables",
+          "label": "Les Misérables",
           "url": "https://amzn.to/3j0wk8o",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
-          "label": "25:10 : N° 20, Guerre et paix",
+          "label": "Guerre et paix",
           "url": "https://amzn.to/3R1FtKC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Léon Tolstoï"
         }
       ]
     },
@@ -3533,7 +4005,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Yh78vzeLe8o",
       "links": [
         {
-          "label": "Montherlant, Pitié pour les femmes",
+          "label": "Pitié pour les femmes",
+          "author": "Henry de Montherlant",
           "url": "https://amzn.to/3WPoXP1",
           "type": "amazon"
         }
@@ -3548,37 +4021,44 @@
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/3QFXrSN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "L'Œuvre au noir",
           "url": "https://amzn.to/3XRApuH",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "Sur les chemins noirs",
           "url": "https://amzn.to/3IT1ZDA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
           "label": "Dans les forêts de Sibérie",
           "url": "https://amzn.to/3XwqnyK",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3ZxiLOe",
           "type": "amazon"
         },
         {
           "label": "Mort à crédit",
           "url": "https://amzn.to/3CRwVAc",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
           "label": "Londres",
           "url": "https://amzn.to/3QMlZcY",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -3591,37 +4071,44 @@
         {
           "label": "Le Double",
           "url": "https://amzn.to/3k77JPG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Les Pauvres gens",
           "url": "https://amzn.to/3ZtB1s2",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Souvenirs de la matin des morts",
           "url": "https://amzn.to/3GxsPhp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Le Bourg de Stépantchikovo",
           "url": "https://amzn.to/3CBwolE",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Le Joueur",
           "url": "https://amzn.to/3k62pfm",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
-          "label": "Crime et châtiment",
+          "label": "Crime et Châtiment",
           "url": "https://amzn.to/3ipzthO",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         },
         {
           "label": "Les Frères Karamazov",
           "url": "https://amzn.to/3CEy5yG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Fiodor Dostoïevski"
         }
       ]
     },
@@ -3634,37 +4121,44 @@
         {
           "label": "Ravage",
           "url": "https://amzn.to/3WVOgjv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "René Barjavel"
         },
         {
           "label": "La Nuit des temps",
           "url": "https://amzn.to/3ipgSCx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "René Barjavel"
         },
         {
-          "label": "Farenheit 451",
+          "label": "Fahrenheit 451",
           "url": "https://amzn.to/3jRnMRm",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ray Bradbury"
         },
         {
           "label": "Ubik",
           "url": "https://amzn.to/3Zl2Ja2",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Philip K. Dick"
         },
         {
           "label": "1984",
+          "author": "George Orwell",
           "url": "https://amzn.to/3CvERXK",
           "type": "amazon"
         },
         {
           "label": "Le Meilleur des mondes",
           "url": "https://amzn.to/3WYjUgf",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Aldous Huxley"
         },
         {
           "label": "Dune",
           "url": "https://amzn.to/3Czfapf",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Frank Herbert"
         }
       ]
     },
@@ -3677,7 +4171,8 @@
         {
           "label": "Le Loup des steppes",
           "url": "https://amzn.to/3CFaiPt",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Hermann Hesse"
         }
       ]
     },
@@ -3690,22 +4185,26 @@
         {
           "label": "Quatrevingt-treize",
           "url": "https://amzn.to/3iVa3bP",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "L'Homme qui rit",
           "url": "https://amzn.to/3FPf4f3",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Les Misérables",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3Fp3cPl",
           "type": "amazon"
         },
         {
           "label": "Notre-Dame de Paris",
           "url": "https://amzn.to/3HDILRL",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         }
       ]
     },
@@ -3716,19 +4215,22 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Scmc57KJcIo",
       "links": [
         {
-          "label": "Mon édition de L'Anabase",
+          "label": "L'Anabase",
           "url": "https://amzn.to/3BOG6AN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Xénophon"
         },
         {
-          "label": "Une édition moins chère",
+          "label": "L'Anabase",
           "url": "https://amzn.to/3WrC899",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Xénophon"
         },
         {
-          "label": "Une édition bilingue pour les petits malins",
+          "label": "L'Anabase",
           "url": "https://amzn.to/3FIKJO9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Xénophon"
         }
       ]
     },
@@ -3740,28 +4242,33 @@
       "links": [
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3YdW94J",
           "type": "amazon"
         },
         {
           "label": "Mort à crédit",
           "url": "https://amzn.to/3hjB8F7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
           "label": "Nord",
           "url": "https://amzn.to/3PiyJac",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
           "label": "Guerre",
           "url": "https://amzn.to/3Flr86m",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
           "label": "Londres",
           "url": "https://amzn.to/3BvGwfo",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -3774,32 +4281,38 @@
         {
           "label": "La Fortune des Rougon",
           "url": "https://amzn.to/3ur4kNm",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         },
         {
           "label": "La Curée",
           "url": "https://amzn.to/3UAcWMa",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         },
         {
           "label": "Le Ventre de Paris",
           "url": "https://amzn.to/3gYdqhI",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         },
         {
           "label": "Son Excellence Eugène Rougon",
           "url": "https://amzn.to/3UwnLPt",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         },
         {
           "label": "Au bonheur des dames",
           "url": "https://amzn.to/3BdifKN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         },
         {
           "label": "Nana",
           "url": "https://amzn.to/3VOiC73",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Zola"
         }
       ]
     },
@@ -3810,17 +4323,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ABsd6zykeOs",
       "links": [
         {
-          "label": "Orwell, 1884",
+          "label": "1884",
+          "author": "George Orwell",
           "url": "https://amzn.to/3gI04G1",
           "type": "amazon"
         },
         {
-          "label": "Orwell, La Ferme des animaux",
+          "label": "La Ferme des animaux",
+          "author": "George Orwell",
           "url": "https://amzn.to/3Vk2sBV",
           "type": "amazon"
         },
         {
-          "label": "Aldous Huxley, Le Meilleur des mondes",
+          "label": "Le Meilleur des mondes",
+          "author": "Aldous Huxley",
           "url": "https://amzn.to/3AQHouF",
           "type": "amazon"
         }
@@ -3833,34 +4349,40 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=6-b7as2Q3I8",
       "links": [
         {
-          "label": "Une Bible pas chère",
+          "label": "La Bible de Jérusalem",
           "url": "https://amzn.to/3tU849L",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Collectif"
         },
         {
-          "label": "Une Bible plus chère",
+          "label": "La Bible - Traduction officielle liturgique",
           "url": "https://amzn.to/3hVpT5L",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Collectif"
         },
         {
           "label": "Le Nom de la rose",
           "url": "https://amzn.to/3XmtM3J",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Umberto Eco"
         },
         {
           "label": "Quatrevingt-treize",
           "url": "https://amzn.to/3AxON1Y",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
-          "label": "Fictions, de Borges",
+          "label": "Fictions",
+          "author": "Jorge Luis Borges",
           "url": "https://amzn.to/3UNNcNr",
           "type": "amazon"
         },
         {
           "label": "Le Meilleur des mondes",
           "url": "https://amzn.to/3GwZ8Pp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Aldous Huxley"
         }
       ]
     },
@@ -3873,42 +4395,50 @@
         {
           "label": "Éducation européenne",
           "url": "https://amzn.to/3O6DGTd",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Romain Gary"
         },
         {
           "label": "La promesse de l'aube",
           "url": "https://amzn.to/3WYoJqf",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Romain Gary"
         },
         {
           "label": "Les Racines du ciel",
           "url": "https://amzn.to/3UCFohg",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Romain Gary"
         },
         {
           "label": "Chien Blanc",
           "url": "https://amzn.to/3GbPpOl",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Romain Gary"
         },
         {
           "label": "Gros-Câlin",
           "url": "https://amzn.to/3Gf0Cxq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Ajar"
         },
         {
           "label": "La vie devant soi",
           "url": "https://amzn.to/3UY7pQ6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Ajar"
         },
         {
           "label": "L'Angoisse du roi Salomon",
           "url": "https://amzn.to/3UYfSTp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Ajar"
         },
         {
-          "label": "Pseudo (pour les lecteurs aguerris)",
+          "label": "Pseudo",
           "url": "https://amzn.to/3AePmO1",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Émile Ajar"
         }
       ]
     },
@@ -3921,7 +4451,8 @@
         {
           "label": "Les Enfants de Húrin",
           "url": "https://amzn.to/3tapoY0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "J. R. R. Tolkien"
         }
       ]
     },
@@ -3932,22 +4463,26 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=zjeZlyBJPUI",
       "links": [
         {
-          "label": "Mémoires d'Hadrien, de Yourcenar",
+          "label": "Mémoires d'Hadrien",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3TS0pV7",
           "type": "amazon"
         },
         {
-          "label": "L'Œuvre au noir, de Yourcenar",
+          "label": "L'Œuvre au noir",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3gZjyWk",
           "type": "amazon"
         },
         {
-          "label": "Ils étaient dix, d'Agatha Christie",
+          "label": "Ils étaient dix",
+          "author": "Agatha Christie",
           "url": "https://amzn.to/3TU1ITs",
           "type": "amazon"
         },
         {
-          "label": "Le Crime de l'Orient Express, d'Agatha Christie (avec un petit bonus)",
+          "label": "Le Crime de l'Orient Express",
+          "author": "Agatha Christie",
           "url": "https://amzn.to/3DOJxcj",
           "type": "amazon"
         }
@@ -3960,34 +4495,40 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=a6PFx-MOtpo",
       "links": [
         {
-          "label": "Sylvain Tesson : ou https://amzn.to/3N5PTXJ",
+          "label": "Sur les chemins noirs",
           "url": "https://amzn.to/3f4qIIy",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
-          "label": "Sylvain Tesson : https://amzn.to/3f4qIIy ou",
+          "label": "Dans les forêts de Sibérie",
           "url": "https://amzn.to/3N5PTXJ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
-          "label": "David Diop",
+          "label": "Frère d'âme",
           "url": "https://amzn.to/3sx3P3t",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "David Diop"
         },
         {
-          "label": "Patrick Modiano",
+          "label": "La Place de l'étoile",
           "url": "https://amzn.to/3DgKk4i",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Patrick Modiano"
         },
         {
-          "label": "Arturo Perez-Reverte",
+          "label": "Le Capitaine Alatriste",
           "url": "https://amzn.to/3N7BDh2",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arturo Pérez-Reverte"
         },
         {
-          "label": "Jean Raspail",
+          "label": "Le Camp des saints",
           "url": "https://amzn.to/3zj14GC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Raspail"
         }
       ]
     },
@@ -4000,22 +4541,26 @@
         {
           "label": "Du côté de chez Swann",
           "url": "https://amzn.to/3zb7PKB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         },
         {
           "label": "À l'ombre des jeunes filles en fleurs",
           "url": "https://amzn.to/3FejY5k",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         },
         {
           "label": "Les plaisirs et les jours",
           "url": "https://amzn.to/3VWQte7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         },
         {
-          "label": "Contre Sainte-Beuve (pour public averti)",
+          "label": "Contre Sainte-Beuve",
           "url": "https://amzn.to/3FiSZ8C",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marcel Proust"
         }
       ]
     },
@@ -4028,7 +4573,8 @@
         {
           "label": "À l'ouest rien de nouveau",
           "url": "https://amzn.to/3TkWYFS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Erich Maria Remarque"
         }
       ]
     },
@@ -4041,7 +4587,8 @@
         {
           "label": "Les Chants de Maldoror",
           "url": "https://amzn.to/3CgRJzU",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Lautréamont"
         }
       ]
     },
@@ -4054,22 +4601,26 @@
         {
           "label": "Sur les chemins noirs",
           "url": "https://amzn.to/3SSpTkg",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Sylvain Tesson"
         },
         {
-          "label": "Pensées, de Marc-Aurèle",
+          "label": "Pensées",
+          "author": "Marc Aurèle",
           "url": "https://amzn.to/3rtldWq",
           "type": "amazon"
         },
         {
-          "label": "Manuel d'Epictète",
+          "label": "Manuel",
           "url": "https://amzn.to/3EdOUCq",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Épictète"
         },
         {
-          "label": "Fragments d'Héraclite (le livre préféré de Sylvain Tesson)",
+          "label": "Fragments",
           "url": "https://amzn.to/3ycIkZ0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Héraclite"
         }
       ]
     },
@@ -4080,17 +4631,20 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=pGTW575QTSI",
       "links": [
         {
-          "label": "Quatrevingt-Treize, de Victor Hugo",
+          "label": "Quatrevingt-Treize",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3E0Muqr",
           "type": "amazon"
         },
         {
-          "label": "L'Etranger, de Camus",
+          "label": "L'Etranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/3fwsEcn",
           "type": "amazon"
         },
         {
-          "label": "Le Comte de Monte-Cristo, de Dumas",
+          "label": "Le Comte de Monte-Cristo",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3SpdxjK",
           "type": "amazon"
         }
@@ -4103,9 +4657,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Nr05Lc9UEKY",
       "links": [
         {
-          "label": "Vie de Saint-Louis : (vous allez vous régaler !)",
+          "label": "Vie de Saint-Louis",
           "url": "https://amzn.to/3xTo2DN",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean de Joinville"
         }
       ]
     },
@@ -4118,17 +4673,20 @@
         {
           "label": "Orages d'acier",
           "url": "https://amzn.to/3dlvTD3",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernst Jünger"
         },
         {
           "label": "Sur les falaises de marbre",
           "url": "https://amzn.to/3du3Oti",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernst Jünger"
         },
         {
-          "label": "Essais d'Ernst Jünger",
+          "label": "Essais",
           "url": "https://amzn.to/3eZdzzV",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernst Jünger"
         }
       ]
     },
@@ -4141,7 +4699,8 @@
         {
           "label": "Le Hussard bleu",
           "url": "https://amzn.to/3REwSge",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Roger Nimier"
         }
       ]
     },
@@ -4152,14 +4711,16 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=7sV3gG3kWQ8",
       "links": [
         {
-          "label": "le livre : (ou https://amzn.to/3KNXCIE, ça revient au même)",
+          "label": "Ils étaient dix",
           "url": "https://amzn.to/3RHV2Gx",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Agatha Christie"
         },
         {
-          "label": "le livre : https://amzn.to/3RHV2Gx (ou ça revient au même)",
+          "label": "Ils étaient dix",
           "url": "https://amzn.to/3KNXCIE",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Agatha Christie"
         }
       ]
     },
@@ -4172,12 +4733,14 @@
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/3KxlhNC",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "L'Œuvre au noir",
           "url": "https://amzn.to/3TrY5nE",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         }
       ]
     },
@@ -4190,7 +4753,8 @@
         {
           "label": "Œuvres complètes de Rimbaud",
           "url": "https://amzn.to/3AE1bh0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Rimbaud"
         }
       ]
     },
@@ -4203,27 +4767,32 @@
         {
           "label": "Les Trois Mousquetaires",
           "url": "https://amzn.to/3bU2nmW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         },
         {
           "label": "Le Comte de Monte Cristo",
+          "author": "Alexandre Dumas",
           "url": "https://amzn.to/3bU0OFQ",
           "type": "amazon"
         },
         {
           "label": "La Reine Margot",
           "url": "https://amzn.to/3Aod5eY",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         },
         {
           "label": "Henri III et sa cour",
           "url": "https://amzn.to/3PrFvsS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         },
         {
-          "label": "Vingt ans après (pour ceux qui ont déjà lu Les Trois Mousquetaires)",
+          "label": "Vingt ans après",
           "url": "https://amzn.to/3SS37JZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Alexandre Dumas"
         }
       ]
     },
@@ -4236,12 +4805,14 @@
         {
           "label": "La Tentation de l'Occident",
           "url": "https://amzn.to/3zfhW1C",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "André Malraux"
         },
         {
-          "label": "Pour aller plus loin, La Condition humaine",
+          "label": "La Condition humaine",
           "url": "https://amzn.to/3RFKqsp",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "André Malraux"
         }
       ]
     },
@@ -4254,15 +4825,18 @@
         {
           "label": "Quatrevingt-treize",
           "url": "https://amzn.to/3RuNDe8",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Notre-Dame de Paris",
           "url": "https://amzn.to/3OUC7XX",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Les Misérables",
+          "author": "Victor Hugo",
           "url": "https://amzn.to/3NZ7qQe",
           "type": "amazon"
         }
@@ -4277,10 +4851,12 @@
         {
           "label": "Le Vieil Homme et la Mer",
           "url": "https://amzn.to/3ADjJyj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Ernest Hemingway"
         },
         {
-          "label": "Pensée pour moi-même, de Marc-Aurèle",
+          "label": "Pensée pour moi-même",
+          "author": "Marc Aurèle",
           "url": "https://amzn.to/3uxnj9l",
           "type": "amazon"
         }
@@ -4295,17 +4871,20 @@
         {
           "label": "Perceval",
           "url": "https://amzn.to/3OBkLzb",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Chrétien de Troyes"
         },
         {
           "label": "Perceval",
           "url": "https://amzn.to/3IaSVHI",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Chrétien de Troyes"
         },
         {
           "label": "Perceval",
           "url": "https://amzn.to/3OK8CrF",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Chrétien de Troyes"
         }
       ]
     },
@@ -4316,7 +4895,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=QZ74dsnQL88",
       "links": [
         {
-          "label": "Voyage au bout de la nuit, Céline",
+          "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3ynZFyI",
           "type": "amazon"
         }
@@ -4331,7 +4911,8 @@
         {
           "label": "Les Fleurs du mal",
           "url": "https://amzn.to/3Oq0Oux",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Charles Baudelaire"
         }
       ]
     },
@@ -4343,28 +4924,33 @@
       "links": [
         {
           "label": "L'Étranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/3MHoObq",
           "type": "amazon"
         },
         {
           "label": "La Peste",
           "url": "https://amzn.to/3aUWZyZ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
           "label": "La Chute",
           "url": "https://amzn.to/3xKrbG6",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
           "label": "Caligula",
           "url": "https://amzn.to/3zz2UEe",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         },
         {
           "label": "Le Mythe de Sisyphe",
           "url": "https://amzn.to/3aNpA9u",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         }
       ]
     },
@@ -4376,13 +4962,15 @@
       "links": [
         {
           "label": "L'Étranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/38SgYhc",
           "type": "amazon"
         },
         {
           "label": "La Chute",
           "url": "https://amzn.to/39bWv79",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Albert Camus"
         }
       ]
     },
@@ -4394,13 +4982,15 @@
       "links": [
         {
           "label": "Fictions",
+          "author": "Jorge Luis Borges",
           "url": "https://amzn.to/3MUTF5f",
           "type": "amazon"
         },
         {
           "label": "Le Livre de Sable",
           "url": "https://amzn.to/3lUtqQr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jorge Luis Borges"
         }
       ]
     },
@@ -4413,7 +5003,8 @@
         {
           "label": "Quatrevingt-treize",
           "url": "https://amzn.to/3LEzuHn",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         }
       ]
     },
@@ -4425,28 +5016,33 @@
       "links": [
         {
           "label": "Le Seigneur des Anneaux",
+          "author": "J. R. R. Tolkien",
           "url": "https://amzn.to/38u28NP",
           "type": "amazon"
         },
         {
           "label": "Le Hobbit",
           "url": "https://amzn.to/3whPTNv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "J. R. R. Tolkien"
         },
         {
           "label": "Les Enfants de Hùrin",
+          "author": "J. R. R. Tolkien",
           "url": "https://amzn.to/3whhuhC",
           "type": "amazon"
         },
         {
-          "label": "Beren et Luthien",
+          "label": "Beren et Lúthien",
           "url": "https://amzn.to/3MiFGFT",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "J. R. R. Tolkien"
         },
         {
-          "label": "Le Silmarillon",
+          "label": "Le Silmarillion",
           "url": "https://amzn.to/3sD0aBG",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "J. R. R. Tolkien"
         }
       ]
     },
@@ -4459,7 +5055,8 @@
         {
           "label": "Le Meilleur des mondes",
           "url": "https://amzn.to/3ypXYRQ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Aldous Huxley"
         }
       ]
     },
@@ -4470,9 +5067,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=dXI7ol_0mfo",
       "links": [
         {
-          "label": "le livre de Céline",
+          "label": "Guerre",
           "url": "https://amzn.to/3x6B2FW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -4485,12 +5083,14 @@
         {
           "label": "Courrier Sud",
           "url": "https://amzn.to/3LWerRH",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Antoine de Saint-Exupéry"
         },
         {
           "label": "Terre des hommes",
           "url": "https://amzn.to/3KKaDBo",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Antoine de Saint-Exupéry"
         }
       ]
     },
@@ -4503,7 +5103,8 @@
         {
           "label": "Dans l'abîme du temps",
           "url": "https://amzn.to/3kb35Na",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "H. P. Lovecraft"
         }
       ]
     },
@@ -4516,12 +5117,14 @@
         {
           "label": "Une Étude en rouge",
           "url": "https://amzn.to/3uUxm9n",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Conan Doyle"
         },
         {
-          "label": "Pour aller plus loin, Le Signe des quatre",
+          "label": "Le Signe des quatre",
           "url": "https://amzn.to/3vorKTS",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Arthur Conan Doyle"
         }
       ]
     },
@@ -4534,7 +5137,8 @@
         {
           "label": "Justine ou les malheurs de la vertu",
           "url": "https://amzn.to/3Kv0pFI",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marquis de Sade"
         }
       ]
     },
@@ -4546,16 +5150,19 @@
       "links": [
         {
           "label": "1984",
+          "author": "George Orwell",
           "url": "https://amzn.to/3zq4kRe",
           "type": "amazon"
         },
         {
           "label": "La Ferme des animaux",
           "url": "https://amzn.to/3zrBGiI",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "George Orwell"
         },
         {
-          "label": "Le Meilleur des Mondes, d'Aldous Huxley",
+          "label": "Le Meilleur des Mondes",
+          "author": "Aldous Huxley",
           "url": "https://amzn.to/3v3JjJd",
           "type": "amazon"
         }
@@ -4568,9 +5175,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=DttglTicPfI",
       "links": [
         {
-          "label": "Le Prophète Et Le Jardin Du Prophète",
+          "label": "Le Prophète et Le Jardin du prophète",
           "url": "https://amzn.to/3RVK2Gc",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Khalil Gibran"
         }
       ]
     },
@@ -4581,7 +5189,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=hRmENesPkJQ",
       "links": [
         {
-          "label": "L'Étranger, d'Albert Camus",
+          "label": "L'Étranger",
+          "author": "Albert Camus",
           "url": "https://amzn.to/3Osq8Qv",
           "type": "amazon"
         }
@@ -4594,9 +5203,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=fqhK2-5zzTg",
       "links": [
         {
-          "label": "amzn.to",
+          "label": "Cyrano de Bergerac",
           "url": "https://amzn.to/3PqXLDy",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Edmond Rostand"
         }
       ]
     },
@@ -4607,24 +5217,28 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=c7fgsAyVLas",
       "links": [
         {
-          "label": "La couleur tombée du ciel",
+          "label": "La Couleur tombée du ciel",
           "url": "https://amzn.to/3okoAx9",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "H. P. Lovecraft"
         },
         {
           "label": "Dans l'abîme du temps",
           "url": "https://amzn.to/3PNwdb0",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "H. P. Lovecraft"
         },
         {
-          "label": "Les Montagnes hallucinées : (retraduites en \"Les Montagnes de la folie\")",
+          "label": "Les Montagnes hallucinées",
           "url": "https://amzn.to/3okKIHB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "H. P. Lovecraft"
         },
         {
-          "label": "Lovecraft en BD",
+          "label": "La Couleur tombée du ciel",
           "url": "https://amzn.to/3aTwwCB",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Gou Tanabe, H. P. Lovecraft"
         }
       ]
     },
@@ -4635,9 +5249,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=U7lu9XBFMEo",
       "links": [
         {
-          "label": "amzn.to",
+          "label": "Le Colonel Chabert",
           "url": "https://amzn.to/3Pr5Vvr",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Honoré de Balzac"
         }
       ]
     },
@@ -4648,9 +5263,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=d2DX_t4vD6A",
       "links": [
         {
-          "label": "le roman",
+          "label": "Un roi sans divertissement",
           "url": "https://amzn.to/3RTk3zh",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Jean Giono"
         }
       ]
     },
@@ -4661,9 +5277,10 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=bu1NsS2zUsk",
       "links": [
         {
-          "label": "amzn.to",
+          "label": "Le Rouge et le Noir",
           "url": "https://amzn.to/3aWAKt7",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Stendhal"
         }
       ]
     },
@@ -4676,12 +5293,14 @@
         {
           "label": "Le Guépard",
           "url": "https://amzn.to/3b0nYd4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Giuseppe Tomasi di Lampedusa"
         },
         {
           "label": "Le Professeur et la Sirène",
           "url": "https://amzn.to/3zmcOZw",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Giuseppe Tomasi di Lampedusa"
         }
       ]
     },
@@ -4694,25 +5313,30 @@
         {
           "label": "Les Perses",
           "url": "https://amzn.to/3Baq1Ge",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Eschyle"
         },
         {
           "label": "La Ménagerie de verre",
           "url": "https://amzn.to/3RWUiOv",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Tennessee Williams"
         },
         {
           "label": "Confession d'un masque",
           "url": "https://amzn.to/3PvV83e",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
-          "label": "La Mer de la fertilité : (c'est là-dedans qu'il raconte en avance son seppuku)",
+          "label": "La Mer de la fertilité",
           "url": "https://amzn.to/3OG3G6B",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Yukio Mishima"
         },
         {
-          "label": "Mishima ou la vision du vide, par Marguerite Yourcenar",
+          "label": "Mishima ou la vision du vide",
+          "author": "Marguerite Yourcenar",
           "url": "https://amzn.to/3Pud1PT",
           "type": "amazon"
         }
@@ -4725,19 +5349,22 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=0lmS-_8Ypyc",
       "links": [
         {
-          "label": "Mémoires d'Outre-Tombe, livres I à XII",
+          "label": "Mémoires d'outre-tombe, livres I à XII",
           "url": "https://amzn.to/3zovaZH",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         },
         {
-          "label": "Mémoires d'Outre-Tombe, livres XIII à XXIV",
+          "label": "Mémoires d'outre-tombe, livres XIII à XXIV",
           "url": "https://amzn.to/3PQWHIV",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         },
         {
           "label": "Le Génie du christianisme",
           "url": "https://amzn.to/3PNBTSA",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "François-René de Chateaubriand"
         }
       ]
     },
@@ -4750,12 +5377,14 @@
         {
           "label": "Mémoires d'Hadrien",
           "url": "https://amzn.to/3aTs6M4",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         },
         {
           "label": "L'Œuvre au noir",
           "url": "https://amzn.to/3Bb7REa",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Marguerite Yourcenar"
         }
       ]
     },
@@ -4768,17 +5397,20 @@
         {
           "label": "Le Colonel Chabert",
           "url": "https://amzn.to/3RQkCKj",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Honoré de Balzac"
         },
         {
           "label": "Illusions perdues",
+          "author": "Honoré de Balzac",
           "url": "https://amzn.to/3yZgPSd",
           "type": "amazon"
         },
         {
           "label": "Le Cabinet des antiques",
           "url": "https://amzn.to/3v8f18q",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Honoré de Balzac"
         }
       ]
     },
@@ -4790,18 +5422,21 @@
       "links": [
         {
           "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
           "url": "https://amzn.to/3B7z6iU",
           "type": "amazon"
         },
         {
           "label": "Mort à crédit",
           "url": "https://amzn.to/3RVJ2BW",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         },
         {
-          "label": "Féerie pour une autre fois",
+          "label": "Féérie pour une autre fois",
           "url": "https://amzn.to/3PLmCS5",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Louis-Ferdinand Céline"
         }
       ]
     },
@@ -4814,17 +5449,20 @@
         {
           "label": "Quatrevingt-treize",
           "url": "https://amzn.to/3v7Bcvi",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "La Légende des siècles",
           "url": "https://amzn.to/3zpSnuJ",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         },
         {
           "label": "Notre-Dame de Paris",
           "url": "https://amzn.to/3B7z1M8",
-          "type": "amazon"
+          "type": "amazon",
+          "author": "Victor Hugo"
         }
       ]
     }

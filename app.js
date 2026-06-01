@@ -51,7 +51,7 @@ function getFilteredLinks() {
     return amazonLinks;
   }
 
-  return amazonLinks.filter((link) => normalize(`${link.label} ${link.videoTitle}`).includes(query));
+  return amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query));
 }
 
 function render() {
@@ -70,12 +70,15 @@ function render() {
   links.forEach((link, index) => {
     const card = template.content.firstElementChild.cloneNode(true);
     const title = card.querySelector("h3");
+    const author = card.querySelector(".book-author");
     const amazonLink = card.querySelector(".amazon-link");
     const sourceLink = card.querySelector(".source-link");
     const sourceTitle = card.querySelector(".source-link strong");
 
     card.style.animationDelay = `${Math.min(index, 10) * 35}ms`;
     title.textContent = link.label;
+    author.textContent = link.author ? link.author : "";
+    author.hidden = !link.author;
     amazonLink.href = link.url;
     sourceLink.href = link.videoUrl;
     sourceTitle.textContent = link.videoTitle;

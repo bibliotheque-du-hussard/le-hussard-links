@@ -515,6 +515,14 @@ h3 {
   text-transform: uppercase;
 }
 
+.book-author {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .amazon-link {
   width: fit-content;
   margin-top: auto;

@@ -1,4 +1,5 @@
-import { mkdir, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 
 const channel = {
   name: "Le Hussard",
@@ -14,10 +15,26 @@ const args = new Map(
   }),
 );
 
-const rawLimit = args.get("limit") || "all";
+const mode = args.get("mode") || (args.has("incremental") ? "incremental" : "full");
+const rawLimit = args.get("limit") || (mode === "incremental" ? "8" : "all");
 const limit = rawLimit === "all" ? Infinity : Number(rawLimit);
-const outFile = args.get("out") || "data/le-hussard-links.json";
+const defaultCatalogFile = "data/le-hussard-links.json";
+const outFile = args.get("out") || defaultCatalogFile;
+const existingFile = args.get("existing") || defaultCatalogFile;
 const waitMs = Number(args.get("wait-ms") || 750);
+const dryRun = args.has("dry-run");
+const refreshLabels = args.has("refresh-labels");
+const candidateOutFile = args.get("candidate-out");
+const candidateOnly = args.has("candidate-only");
+const reviewedFile = args.get("reviewed");
+
+if (!["full", "incremental"].includes(mode)) {
+  throw new Error(`Unknown mode "${mode}". Use --mode=full or --mode=incremental.`);
+}
+
+if (!Number.isFinite(limit) && rawLimit !== "all") {
+  throw new Error(`Invalid --limit value "${rawLimit}". Use a number or "all".`);
+}
 
 function sleep(ms) {
   return new Promise((resolve) => {
@@ -97,6 +114,18 @@ function cleanUrl(url) {
   return url.replace(/[),.;!?:]+$/, "");
 }
 
+function normalizeUrlKey(url) {
+  const parsed = new URL(cleanUrl(url));
+  parsed.hash = "";
+  parsed.hostname = parsed.hostname.toLowerCase().replace(/^www\./, "");
+
+  if (parsed.pathname.length > 1) {
+    parsed.pathname = parsed.pathname.replace(/\/+$/, "");
+  }
+
+  return parsed.toString();
+}
+
 function tidyLabel(label) {
   const isCallToAction = /\b(?:acheter|cliquez|c['’]est par ici|via ce lien|procurer|pas encore lu|voulez|foncez)\b/i.test(label);
   const quoteMatch = label.match(/["“](.+?)["”](?:\s+(?:de|d['’])\s+([^,!.?()]+))?/i);
@@ -141,7 +170,7 @@ function linkType(url) {
   return null;
 }
 
-function extractLinks(description) {
+function extractLinks(description, { includeSourceText = false } = {}) {
   const links = [];
   const seen = new Set();
 
@@ -154,15 +183,73 @@ function extractLinks(description) {
       }
 
       seen.add(url);
-      links.push({
+      const link = {
         label: prettifyLabel(line, match[0]),
         url,
         type,
-      });
+      };
+
+      if (includeSourceText) {
+        link.sourceText = line.trim();
+      }
+
+      links.push(link);
     }
   }
 
   return links;
+}
+
+function isSuspiciousLabel(label, url) {
+  const trimmed = label.trim();
+  const host = new URL(cleanUrl(url)).hostname.replace(/^www\./, "");
+
+  return (
+    trimmed.length < 3 ||
+    trimmed === host ||
+    /^https?:\/\//i.test(trimmed) ||
+    /^(?:amazon|amzn\.to|cliquez ici|c['’]est par ici|via ce lien|lien)$/i.test(trimmed)
+  );
+}
+
+function validateLinks(videos) {
+  const warnings = [];
+
+  for (const video of videos) {
+    const seen = new Set();
+
+    for (const link of video.links) {
+      const key = normalizeUrlKey(link.url);
+
+      if (seen.has(key)) {
+        warnings.push(`${video.id}: duplicate link ${link.url}`);
+      }
+
+      if (isSuspiciousLabel(link.label, link.url)) {
+        warnings.push(`${video.id}: suspicious label "${link.label}" for ${link.url}`);
+      }
+
+      seen.add(key);
+    }
+  }
+
+  return warnings;
+}
+
+async function readExistingCatalog(file) {
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      return null;
+    }
+
+    throw error;
+  }
+}
+
+async function readJson(file) {
+  return JSON.parse(await readFile(file, "utf8"));
 }
 
 async function fetchText(url, retries = 3) {
@@ -269,17 +356,158 @@ async function getAllVideos(channelHtml, client) {
   return videos.slice(0, limit);
 }
 
-async function main() {
-  const channelHtml = await fetchText(channel.videosUrl);
-  const client = extractClientConfig(channelHtml);
-  const videos = await getAllVideos(channelHtml, client);
+function mergeLinks(existingLinks = [], incomingLinks = [], report) {
+  const merged = [];
+  const byUrl = new Map();
+
+  for (const link of existingLinks) {
+    const key = normalizeUrlKey(link.url);
+    if (!byUrl.has(key)) {
+      byUrl.set(key, { ...link });
+      merged.push(byUrl.get(key));
+    }
+  }
+
+  for (const link of incomingLinks) {
+    const key = normalizeUrlKey(link.url);
+    const current = byUrl.get(key);
+
+    if (!current) {
+      const next = { ...link };
+      byUrl.set(key, next);
+      merged.push(next);
+      report.addedLinks += 1;
+      continue;
+    }
+
+    if (current.label !== link.label) {
+      report.labelChanges.push({
+        url: link.url,
+        from: current.label,
+        to: link.label,
+      });
+
+      if (refreshLabels) {
+        current.label = link.label;
+      }
+    }
+
+    if (link.author && !current.author) {
+      current.author = link.author;
+      report.addedAuthors += 1;
+    } else if (link.author && current.author && current.author !== link.author) {
+      report.authorChanges.push({
+        url: link.url,
+        from: current.author,
+        to: link.author,
+      });
+
+      if (refreshLabels) {
+        current.author = link.author;
+      }
+    }
+
+    current.type = link.type;
+  }
+
+  return merged;
+}
+
+function mergeCatalog(existing, incoming) {
+  const report = {
+    newVideos: 0,
+    updatedVideos: 0,
+    addedLinks: 0,
+    addedAuthors: 0,
+    labelChanges: [],
+    authorChanges: [],
+  };
+
+  if (!existing || mode === "full") {
+    return { payload: incoming, report };
+  }
+
+  const existingById = new Map(existing.videos.map((video) => [video.id, video]));
+  const incomingIds = new Set(incoming.videos.map((video) => video.id));
+  const videos = [];
+
+  for (const incomingVideo of incoming.videos) {
+    const existingVideo = existingById.get(incomingVideo.id);
+
+    if (!existingVideo) {
+      report.newVideos += 1;
+      report.addedLinks += incomingVideo.links.length;
+      videos.push(incomingVideo);
+      continue;
+    }
+
+    report.updatedVideos += 1;
+    videos.push({
+      ...existingVideo,
+      ...incomingVideo,
+      links: mergeLinks(existingVideo.links, incomingVideo.links, report),
+    });
+  }
+
+  for (const existingVideo of existing.videos) {
+    if (!incomingIds.has(existingVideo.id)) {
+      videos.push(existingVideo);
+    }
+  }
+
+  return {
+    payload: {
+      ...existing,
+      generatedAt: incoming.generatedAt,
+      channel: incoming.channel,
+      videos,
+    },
+    report,
+  };
+}
+
+function preserveReviewedLinkMetadata(existing, incoming) {
+  if (!existing) {
+    return incoming;
+  }
+
+  const existingLinksByUrl = new Map();
+
+  for (const video of existing.videos) {
+    for (const link of video.links || []) {
+      existingLinksByUrl.set(normalizeUrlKey(link.url), link);
+    }
+  }
+
+  return {
+    ...incoming,
+    videos: incoming.videos.map((video) => ({
+      ...video,
+      links: video.links.map((link) => {
+        const existingLink = existingLinksByUrl.get(normalizeUrlKey(link.url));
+        if (!existingLink) {
+          return link;
+        }
+
+        return {
+          ...link,
+          label: refreshLabels ? link.label : existingLink.label,
+          ...(existingLink.author && !refreshLabels ? { author: existingLink.author } : {}),
+          ...(link.author ? { author: link.author } : {}),
+        };
+      }),
+    })),
+  };
+}
+
+async function collectCatalog(videos, client, options = {}) {
   const collected = [];
   console.log(`Found ${videos.length} videos. Collecting descriptions...`);
 
   for (const [index, video] of videos.entries()) {
     await sleep(waitMs);
     const description = await fetchVideoDescription({ ...client, videoId: video.id });
-    const links = extractLinks(description);
+    const links = extractLinks(description, options);
 
     if (links.length > 0) {
       collected.push({ ...video, links });
@@ -290,22 +518,122 @@ async function main() {
     }
   }
 
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    channel: {
-      name: channel.name,
-      handle: channel.handle,
-      url: channel.url,
-    },
-    videos: collected,
-  };
+  return collected;
+}
 
-  await mkdir(outFile.split("/").slice(0, -1).join("/"), { recursive: true });
+function countLinks(videos) {
+  return videos.reduce((total, video) => total + video.links.length, 0);
+}
+
+async function writeCatalog(payload) {
+  await mkdir(dirname(outFile), { recursive: true });
   await writeFile(`${outFile}.tmp`, `${JSON.stringify(payload, null, 2)}\n`);
   await rename(`${outFile}.tmp`, outFile);
+}
 
-  const totalLinks = collected.reduce((total, video) => total + video.links.length, 0);
-  console.log(`Wrote ${outFile}: ${collected.length} videos, ${totalLinks} links.`);
+async function writeJson(file, payload) {
+  await mkdir(dirname(file), { recursive: true });
+  await writeFile(`${file}.tmp`, `${JSON.stringify(payload, null, 2)}\n`);
+  await rename(`${file}.tmp`, file);
+}
+
+function normalizeReviewedPayload(payload) {
+  return {
+    ...payload,
+    videos: payload.videos.map((video) => ({
+      id: video.id,
+      title: video.title,
+      thumbnail: video.thumbnail,
+      youtubeUrl: video.youtubeUrl,
+      links: video.links.map((link) => ({
+        label: link.label,
+        ...(link.author ? { author: link.author } : {}),
+        url: link.url,
+        type: link.type,
+      })),
+    })),
+  };
+}
+
+function printReport(report, warnings) {
+  if (mode === "incremental") {
+    console.log(
+      `Incremental report: ${report.newVideos} new videos, ${report.updatedVideos} refreshed videos, ${report.addedLinks} added links.`,
+    );
+  }
+
+  if (report.labelChanges.length > 0) {
+    console.log(`Label drift detected on ${report.labelChanges.length} existing links.`);
+    for (const change of report.labelChanges.slice(0, 20)) {
+      console.log(`- ${change.url}: "${change.from}" -> "${change.to}"`);
+    }
+  }
+
+  if (report.authorChanges.length > 0) {
+    console.log(`Author drift detected on ${report.authorChanges.length} existing links.`);
+    for (const change of report.authorChanges.slice(0, 20)) {
+      console.log(`- ${change.url}: "${change.from}" -> "${change.to}"`);
+    }
+  }
+
+  if (report.addedAuthors > 0) {
+    console.log(`Added authors to ${report.addedAuthors} existing links.`);
+  }
+
+  if (warnings.length > 0) {
+    console.warn(`Validation warnings (${warnings.length}):`);
+    for (const warning of warnings.slice(0, 20)) {
+      console.warn(`- ${warning}`);
+    }
+  }
+}
+
+async function main() {
+  let incoming;
+
+  if (reviewedFile) {
+    incoming = normalizeReviewedPayload(await readJson(reviewedFile));
+    console.log(`Loaded reviewed candidates from ${reviewedFile}.`);
+  } else {
+    const channelHtml = await fetchText(channel.videosUrl);
+    const client = extractClientConfig(channelHtml);
+    const videos = await getAllVideos(channelHtml, client);
+    const collected = await collectCatalog(videos, client, { includeSourceText: Boolean(candidateOutFile) });
+
+    incoming = {
+      generatedAt: new Date().toISOString(),
+      channel: {
+        name: channel.name,
+        handle: channel.handle,
+        url: channel.url,
+      },
+      videos: collected,
+    };
+  }
+
+  if (candidateOutFile) {
+    await writeJson(candidateOutFile, incoming);
+    console.log(`Wrote review candidates to ${candidateOutFile}: ${incoming.videos.length} videos, ${countLinks(incoming.videos)} links.`);
+
+    if (candidateOnly) {
+      return;
+    }
+  }
+
+  const existing = await readExistingCatalog(existingFile);
+  const reviewedIncoming = mode === "full" ? preserveReviewedLinkMetadata(existing, incoming) : incoming;
+  const { payload, report } = mergeCatalog(mode === "incremental" ? existing : null, reviewedIncoming);
+  const warnings = validateLinks(payload.videos);
+
+  printReport(report, warnings);
+
+  if (dryRun) {
+    console.log(`Dry run only. Would write ${outFile}: ${payload.videos.length} videos, ${countLinks(payload.videos)} links.`);
+    return;
+  }
+
+  await writeCatalog(payload);
+  console.log(`Wrote ${outFile}: ${payload.videos.length} videos, ${countLinks(payload.videos)} links.`);
 }
 
 main().catch((error) => {
