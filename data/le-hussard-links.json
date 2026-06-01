@@ -1,11 +1,55 @@
 {
-  "generatedAt": "2026-05-30T01:58:36.491Z",
+  "generatedAt": "2026-06-01T14:33:24.831Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "aeIZRlBqHB0",
+      "title": "COMMENT LA GAUCHE VA DÉTRUIRE LE FRANÇAIS ?",
+      "thumbnail": "https://i.ytimg.com/vi/aeIZRlBqHB0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=aeIZRlBqHB0",
+      "links": [
+        {
+          "label": "Les Dieux ont soif",
+          "author": "Anatole France",
+          "url": "https://amzn.to/4djjjAS",
+          "type": "amazon"
+        },
+        {
+          "label": "Un Jardin sur l'Oronte",
+          "author": "Maurice Barrès",
+          "url": "https://amzn.to/4bXdgj5",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Ventre de Paris",
+          "author": "Émile Zola",
+          "url": "https://amzn.to/3PEskdP",
+          "type": "amazon"
+        },
+        {
+          "label": "Notre-Dame de Paris",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4s5yLnN",
+          "type": "amazon"
+        },
+        {
+          "label": "Voyage au bout de la nuit",
+          "author": "Louis-Ferdinand Céline",
+          "url": "https://amzn.to/4tlBcDO",
+          "type": "amazon"
+        },
+        {
+          "label": "Septentrion",
+          "author": "Louis Calaferte",
+          "url": "https://amzn.to/4bIY4ag",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "02V110Axzzw",
       "title": "HÉLÈNE NOIRE ET ACHILLE TRANS : COMMENT HOLLYWOOD VEUT RÉÉCRIRE L'ODYSSÉE !",
