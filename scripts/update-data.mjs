@@ -16,7 +16,7 @@ const args = new Map(
 );
 
 const mode = args.get("mode") || (args.has("incremental") ? "incremental" : "full");
-const rawLimit = args.get("limit") || (mode === "incremental" ? "8" : "all");
+const rawLimit = args.get("limit") || (mode === "incremental" ? "3" : "all");
 const limit = rawLimit === "all" ? Infinity : Number(rawLimit);
 const defaultCatalogFile = "data/le-hussard-links.json";
 const outFile = args.get("out") || defaultCatalogFile;

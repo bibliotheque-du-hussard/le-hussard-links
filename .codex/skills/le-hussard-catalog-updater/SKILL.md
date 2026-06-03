@@ -9,7 +9,7 @@ description: Use when updating La Bibliotheque du Hussard's catalog from Le Huss
 
 Keep `data/le-hussard-links.json` current without unnecessary churn.
 
-Le Hussard usually publishes on Wednesdays and Sundays. For routine updates, prefer an incremental upsert over a full rebuild.
+Le Hussard usually publishes on Wednesdays and Sundays. For routine updates, prefer an incremental upsert over a full rebuild. The incremental window is intentionally scoped to the latest 3 videos.
 
 ## Default Workflow
 
@@ -131,7 +131,7 @@ npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json
 Useful flags:
 
 - `--dry-run`: collect and merge in memory without writing.
-- `--limit=8`: inspect only the latest eight channel videos; this is the incremental default.
+- `--limit=3`: inspect only the latest three channel videos; this is the incremental default.
 - `--candidate-out=path/to/file.json`: write fetched candidates for LLM review.
 - `--candidate-only`: stop after writing the candidate file.
 - `--reviewed=path/to/file.json`: upsert an LLM-reviewed candidate payload instead of fetching descriptions.

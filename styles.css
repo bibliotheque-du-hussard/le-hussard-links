@@ -66,7 +66,8 @@ input {
 .notice,
 .partners,
 .toolbar,
-.method {
+.method,
+.site-footer {
   animation: rise 0.55s cubic-bezier(0.2, 0, 0, 1) both;
 }
 
@@ -602,6 +603,20 @@ h3 {
   margin-top: 18px;
   font-size: clamp(1rem, 2vw, 1.2rem);
   text-wrap: balance;
+}
+
+.site-footer {
+  margin: -28px 0 42px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  text-align: center;
+  animation-delay: 300ms;
+}
+
+.site-footer p {
+  max-width: 780px;
+  margin: 0 auto;
 }
 
 code {

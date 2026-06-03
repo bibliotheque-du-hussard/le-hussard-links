@@ -14,7 +14,7 @@ Then open the local URL printed by `serve`.
 
 ## Update the catalog
 
-Routine updates should use the incremental upsert flow. Le Hussard usually publishes on Wednesdays and Sundays, so this is the stable twice-a-week path:
+Routine updates should use the incremental upsert flow. Le Hussard usually publishes on Wednesdays and Sundays, so this is the stable twice-a-week path. Incremental candidate generation checks the latest 3 videos by default:
 
 ```bash
 npm run update-data:candidates
@@ -39,6 +39,10 @@ npm run update-data:full -- --limit=all --wait-ms=2000
 ```
 
 For Codex workflow guidance, see `.codex/skills/le-hussard-catalog-updater/SKILL.md`.
+
+## Deploy
+
+The site is deployed with GitHub Pages from the `bibliotheque-du-hussard/le-hussard-links` repository. See [DEPLOYMENT.md](DEPLOYMENT.md) for the full deployment runbook, including the personal GitHub CLI profile, SSH alias, Pages setup, and verification commands.
 
 ## Notes
 

@@ -3,6 +3,7 @@ const dataUrl = "data/le-hussard-links.json";
 const state = {
   data: null,
   query: "",
+  searchTracked: false,
 };
 
 const bookGrid = document.querySelector("#bookGrid");
@@ -20,6 +21,25 @@ function normalize(value) {
     .toLocaleLowerCase("fr-FR")
     .normalize("NFD")
     .replace(/\p{Diacritic}/gu, "");
+}
+
+function slugify(value) {
+  return normalize(value)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+function track(eventName, properties = {}) {
+  const cleanProperties = Object.fromEntries(
+    Object.entries(properties).filter(([, value]) => value !== undefined && value !== ""),
+  );
+
+  window.posthog?.capture?.(eventName, cleanProperties);
+}
+
+function trackExternalNavigation(properties) {
+  track("external navigation triggered", properties);
 }
 
 function getAmazonLinks(data) {
@@ -80,6 +100,11 @@ function render() {
     author.textContent = link.author ? link.author : "";
     author.hidden = !link.author;
     amazonLink.href = link.url;
+    amazonLink.dataset.trackDestinationType = "amazon";
+    amazonLink.dataset.trackDestination = "amazon";
+    amazonLink.dataset.trackSurface = "book_card";
+    amazonLink.dataset.trackItemId = slugify(`${link.label}-${link.url}`);
+    amazonLink.dataset.trackItemTitle = link.label;
     sourceLink.href = link.videoUrl;
     sourceTitle.textContent = link.videoTitle;
     bookGrid.append(card);
@@ -88,11 +113,39 @@ function render() {
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
+
+  if (!state.searchTracked && state.query.length > 0) {
+    state.searchTracked = true;
+    track("search used", {
+      surface: "catalogue",
+    });
+  }
+
   render();
+});
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("[data-track-destination-type]");
+
+  if (!link) {
+    return;
+  }
+
+  trackExternalNavigation({
+    destination_type: link.dataset.trackDestinationType,
+    destination: link.dataset.trackDestination,
+    surface: link.dataset.trackSurface,
+    item_id: link.dataset.trackItemId,
+    item_title: link.dataset.trackItemTitle,
+  });
 });
 
 async function boot() {
   try {
+    track("landing page viewed", {
+      page: "home",
+    });
+
     const response = await fetch(dataUrl);
     if (!response.ok) {
       throw new Error(`Impossible de charger ${dataUrl}`);

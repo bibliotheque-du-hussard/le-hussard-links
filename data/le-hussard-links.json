@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-06-01T14:33:24.831Z",
+  "generatedAt": "2026-06-03T15:24:01.148Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "P14bQ7-Dj_0",
+      "title": "JE RÉÉDUQUE (POUR DE BON) CET EXPATRIÉ DONNEUR DE LEÇONS !",
+      "thumbnail": "https://i.ytimg.com/vi/P14bQ7-Dj_0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=P14bQ7-Dj_0",
+      "links": [
+        {
+          "label": "De la démocratie en Amérique",
+          "author": "Alexis de Tocqueville",
+          "url": "https://amzn.to/3PL0UU4",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Ancien Régime et la Révolution",
+          "author": "Alexis de Tocqueville",
+          "url": "https://amzn.to/4uBYWEN",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Despotisme démocratique",
+          "author": "Alexis de Tocqueville",
+          "url": "https://amzn.to/4dBsQ60",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "aeIZRlBqHB0",
       "title": "COMMENT LA GAUCHE VA DÉTRUIRE LE FRANÇAIS ?",
@@ -63,7 +89,7 @@
           "type": "amazon"
         },
         {
-          "label": "l'Odyssée",
+          "label": "L'Odyssée",
           "author": "Homère",
           "url": "https://amzn.to/4v5X9Yg",
           "type": "amazon"
@@ -100,7 +126,7 @@
           "label": "Tristan et Iseut",
           "url": "https://amzn.to/4diNmbq",
           "type": "amazon",
-          "author": "Béroul"
+          "author": "Tradition médiévale"
         },
         {
           "label": "Madame Bovary",
@@ -121,7 +147,7 @@
           "type": "amazon"
         },
         {
-          "label": "Le fantôme de l'opéra",
+          "label": "Le Fantôme de l'Opéra",
           "author": "Gaston Leroux",
           "url": "https://amzn.to/3RweKdk",
           "type": "amazon"
@@ -147,7 +173,7 @@
           "type": "amazon"
         },
         {
-          "label": "Les Confessions de Saint-Augustin",
+          "label": "Les Confessions",
           "author": "Saint Augustin",
           "url": "https://amzn.to/4bxvEyF",
           "type": "amazon"
