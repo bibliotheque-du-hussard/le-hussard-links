@@ -1,11 +1,31 @@
 {
-  "generatedAt": "2026-06-03T15:24:01.148Z",
+  "generatedAt": "2026-06-08T00:45:29.764Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "DaFq2vhKm3k",
+      "title": "COMMENT LA DROITE EST DEVENUE LE CAMP DU FUN ?",
+      "thumbnail": "https://i.ytimg.com/vi/DaFq2vhKm3k/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DaFq2vhKm3k",
+      "links": [
+        {
+          "label": "Les Épées",
+          "author": "Roger Nimier",
+          "url": "https://amzn.to/3OcjR0W",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Hussard bleu",
+          "author": "Roger Nimier",
+          "url": "https://amzn.to/3PRsxum",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "P14bQ7-Dj_0",
       "title": "JE RÉÉDUQUE (POUR DE BON) CET EXPATRIÉ DONNEUR DE LEÇONS !",
