@@ -41,6 +41,51 @@ Le Hussard usually publishes on Wednesdays and Sundays. For routine updates, pre
 
 6. Review `git diff -- data/le-hussard-links.json` before finishing.
 
+## Autonomous Publish Workflow
+
+Use this workflow for the scheduled automation and whenever Julian asks for an autonomous update.
+
+1. Confirm the repository is on `main`, has no unrelated local changes, and can push with the personal GitHub profile:
+
+   ```bash
+   git status --short --branch
+   GH_CONFIG_DIR="$HOME/.config/gh-personal" gh auth status
+   ```
+
+2. Run the default candidate review and dry-run workflow.
+3. Publish without asking for approval only when all of these are true:
+   - the dry run reports at least one new video or added link;
+   - validation warnings are empty;
+   - label drift and author drift are either empty or clearly harmless metadata refreshes;
+   - every added link is an Amazon link from a recent public Le Hussard video description;
+   - reviewed labels are useful titles, not calls to action, domains, or raw URLs.
+4. If the dry run is clean but reports no catalog changes, report "no changes" and do not commit.
+5. If the dry run is not clean, do not write, stage, commit, or push. Report the blocker with the candidate videos and links that need human review.
+6. Write the reviewed upsert:
+
+   ```bash
+   npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json
+   ```
+
+7. Re-check the diff. Stage only `data/le-hussard-links.json`, commit with `Update Le Hussard catalog`, and push `main`:
+
+   ```bash
+   git add data/le-hussard-links.json
+   git commit -m "Update Le Hussard catalog"
+   git push origin main
+   ```
+
+8. Verify GitHub Pages:
+
+   ```bash
+   GH_CONFIG_DIR="$HOME/.config/gh-personal" gh api repos/bibliotheque-du-hussard/le-hussard-links/pages --jq '{html_url, status, source}'
+   curl -s -L https://bibliotheque-du-hussard.github.io/le-hussard-links/data/le-hussard-links.json > /tmp/le-hussard-pages-data.json
+   ```
+
+   Confirm the deployed catalog count and latest video match the local catalog. Retry for a few minutes if Pages is still building or cached.
+
+9. Report the commit hash, deployed URL, final catalog counts, new videos, added links, and any skipped/blocking conditions.
+
 ## When To Use Full Mode
 
 Use a full rebuild only when:
