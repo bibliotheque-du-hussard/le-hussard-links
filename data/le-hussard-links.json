@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-06-08T00:45:29.764Z",
+  "generatedAt": "2026-06-09T21:39:35.694Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "W_o1DgqSJmM",
+      "title": "CET ALGÉRIEN PAYÉ PAR BOLLORÉ ATOMISE L'ISLAMISTE JEAN-LUC MÉLENCHON !",
+      "thumbnail": "https://i.ytimg.com/vi/W_o1DgqSJmM/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=W_o1DgqSJmM",
+      "links": [
+        {
+          "label": "2084",
+          "author": "Boualem Sansal",
+          "url": "https://amzn.to/4vEQ7Kx",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Train d'Erlingen",
+          "author": "Boualem Sansal",
+          "url": "https://amzn.to/4adDIoo",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Village de l'Allemand",
+          "author": "Boualem Sansal",
+          "url": "https://amzn.to/3Q9QcGT",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "DaFq2vhKm3k",
       "title": "COMMENT LA DROITE EST DEVENUE LE CAMP DU FUN ?",
