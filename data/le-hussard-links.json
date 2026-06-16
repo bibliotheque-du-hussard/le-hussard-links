@@ -1,11 +1,43 @@
 {
-  "generatedAt": "2026-06-09T21:39:35.694Z",
+  "generatedAt": "2026-06-16T23:50:45.604Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "Eaflee9RdSQ",
+      "title": "LA BOLCHÉVIQUE SÉNILE ANNIE ERNAUX JURE ALLÉGEANCE AU GRAND IMAM MÉLENCHON DE SAINT-DENIS !",
+      "thumbnail": "https://i.ytimg.com/vi/Eaflee9RdSQ/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Eaflee9RdSQ",
+      "links": [
+        {
+          "label": "Le Contrat social",
+          "author": "Jean-Jacques Rousseau",
+          "url": "https://amzn.to/4eduxFP",
+          "type": "amazon"
+        },
+        {
+          "label": "Recueil de poésies",
+          "author": "Paul Éluard",
+          "url": "https://amzn.to/43vnpzB",
+          "type": "amazon"
+        },
+        {
+          "label": "Quatrevingt-treize",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4xm7uB8",
+          "type": "amazon"
+        },
+        {
+          "label": "Germinal",
+          "author": "Émile Zola",
+          "url": "https://amzn.to/4okytJu",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "W_o1DgqSJmM",
       "title": "CET ALGÉRIEN PAYÉ PAR BOLLORÉ ATOMISE L'ISLAMISTE JEAN-LUC MÉLENCHON !",
