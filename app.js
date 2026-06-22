@@ -54,8 +54,29 @@ function getAmazonLinks(data) {
   );
 }
 
+function getBookKey(link) {
+  return normalize(`${link.label} ${link.author || ""}`.trim());
+}
+
+function dedupeBookLinks(links) {
+  const seen = new Set();
+  const uniqueLinks = [];
+
+  for (const link of links) {
+    const key = getBookKey(link);
+    if (seen.has(key)) {
+      continue;
+    }
+
+    seen.add(key);
+    uniqueLinks.push(link);
+  }
+
+  return uniqueLinks;
+}
+
 function updateStats(data) {
-  const amazonLinks = getAmazonLinks(data);
+  const amazonLinks = dedupeBookLinks(getAmazonLinks(data));
   const sourceVideos = new Set(amazonLinks.map((link) => link.videoUrl));
 
   document.querySelector("#updatedAt").textContent = formatDate.format(new Date(data.generatedAt));
@@ -68,16 +89,18 @@ function getFilteredLinks() {
   const amazonLinks = getAmazonLinks(state.data);
 
   if (!query) {
-    return amazonLinks;
+    return dedupeBookLinks(amazonLinks);
   }
 
-  return amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query));
+  return dedupeBookLinks(
+    amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query)),
+  );
 }
 
 function render() {
   const links = getFilteredLinks();
   bookGrid.replaceChildren();
-  resultCount.textContent = `${links.length} lien${links.length > 1 ? "s" : ""} Amazon trouvé${links.length > 1 ? "s" : ""}`;
+  resultCount.textContent = `Plus de ${links.length} lien${links.length > 1 ? "s" : ""} Amazon disponible${links.length > 1 ? "s" : ""} !`;
 
   if (links.length === 0) {
     const empty = document.createElement("div");
