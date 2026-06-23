@@ -97,15 +97,13 @@ function updateStats(data) {
 
 function getFilteredLinks() {
   const query = normalize(state.query.trim());
-  const amazonLinks = getAmazonLinks(state.data);
+  const amazonLinks = dedupeBookLinks(getAmazonLinks(state.data));
 
   if (!query) {
-    return dedupeBookLinks(amazonLinks);
+    return amazonLinks;
   }
 
-  return dedupeBookLinks(
-    amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query)),
-  );
+  return amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query));
 }
 
 function render() {
