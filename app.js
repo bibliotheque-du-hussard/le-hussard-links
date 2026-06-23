@@ -1,4 +1,6 @@
 const dataUrl = "data/le-hussard-links.json";
+const searchDebounceMs = 350;
+const skeletonCardCount = 6;
 
 const state = {
   data: null,
@@ -40,6 +42,15 @@ function track(eventName, properties = {}) {
 
 function trackExternalNavigation(properties) {
   track("external navigation triggered", properties);
+}
+
+function debounce(callback, delay) {
+  let timeoutId;
+
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => callback(...args), delay);
+  };
 }
 
 function getAmazonLinks(data) {
@@ -99,6 +110,7 @@ function getFilteredLinks() {
 
 function render() {
   const links = getFilteredLinks();
+  bookGrid.removeAttribute("aria-busy");
   bookGrid.replaceChildren();
   resultCount.textContent = `Plus de ${links.length} lien${links.length > 1 ? "s" : ""} Amazon disponible${links.length > 1 ? "s" : ""} !`;
 
@@ -134,17 +146,52 @@ function render() {
   });
 }
 
-searchInput.addEventListener("input", (event) => {
-  state.query = event.target.value;
+function renderSkeletons() {
+  bookGrid.setAttribute("aria-busy", "true");
+  resultCount.textContent = "Chargement du catalogue...";
+  bookGrid.replaceChildren(
+    ...Array.from({ length: skeletonCardCount }, () => {
+      const card = document.createElement("article");
+      card.className = "book-card book-card-skeleton";
+      card.setAttribute("aria-hidden", "true");
+      card.innerHTML = `
+        <div class="book-spine"></div>
+        <div class="book-body">
+          <span class="skeleton-line skeleton-kicker"></span>
+          <span class="skeleton-line skeleton-title"></span>
+          <span class="skeleton-line skeleton-title skeleton-title-short"></span>
+          <span class="skeleton-line skeleton-author"></span>
+          <span class="skeleton-pill"></span>
+        </div>
+        <div class="source-link skeleton-source">
+          <span class="skeleton-line skeleton-source-label"></span>
+          <span class="skeleton-line skeleton-source-title"></span>
+        </div>
+      `;
+      return card;
+    }),
+  );
+}
 
-  if (!state.searchTracked && state.query.length > 0) {
+const applySearchQuery = debounce((query) => {
+  state.query = query;
+
+  if (state.data) {
+    render();
+  }
+}, searchDebounceMs);
+
+searchInput.addEventListener("input", (event) => {
+  const nextQuery = event.target.value;
+
+  if (!state.searchTracked && nextQuery.length > 0) {
     state.searchTracked = true;
     track("search used", {
       surface: "catalogue",
     });
   }
 
-  render();
+  applySearchQuery(nextQuery);
 });
 
 document.addEventListener("click", (event) => {
@@ -168,6 +215,7 @@ async function boot() {
     track("landing page viewed", {
       page: "home",
     });
+    renderSkeletons();
 
     const response = await fetch(dataUrl);
     if (!response.ok) {
