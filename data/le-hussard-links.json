@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-06-22T08:17:24.124Z",
+  "generatedAt": "2026-06-24T00:06:00.907Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "yIcxHENqcJ8",
+      "title": "LE PARASITE MATTHIEU PIGASSE ESSAYE DE TACLER BOLLORÉ : IL TRÉBUCHE SUR SON FROC ! (Aïe.)",
+      "thumbnail": "https://i.ytimg.com/vi/yIcxHENqcJ8/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=yIcxHENqcJ8",
+      "links": [
+        {
+          "label": "La Grève",
+          "author": "Ayn Rand",
+          "url": "https://amzn.to/4oEMp1e",
+          "type": "amazon"
+        },
+        {
+          "label": "La Route de la servitude",
+          "author": "Friedrich Hayek",
+          "url": "https://amzn.to/3SdYrT0",
+          "type": "amazon"
+        },
+        {
+          "label": "Illusions perdues",
+          "author": "Honoré de Balzac",
+          "url": "https://amzn.to/4uG1jFy",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "rjI-av8mrFY",
       "title": "FAUT-IL FERMER LE CNC ? (Mon enquête DÉFINITIVE.)",
