@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-06-24T00:06:00.907Z",
+  "generatedAt": "2026-06-28T12:20:48.265Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "7ZHYY_sMkbI",
+      "title": "CE GAUCHISTE SOCIOLOGUE RÊVE D'ÊTRE RÉDUIT EN ESCLAVAGE : JE L'AIDE UN PEU !",
+      "thumbnail": "https://i.ytimg.com/vi/7ZHYY_sMkbI/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7ZHYY_sMkbI",
+      "links": [
+        {
+          "label": "L'Esprit des lois",
+          "author": "Montesquieu",
+          "url": "https://amzn.to/4sKWpGA",
+          "type": "amazon"
+        },
+        {
+          "label": "La Démocratie en Amérique",
+          "author": "Alexis de Tocqueville",
+          "url": "https://amzn.to/3Qc2QF7",
+          "type": "amazon"
+        },
+        {
+          "label": "La Désobéissance civile",
+          "author": "Henry David Thoreau",
+          "url": "https://amzn.to/4czzgk3",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Démons",
+          "author": "Fiodor Dostoïevski",
+          "url": "https://amzn.to/4tn9abd",
+          "type": "amazon"
+        },
+        {
+          "label": "Essais",
+          "author": "Ernst Jünger",
+          "url": "https://amzn.to/3QkSp1U",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "yIcxHENqcJ8",
       "title": "LE PARASITE MATTHIEU PIGASSE ESSAYE DE TACLER BOLLORÉ : IL TRÉBUCHE SUR SON FROC ! (Aïe.)",
