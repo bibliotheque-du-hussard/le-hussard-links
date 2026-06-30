@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-06-28T12:20:48.265Z",
+  "generatedAt": "2026-06-30T21:54:12.924Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "cFEfBvPHs24",
+      "title": "SYLVAIN TESSON DÉZINGUE LES GAUCHISTES DE FRANCE INTER ! (Ils sont en sueur.)",
+      "thumbnail": "https://i.ytimg.com/vi/cFEfBvPHs24/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cFEfBvPHs24",
+      "links": [
+        {
+          "label": "Sur les chemins noirs",
+          "author": "Sylvain Tesson",
+          "url": "https://amzn.to/3SlGIcq",
+          "type": "amazon"
+        },
+        {
+          "label": "Dans les forêts de Sibérie",
+          "author": "Sylvain Tesson",
+          "url": "https://amzn.to/4oPEVII",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Guépard",
+          "author": "Giuseppe Tomasi di Lampedusa",
+          "url": "https://amzn.to/4ahcMnW",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Contemplations",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4eLo1Xa",
+          "type": "amazon"
+        },
+        {
+          "label": "La Grève",
+          "author": "Ayn Rand",
+          "url": "https://amzn.to/4g6XqWP",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "7ZHYY_sMkbI",
       "title": "CE GAUCHISTE SOCIOLOGUE RÊVE D'ÊTRE RÉDUIT EN ESCLAVAGE : JE L'AIDE UN PEU !",
