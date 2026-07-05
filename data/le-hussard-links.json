@@ -1,11 +1,61 @@
 {
-  "generatedAt": "2026-06-30T21:54:12.924Z",
+  "generatedAt": "2026-07-05T13:54:48.616Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "sFq5mAgfLO0",
+      "title": "COMMENT JÉSUS VA SAUVER LA GEN Z ? (Les athées en sueur.)",
+      "thumbnail": "https://i.ytimg.com/vi/sFq5mAgfLO0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=sFq5mAgfLO0",
+      "links": [
+        {
+          "label": "Les Confessions",
+          "author": "Saint Augustin",
+          "url": "https://amzn.to/42L0BeC",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Bouc émissaire",
+          "author": "René Girard",
+          "url": "https://amzn.to/3QMiM10",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Misérables",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4w9Tkm7",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Seigneur des Anneaux",
+          "author": "J. R. R. Tolkien",
+          "url": "https://amzn.to/4n4SbYV",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Nom de la rose",
+          "author": "Umberto Eco",
+          "url": "https://amzn.to/3QEOcq7",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Désespéré",
+          "author": "Léon Bloy",
+          "url": "https://amzn.to/4d4Zont",
+          "type": "amazon"
+        },
+        {
+          "label": "Pensées",
+          "author": "Blaise Pascal",
+          "url": "https://amzn.to/3RjK9zx",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "cFEfBvPHs24",
       "title": "SYLVAIN TESSON DÉZINGUE LES GAUCHISTES DE FRANCE INTER ! (Ils sont en sueur.)",
