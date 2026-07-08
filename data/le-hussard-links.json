@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-07-05T13:54:48.616Z",
+  "generatedAt": "2026-07-08T00:58:45.963Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "oF2BXOKSNC0",
+      "title": "CETTE BOOMEUSE LFI PRÉTEND QUE BARDELLA A ZIGOUILLÉ SA FAMILLE ! (On analyse son délire.)",
+      "thumbnail": "https://i.ytimg.com/vi/oF2BXOKSNC0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=oF2BXOKSNC0",
+      "links": [
+        {
+          "label": "Les Rois thaumaturges",
+          "author": "Marc Bloch",
+          "url": "https://amzn.to/4v92zBs",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Étrange Défaite",
+          "author": "Marc Bloch",
+          "url": "https://amzn.to/4fcQAOq",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Métier d'historien",
+          "author": "Marc Bloch",
+          "url": "https://amzn.to/3SwDtPt",
+          "type": "amazon"
+        },
+        {
+          "label": "Guillaume Le Maréchal",
+          "author": "Georges Duby",
+          "url": "https://amzn.to/444Dwob",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Identité de la France",
+          "author": "Fernand Braudel",
+          "url": "https://amzn.to/4eL7pys",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "sFq5mAgfLO0",
       "title": "COMMENT JÉSUS VA SAUVER LA GEN Z ? (Les athées en sueur.)",
