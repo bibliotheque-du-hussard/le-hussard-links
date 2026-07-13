@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-07-08T00:58:45.963Z",
+  "generatedAt": "2026-07-12T20:14:29.194Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "rrbZjxD9x5Y",
+      "title": "DEUX BOOMERS AHURIS ESSAYENT DE NIER LA RÉALITÉ ! (Je les renvoie en ephad.)",
+      "thumbnail": "https://i.ytimg.com/vi/rrbZjxD9x5Y/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rrbZjxD9x5Y",
+      "links": [
+        {
+          "label": "Le Château de ma mère",
+          "author": "Marcel Pagnol",
+          "url": "https://amzn.to/4o1OtzW",
+          "type": "amazon"
+        },
+        {
+          "label": "Vipère au poing",
+          "author": "Hervé Bazin",
+          "url": "https://amzn.to/4fTbKlq",
+          "type": "amazon"
+        },
+        {
+          "label": "Mémoires d'outre-tombe",
+          "author": "François-René de Chateaubriand",
+          "url": "https://amzn.to/4u7cJSs",
+          "type": "amazon"
+        },
+        {
+          "label": "Mort à crédit",
+          "author": "Louis-Ferdinand Céline",
+          "url": "https://amzn.to/4x3k9sy",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Capitalisme de la séduction",
+          "author": "Michel Clouscard",
+          "url": "https://amzn.to/4uHEjXv",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "oF2BXOKSNC0",
       "title": "CETTE BOOMEUSE LFI PRÉTEND QUE BARDELLA A ZIGOUILLÉ SA FAMILLE ! (On analyse son délire.)",
