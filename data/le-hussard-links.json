@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-07-12T20:14:29.194Z",
+  "generatedAt": "2026-07-17T00:42:49.775Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "fyMvVx5DvIw",
+      "title": "HAMZA LA DOUANE A-T-IL MANGÉ LE CERVEAU DES GAUCHISTES ?",
+      "thumbnail": "https://i.ytimg.com/vi/fyMvVx5DvIw/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fyMvVx5DvIw",
+      "links": [
+        {
+          "label": "Le Petit Nicolas",
+          "author": "René Goscinny et Jean-Jacques Sempé",
+          "url": "https://amzn.to/3RrkXrm",
+          "type": "amazon"
+        },
+        {
+          "label": "La Guerre des boutons",
+          "author": "Louis Pergaud",
+          "url": "https://amzn.to/4p9tpIa",
+          "type": "amazon"
+        },
+        {
+          "label": "Sa Majesté des mouches",
+          "author": "William Golding",
+          "url": "https://amzn.to/4eXvfak",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "rrbZjxD9x5Y",
       "title": "DEUX BOOMERS AHURIS ESSAYENT DE NIER LA RÉALITÉ ! (Je les renvoie en ephad.)",
