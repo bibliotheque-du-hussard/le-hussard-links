@@ -11,6 +11,9 @@ const state = {
 const bookGrid = document.querySelector("#bookGrid");
 const resultCount = document.querySelector("#resultCount");
 const searchInput = document.querySelector("#searchInput");
+const searchBox = document.querySelector("#catalogue .search-box");
+const searchControls = document.querySelector("#catalogue .controls");
+const toolbar = document.querySelector("#catalogue");
 const template = document.querySelector("#bookCardTemplate");
 
 const formatDate = new Intl.DateTimeFormat("fr-FR", {
@@ -192,6 +195,178 @@ searchInput.addEventListener("input", (event) => {
   applySearchQuery(nextQuery);
 });
 
+function setupSearchDock() {
+  if (!searchBox || !searchControls || !toolbar) {
+    return;
+  }
+
+  const dockMaxWidth = 880;
+  const dockTop = 12;
+  const durationMs = 380;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let docked = false;
+  // 0 = fully in the toolbar cell, 1 = fully docked at the top. The animation is
+  // driven manually (rather than via a CSS transition) so each frame can read the
+  // live in-flow cell position — that way the box tracks the cell even while the
+  // user keeps scrolling during the transition, and lands on it with no snap.
+  let progress = 0;
+  let rafId = null;
+  let animFrom = 0;
+  let animTo = 0;
+  let animStart = 0;
+  // Vertical distance from the search box's top to the input's top in normal
+  // flow (the "Recherche" label height + gap). While docked the label is hidden,
+  // so we anchor the animation to the input's position — otherwise the label
+  // reappearing on undock would shove the input down and cause a snap.
+  let labelOffset = 0;
+
+  const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+  const getDockTarget = () => {
+    const width = Math.min(dockMaxWidth, window.innerWidth * 0.92);
+    return { width, left: (window.innerWidth - width) / 2, top: dockTop };
+  };
+
+  // Geometry at a given progress: interpolate between the live in-flow cell (0)
+  // and the docked target (1). Both are read fresh so scrolling/resizing is
+  // tracked continuously.
+  const geometryAt = (p) => {
+    const cell = searchControls.getBoundingClientRect();
+    const target = getDockTarget();
+    // In-flow endpoint is the input's top (cell top + label offset), since the
+    // label is hidden while docked and reclaims that space on undock.
+    const originTop = cell.top + labelOffset;
+    return {
+      left: cell.left + (target.left - cell.left) * p,
+      top: originTop + (target.top - originTop) * p,
+      width: cell.width + (target.width - cell.width) * p,
+    };
+  };
+
+  const applyGeometry = (p) => {
+    const { left, top, width } = geometryAt(p);
+    searchBox.style.width = `${width}px`;
+    searchBox.style.transform = `translate(${left}px, ${top}px)`;
+  };
+
+  const finishUndock = () => {
+    // Guard against a re-dock that happened mid-transition.
+    if (docked) {
+      return;
+    }
+    const hadFocus = document.activeElement === searchInput;
+    // Move back into the toolbar cell (still fixed, so no visual jump), then drop
+    // the fixed positioning so it resumes normal flow exactly in place.
+    searchControls.appendChild(searchBox);
+    searchBox.classList.remove("is-docked");
+    searchBox.style.transform = "";
+    searchBox.style.width = "";
+    searchControls.style.minHeight = "";
+    if (hadFocus) {
+      searchInput.focus({ preventScroll: true });
+    }
+  };
+
+  const frame = (now) => {
+    const linear = durationMs <= 0 ? 1 : Math.min((now - animStart) / durationMs, 1);
+    progress = animFrom + (animTo - animFrom) * easeOutCubic(linear);
+    applyGeometry(progress);
+
+    if (linear < 1) {
+      rafId = window.requestAnimationFrame(frame);
+      return;
+    }
+
+    rafId = null;
+    progress = animTo;
+    if (animTo === 0) {
+      finishUndock();
+    }
+  };
+
+  const animateTo = (target) => {
+    if (rafId) {
+      window.cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+
+    if (prefersReducedMotion) {
+      progress = target;
+      applyGeometry(progress);
+      if (target === 0) {
+        finishUndock();
+      }
+      return;
+    }
+
+    animFrom = progress;
+    animTo = target;
+    animStart = performance.now();
+    rafId = window.requestAnimationFrame(frame);
+  };
+
+  const dock = () => {
+    if (docked) {
+      return;
+    }
+    docked = true;
+
+    // Freeze the toolbar cell height so the layout below does not jump when the
+    // search box leaves the normal flow.
+    const rect = searchBox.getBoundingClientRect();
+    const hadFocus = document.activeElement === searchInput;
+    // Measure the label offset now, while the label is still laid out.
+    labelOffset = searchInput.getBoundingClientRect().top - rect.top;
+    searchControls.style.minHeight = `${rect.height}px`;
+
+    // The .toolbar has an animation that leaves a non-none transform, which would
+    // make it the containing block for our fixed box (positioning it relative to
+    // the scrolled-away toolbar instead of the viewport). Reparent to <body> so
+    // fixed positioning is genuinely viewport-relative.
+    document.body.appendChild(searchBox);
+    if (hadFocus) {
+      searchInput.focus({ preventScroll: true });
+    }
+
+    searchBox.classList.add("is-docked");
+    applyGeometry(progress); // start exactly where the box currently sits
+    animateTo(1);
+  };
+
+  const undock = () => {
+    if (!docked) {
+      return;
+    }
+    docked = false;
+    animateTo(0);
+  };
+
+  // Keep the docked pill centered/sized correctly across viewport resizes while
+  // it is docked and idle (during an animation the rAF loop already tracks it).
+  window.addEventListener("resize", () => {
+    if (docked && rafId === null) {
+      applyGeometry(progress);
+    }
+  });
+
+  // Dock once the catalogue toolbar has scrolled up out of view; undock when it
+  // scrolls back in.
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      if (scrolledPast) {
+        dock();
+      } else {
+        undock();
+      }
+    },
+    { threshold: 0 },
+  );
+
+  observer.observe(toolbar);
+}
+
 document.addEventListener("click", (event) => {
   const link = event.target.closest("[data-track-destination-type]");
 
@@ -229,4 +404,5 @@ async function boot() {
   }
 }
 
+setupSearchDock();
 boot();

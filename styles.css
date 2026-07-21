@@ -785,9 +785,39 @@ code {
   }
 }
 
+/* Docked (floating) search bar: the real toolbar search box detaches and
+   morphs to a centered, expanded pill at the top of the viewport while
+   scrolling the catalogue. Positioning is driven by inline transform/width
+   set in app.js so the transition can animate smoothly. */
+.search-box.is-docked {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  margin: 0;
+  box-sizing: border-box;
+  will-change: transform, width;
+}
+
+.search-box.is-docked span {
+  display: none;
+}
+
+.search-box.is-docked input {
+  box-shadow: inset 0 0 0 1px rgba(67, 38, 25, 0.12), 0 22px 48px rgba(63, 39, 23, 0.24);
+}
+
+.search-box.is-docked input:focus {
+  box-shadow: inset 0 0 0 2px rgba(110, 63, 42, 0.72), 0 22px 48px rgba(63, 39, 23, 0.24);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .skeleton-line::after,
   .skeleton-pill::after {
     animation: none;
+  }
+
+  .search-box.is-docked {
+    transition: none;
   }
 }
