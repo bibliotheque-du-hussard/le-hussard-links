@@ -27,6 +27,8 @@ const refreshLabels = args.has("refresh-labels");
 const candidateOutFile = args.get("candidate-out");
 const candidateOnly = args.has("candidate-only");
 const reviewedFile = args.get("reviewed");
+const reportOutFile = args.get("report-out");
+const publishGate = args.has("publish-gate");
 
 if (!["full", "incremental"].includes(mode)) {
   throw new Error(`Unknown mode "${mode}". Use --mode=full or --mode=incremental.`);
@@ -170,6 +172,14 @@ function linkType(url) {
   return null;
 }
 
+function isAmazonLink(link) {
+  try {
+    return link.type === "amazon" && linkType(link.url) === "amazon";
+  } catch {
+    return false;
+  }
+}
+
 function extractLinks(description, { includeSourceText = false } = {}) {
   const links = [];
   const seen = new Set();
@@ -219,6 +229,11 @@ function validateLinks(videos) {
     const seen = new Set();
 
     for (const link of video.links) {
+      if (!isAmazonLink(link)) {
+        warnings.push(`${video.id}: non-Amazon link ${link.url}`);
+        continue;
+      }
+
       const key = normalizeUrlKey(link.url);
 
       if (seen.has(key)) {
@@ -230,6 +245,67 @@ function validateLinks(videos) {
       }
 
       seen.add(key);
+    }
+  }
+
+  return warnings;
+}
+
+function validateReviewedPayload(payload) {
+  const warnings = [];
+  const videoIds = new Set();
+
+  if (!payload || typeof payload !== "object") {
+    return ["reviewed payload: expected a JSON object"];
+  }
+
+  if (!Array.isArray(payload.videos)) {
+    return ["reviewed payload: expected videos array"];
+  }
+
+  for (const [videoIndex, video] of payload.videos.entries()) {
+    const videoRef = video?.id || `videos[${videoIndex}]`;
+
+    if (!video?.id) {
+      warnings.push(`videos[${videoIndex}]: missing id`);
+    } else if (videoIds.has(video.id)) {
+      warnings.push(`${video.id}: duplicate video id`);
+    } else {
+      videoIds.add(video.id);
+    }
+
+    for (const field of ["title", "thumbnail", "youtubeUrl"]) {
+      if (!video?.[field]) {
+        warnings.push(`${videoRef}: missing ${field}`);
+      }
+    }
+
+    if (!Array.isArray(video?.links)) {
+      warnings.push(`${videoRef}: missing links array`);
+      continue;
+    }
+
+    for (const [linkIndex, link] of video.links.entries()) {
+      const linkRef = `${videoRef}.links[${linkIndex}]`;
+
+      if (!link || typeof link !== "object") {
+        warnings.push(`${linkRef}: expected link object`);
+        continue;
+      }
+
+      if (Object.prototype.hasOwnProperty.call(link, "sourceText")) {
+        warnings.push(`${linkRef}: sourceText must be removed after review`);
+      }
+
+      for (const field of ["label", "url", "type"]) {
+        if (!link?.[field]) {
+          warnings.push(`${linkRef}: missing ${field}`);
+        }
+      }
+
+      if (link?.url && !isAmazonLink(link)) {
+        warnings.push(`${linkRef}: expected an Amazon link`);
+      }
     }
   }
 
@@ -356,7 +432,7 @@ async function getAllVideos(channelHtml, client) {
   return videos.slice(0, limit);
 }
 
-function mergeLinks(existingLinks = [], incomingLinks = [], report) {
+function mergeLinks(existingLinks = [], incomingLinks = [], report, video) {
   const merged = [];
   const byUrl = new Map();
 
@@ -377,6 +453,11 @@ function mergeLinks(existingLinks = [], incomingLinks = [], report) {
       byUrl.set(key, next);
       merged.push(next);
       report.addedLinks += 1;
+      report.addedLinkDetails.push({
+        videoId: video.id,
+        videoTitle: video.title,
+        ...link,
+      });
       continue;
     }
 
@@ -395,6 +476,13 @@ function mergeLinks(existingLinks = [], incomingLinks = [], report) {
     if (link.author && !current.author) {
       current.author = link.author;
       report.addedAuthors += 1;
+      report.addedAuthorDetails.push({
+        videoId: video.id,
+        videoTitle: video.title,
+        url: link.url,
+        label: current.label,
+        author: link.author,
+      });
     } else if (link.author && current.author && current.author !== link.author) {
       report.authorChanges.push({
         url: link.url,
@@ -419,6 +507,9 @@ function mergeCatalog(existing, incoming) {
     updatedVideos: 0,
     addedLinks: 0,
     addedAuthors: 0,
+    newVideoDetails: [],
+    addedLinkDetails: [],
+    addedAuthorDetails: [],
     labelChanges: [],
     authorChanges: [],
   };
@@ -437,6 +528,19 @@ function mergeCatalog(existing, incoming) {
     if (!existingVideo) {
       report.newVideos += 1;
       report.addedLinks += incomingVideo.links.length;
+      report.newVideoDetails.push({
+        id: incomingVideo.id,
+        title: incomingVideo.title,
+        youtubeUrl: incomingVideo.youtubeUrl,
+        linkCount: incomingVideo.links.length,
+      });
+      report.addedLinkDetails.push(
+        ...incomingVideo.links.map((link) => ({
+          videoId: incomingVideo.id,
+          videoTitle: incomingVideo.title,
+          ...link,
+        })),
+      );
       videos.push(incomingVideo);
       continue;
     }
@@ -445,7 +549,7 @@ function mergeCatalog(existing, incoming) {
     videos.push({
       ...existingVideo,
       ...incomingVideo,
-      links: mergeLinks(existingVideo.links, incomingVideo.links, report),
+      links: mergeLinks(existingVideo.links, incomingVideo.links, report, incomingVideo),
     });
   }
 
@@ -525,6 +629,22 @@ function countLinks(videos) {
   return videos.reduce((total, video) => total + video.links.length, 0);
 }
 
+function summarizePayload(payload) {
+  return {
+    generatedAt: payload.generatedAt,
+    videoCount: payload.videos.length,
+    linkCount: countLinks(payload.videos),
+    latestVideo: payload.videos[0]
+      ? {
+          id: payload.videos[0].id,
+          title: payload.videos[0].title,
+          youtubeUrl: payload.videos[0].youtubeUrl,
+          linkCount: payload.videos[0].links.length,
+        }
+      : null,
+  };
+}
+
 async function writeCatalog(payload) {
   await mkdir(dirname(outFile), { recursive: true });
   await writeFile(`${outFile}.tmp`, `${JSON.stringify(payload, null, 2)}\n`);
@@ -588,11 +708,74 @@ function printReport(report, warnings) {
   }
 }
 
+function buildGateReport({ existing, incoming, payload, report, warnings }) {
+  const blockers = [];
+  const hasPublishableChanges = report.newVideos > 0 || report.addedLinks > 0;
+
+  if (warnings.length > 0) {
+    blockers.push({
+      type: "validation_warnings",
+      count: warnings.length,
+      items: warnings,
+    });
+  }
+
+  if (report.labelChanges.length > 0) {
+    blockers.push({
+      type: "label_drift",
+      count: report.labelChanges.length,
+      items: report.labelChanges,
+    });
+  }
+
+  if (report.authorChanges.length > 0) {
+    blockers.push({
+      type: "author_drift",
+      count: report.authorChanges.length,
+      items: report.authorChanges,
+    });
+  }
+
+  if (!hasPublishableChanges) {
+    blockers.push({
+      type: "no_publishable_changes",
+      count: 0,
+      items: [],
+    });
+  }
+
+  const onlyNoChanges = blockers.length === 1 && blockers[0].type === "no_publishable_changes";
+
+  return {
+    status: blockers.length === 0 ? "publishable" : onlyNoChanges ? "no_changes" : "blocked",
+    publishable: blockers.length === 0,
+    mode,
+    dryRun,
+    refreshLabels,
+    files: {
+      existing: existingFile,
+      out: outFile,
+      reviewed: reviewedFile || null,
+    },
+    counts: {
+      existing: existing ? summarizePayload(existing) : null,
+      incoming: summarizePayload(incoming),
+      output: summarizePayload(payload),
+    },
+    changes: report,
+    warnings,
+    blockers,
+  };
+}
+
 async function main() {
   let incoming;
+  let reviewedWarnings = [];
 
   if (reviewedFile) {
-    incoming = normalizeReviewedPayload(await readJson(reviewedFile));
+    const reviewedPayload = await readJson(reviewedFile);
+    reviewedWarnings = validateReviewedPayload(reviewedPayload);
+    incoming = normalizeReviewedPayload(reviewedPayload);
     console.log(`Loaded reviewed candidates from ${reviewedFile}.`);
   } else {
     const channelHtml = await fetchText(channel.videosUrl);
@@ -623,9 +806,22 @@ async function main() {
   const existing = await readExistingCatalog(existingFile);
   const reviewedIncoming = mode === "full" ? preserveReviewedLinkMetadata(existing, incoming) : incoming;
   const { payload, report } = mergeCatalog(mode === "incremental" ? existing : null, reviewedIncoming);
-  const warnings = validateLinks(payload.videos);
+  const warnings = [...reviewedWarnings, ...validateLinks(payload.videos)];
+  const gateReport = buildGateReport({ existing, incoming, payload, report, warnings });
 
   printReport(report, warnings);
+
+  if (reportOutFile) {
+    await writeJson(reportOutFile, gateReport);
+    console.log(`Wrote update report to ${reportOutFile}: ${gateReport.status}.`);
+  }
+
+  if (publishGate && !gateReport.publishable) {
+    const gateVerb = gateReport.status === "no_changes" ? "stopped" : "blocked";
+    console.error(`Publish gate ${gateVerb}: ${gateReport.blockers.map((blocker) => blocker.type).join(", ")}.`);
+    process.exitCode = 1;
+    return;
+  }
 
   if (dryRun) {
     console.log(`Dry run only. Would write ${outFile}: ${payload.videos.length} videos, ${countLinks(payload.videos)} links.`);

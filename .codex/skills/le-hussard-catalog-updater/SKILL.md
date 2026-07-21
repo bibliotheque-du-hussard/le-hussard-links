@@ -30,7 +30,7 @@ Le Hussard usually publishes on Wednesdays and Sundays. For routine updates, pre
 4. Save the reviewed payload, for example `/tmp/le-hussard-reviewed.json`, then dry-run the deterministic upsert:
 
    ```bash
-   npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json --dry-run
+   npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json --dry-run --report-out=/tmp/le-hussard-report.json
    ```
 
 5. If the dry run looks stable, write the reviewed upsert:
@@ -53,6 +53,9 @@ Use this workflow for the scheduled automation and whenever Julian asks for an a
    ```
 
 2. Run the default candidate review and dry-run workflow.
+   - Prefer `--report-out=/tmp/le-hussard-report.json --publish-gate` for the dry run so deterministic blockers are explicit and machine-readable.
+   - A report status of `no_changes` is a normal no-op condition: report it and do not commit.
+   - Keep LLM review responsible for title splitting and author normalization; do not rely on the script to infer those semantic fields.
 3. Publish without asking for approval only when all of these are true:
    - the dry run reports at least one new video or added link;
    - validation warnings are empty;
@@ -169,7 +172,7 @@ Routine command:
 
 ```bash
 npm run update-data:candidates
-npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json --dry-run
+npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json --dry-run --report-out=/tmp/le-hussard-report.json --publish-gate
 npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json
 ```
 
@@ -180,6 +183,8 @@ Useful flags:
 - `--candidate-out=path/to/file.json`: write fetched candidates for LLM review.
 - `--candidate-only`: stop after writing the candidate file.
 - `--reviewed=path/to/file.json`: upsert an LLM-reviewed candidate payload instead of fetching descriptions.
+- `--report-out=path/to/file.json`: write a machine-readable report with counts, change details, validation warnings, drift, blockers, and publishability status.
+- `--publish-gate`: exit nonzero when the report is not publishable, including no changes, validation warnings, label drift, or author drift.
 - `--existing=path/to/file.json`: read an alternate existing catalog when testing incremental merges; defaults to `data/le-hussard-links.json`.
 - `--wait-ms=2000`: slow down YouTube requests when rate-limited.
 - `--refresh-labels`: allow existing labels to change when parser output differs.
