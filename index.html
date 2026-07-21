@@ -183,6 +183,23 @@
           </div>
         </section>
 
+        <section class="browse" aria-label="Explorer le catalogue">
+          <div class="browse-modes" role="tablist" aria-label="Mode d'exploration">
+            <button type="button" class="browse-mode is-active" data-mode="all" aria-pressed="true">Tout</button>
+            <button type="button" class="browse-mode" data-mode="authors" aria-pressed="false">Par auteur</button>
+            <button type="button" class="browse-mode" data-mode="videos" aria-pressed="false">Par vidéo</button>
+          </div>
+          <div class="facet-sort" id="facetSort" hidden>
+            <span class="facet-sort-label">Trier par</span>
+            <div class="sort-fields" role="group" aria-label="Critère de tri">
+              <button type="button" class="sort-btn" data-sort-field="alpha" aria-pressed="false">Alphabétique</button>
+              <button type="button" class="sort-btn is-active" data-sort-field="date" aria-pressed="true">Date</button>
+            </div>
+            <button type="button" class="sort-dir" id="sortDir" data-dir="desc" aria-label="Inverser le sens du tri">Plus récent</button>
+          </div>
+          <div class="facet-list" id="facetList" hidden></div>
+        </section>
+
         <section class="results-meta" aria-live="polite">
           <span id="resultCount">0 liens trouvés</span>
         </section>

@@ -6,6 +6,10 @@ const state = {
   data: null,
   query: "",
   searchTracked: false,
+  mode: "all", // "all" | "authors" | "videos"
+  selectedAuthor: null,
+  selectedVideo: null,
+  videoSort: { field: "date", dir: "desc" }, // field: "alpha" | "date"; dir: "asc" | "desc"
 };
 
 const bookGrid = document.querySelector("#bookGrid");
@@ -15,6 +19,12 @@ const searchBox = document.querySelector("#catalogue .search-box");
 const searchControls = document.querySelector("#catalogue .controls");
 const toolbar = document.querySelector("#catalogue");
 const template = document.querySelector("#bookCardTemplate");
+const facetList = document.querySelector("#facetList");
+const browseModes = document.querySelector(".browse-modes");
+const facetSort = document.querySelector("#facetSort");
+const sortDir = document.querySelector("#sortDir");
+// Assigned by setupSearchDock; lets a browse-mode change re-evaluate docking.
+let refreshSearchDock = () => {};
 
 const formatDate = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "long",
@@ -89,6 +99,55 @@ function dedupeBookLinks(links) {
   return uniqueLinks;
 }
 
+function getBooks() {
+  return dedupeBookLinks(getAmazonLinks(state.data));
+}
+
+function getAuthorFacets(books) {
+  const counts = new Map();
+  for (const book of books) {
+    if (!book.author) {
+      continue;
+    }
+    counts.set(book.author, (counts.get(book.author) || 0) + 1);
+  }
+  return [...counts.entries()]
+    .map(([author, count]) => ({ key: author, label: author, count }))
+    .sort((a, b) => a.label.localeCompare(b.label, "fr"));
+}
+
+function getVideoFacets(books) {
+  // Videos are stored newest-first, so the array index is a date proxy:
+  // order 0 = most recent, higher order = older.
+  const orderByUrl = new Map(state.data.videos.map((video, index) => [video.youtubeUrl, index]));
+
+  const byVideo = new Map();
+  for (const book of books) {
+    const existing = byVideo.get(book.videoUrl);
+    if (existing) {
+      existing.count += 1;
+    } else {
+      byVideo.set(book.videoUrl, {
+        key: book.videoUrl,
+        label: book.videoTitle,
+        count: 1,
+        order: orderByUrl.get(book.videoUrl) ?? Number.MAX_SAFE_INTEGER,
+      });
+    }
+  }
+
+  const { field, dir } = state.videoSort;
+  const sign = dir === "asc" ? 1 : -1;
+
+  return [...byVideo.values()].sort((a, b) => {
+    if (field === "alpha") {
+      return sign * a.label.localeCompare(b.label, "fr");
+    }
+    // "asc" (increasing date) = oldest first = higher order first.
+    return sign * (b.order - a.order);
+  });
+}
+
 function updateStats(data) {
   const amazonLinks = dedupeBookLinks(getAmazonLinks(data));
   const sourceVideos = new Set(amazonLinks.map((link) => link.videoUrl));
@@ -99,27 +158,134 @@ function updateStats(data) {
 }
 
 function getFilteredLinks() {
-  const query = normalize(state.query.trim());
-  const amazonLinks = dedupeBookLinks(getAmazonLinks(state.data));
+  let books = getBooks();
 
-  if (!query) {
-    return amazonLinks;
+  if (state.mode === "authors" && state.selectedAuthor) {
+    books = books.filter((book) => book.author === state.selectedAuthor);
+  } else if (state.mode === "videos" && state.selectedVideo) {
+    books = books.filter((book) => book.videoUrl === state.selectedVideo);
   }
 
-  return amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query));
+  // In "all" mode the search filters the books directly. In a browse mode the
+  // search filters the facet chips instead (see renderFacets), so the selected
+  // author/video keeps showing its books.
+  if (state.mode === "all") {
+    const query = normalize(state.query.trim());
+    if (query) {
+      books = books.filter((link) =>
+        normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query),
+      );
+    }
+  }
+
+  return books;
+}
+
+function makeInfo(text) {
+  const info = document.createElement("div");
+  info.className = "empty-state";
+  info.textContent = text;
+  return info;
+}
+
+function describeResults(count) {
+  const plural = count > 1 ? "s" : "";
+  if (state.mode === "authors" && state.selectedAuthor) {
+    return `${count} livre${plural} de ${state.selectedAuthor}`;
+  }
+  if (state.mode === "videos" && state.selectedVideo) {
+    return `${count} livre${plural} dans cette vidéo`;
+  }
+  if (state.query.trim()) {
+    return `${count} livre${plural} trouvé${plural}`;
+  }
+  return `Plus de ${count} lien${plural} Amazon disponible${plural} !`;
 }
 
 function render() {
-  const links = getFilteredLinks();
+  renderFacets();
+  renderBooks();
+}
+
+function renderFacets() {
+  // The sort bar only applies to the video list.
+  facetSort.hidden = state.mode !== "videos";
+  if (state.mode === "videos") {
+    updateSortControl();
+  }
+
+  if (state.mode === "all") {
+    facetList.hidden = true;
+    facetList.replaceChildren();
+    return;
+  }
+
+  const books = getBooks();
+  let facets = state.mode === "authors" ? getAuthorFacets(books) : getVideoFacets(books);
+
+  const query = normalize(state.query.trim());
+  if (query) {
+    facets = facets.filter((facet) => normalize(facet.label).includes(query));
+  }
+
+  facetList.hidden = false;
+  facetList.replaceChildren();
+
+  if (facets.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "facet-empty";
+    empty.textContent = "Aucun résultat pour cette recherche.";
+    facetList.append(empty);
+    return;
+  }
+
+  const selectedKey = state.mode === "authors" ? state.selectedAuthor : state.selectedVideo;
+
+  for (const facet of facets) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "facet-chip";
+    chip.dataset.facetKey = facet.key;
+    const active = facet.key === selectedKey;
+    chip.classList.toggle("is-active", active);
+    chip.setAttribute("aria-pressed", String(active));
+
+    const label = document.createElement("span");
+    label.className = "facet-label";
+    label.textContent = facet.label;
+
+    const count = document.createElement("span");
+    count.className = "facet-count";
+    count.textContent = facet.count;
+
+    chip.append(label, count);
+    facetList.append(chip);
+  }
+}
+
+function renderBooks() {
   bookGrid.removeAttribute("aria-busy");
   bookGrid.replaceChildren();
-  resultCount.textContent = `Plus de ${links.length} lien${links.length > 1 ? "s" : ""} Amazon disponible${links.length > 1 ? "s" : ""} !`;
+
+  // In a browse mode with nothing selected yet, prompt the user to pick one.
+  if (state.mode === "authors" && !state.selectedAuthor) {
+    resultCount.textContent = "Choisissez un auteur pour afficher ses livres.";
+    bookGrid.append(makeInfo("Sélectionnez un auteur dans la liste ci-dessus pour voir ses livres."));
+    return;
+  }
+  if (state.mode === "videos" && !state.selectedVideo) {
+    resultCount.textContent = "Choisissez une vidéo pour afficher ses livres.";
+    bookGrid.append(makeInfo("Sélectionnez une vidéo dans la liste ci-dessus pour voir ses livres."));
+    return;
+  }
+
+  const links = getFilteredLinks();
+  resultCount.textContent = describeResults(links.length);
 
   if (links.length === 0) {
-    const empty = document.createElement("div");
-    empty.className = "empty-state";
-    empty.textContent = "Aucun livre ne correspond à cette recherche. Essayez un autre titre ou auteur.";
-    bookGrid.append(empty);
+    bookGrid.append(
+      makeInfo("Aucun livre ne correspond à cette recherche. Essayez un autre titre ou auteur."),
+    );
     return;
   }
 
@@ -193,6 +359,93 @@ searchInput.addEventListener("input", (event) => {
   }
 
   applySearchQuery(nextQuery);
+});
+
+function updateModeButtons() {
+  for (const button of browseModes.querySelectorAll(".browse-mode")) {
+    const active = button.dataset.mode === state.mode;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  }
+}
+
+function updateSearchPlaceholder() {
+  searchInput.placeholder =
+    state.mode === "authors"
+      ? "Rechercher un auteur..."
+      : state.mode === "videos"
+        ? "Rechercher une vidéo..."
+        : "Ex: titre, auteur, vidéo...";
+}
+
+const sortDirLabels = {
+  alpha: { asc: "A → Z", desc: "Z → A" },
+  date: { asc: "Plus ancien", desc: "Plus récent" },
+};
+
+function updateSortControl() {
+  const { field, dir } = state.videoSort;
+
+  for (const button of facetSort.querySelectorAll(".sort-btn")) {
+    const active = button.dataset.sortField === field;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  }
+
+  sortDir.textContent = sortDirLabels[field][dir];
+  sortDir.dataset.dir = dir;
+}
+
+facetSort?.addEventListener("click", (event) => {
+  const fieldButton = event.target.closest(".sort-btn");
+  const dirButton = event.target.closest(".sort-dir");
+
+  if (fieldButton && fieldButton.dataset.sortField !== state.videoSort.field) {
+    state.videoSort.field = fieldButton.dataset.sortField;
+  } else if (dirButton) {
+    state.videoSort.dir = state.videoSort.dir === "asc" ? "desc" : "asc";
+  } else {
+    return;
+  }
+
+  track("catalogue video sort changed", { ...state.videoSort });
+  render();
+});
+
+browseModes?.addEventListener("click", (event) => {
+  const button = event.target.closest(".browse-mode");
+  if (!button || button.dataset.mode === state.mode) {
+    return;
+  }
+
+  state.mode = button.dataset.mode;
+  updateModeButtons();
+  updateSearchPlaceholder();
+  refreshSearchDock(); // undock when leaving "Tout"; allow docking again on return
+  track("catalogue browse mode changed", { mode: state.mode });
+
+  if (state.data) {
+    render();
+  }
+});
+
+facetList?.addEventListener("click", (event) => {
+  const chip = event.target.closest(".facet-chip");
+  if (!chip) {
+    return;
+  }
+
+  const key = chip.dataset.facetKey;
+  if (state.mode === "authors") {
+    // Toggle: clicking the active author clears the selection.
+    state.selectedAuthor = state.selectedAuthor === key ? null : key;
+    track("catalogue author selected", { author: state.selectedAuthor || undefined });
+  } else if (state.mode === "videos") {
+    state.selectedVideo = state.selectedVideo === key ? null : key;
+    track("catalogue video selected", { video_url: state.selectedVideo || undefined });
+  }
+
+  render();
 });
 
 function setupSearchDock() {
@@ -351,15 +604,25 @@ function setupSearchDock() {
   });
 
   // Dock once the catalogue toolbar has scrolled up out of view; undock when it
-  // scrolls back in.
+  // scrolls back in. The sticky bar is only used in "Tout" mode — the browse
+  // modes search the facet list instead, so a floating search bar is not needed.
+  let scrolledPast = false;
+
+  const update = () => {
+    if (scrolledPast && state.mode === "all") {
+      dock();
+    } else {
+      undock();
+    }
+  };
+
+  // Allow a browse-mode change to re-evaluate the dock state immediately.
+  refreshSearchDock = update;
+
   const observer = new IntersectionObserver(
     ([entry]) => {
-      const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-      if (scrolledPast) {
-        dock();
-      } else {
-        undock();
-      }
+      scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      update();
     },
     { threshold: 0 },
   );
