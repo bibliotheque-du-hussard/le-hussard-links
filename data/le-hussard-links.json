@@ -1,11 +1,43 @@
 {
-  "generatedAt": "2026-07-21T07:51:25.097Z",
+  "generatedAt": "2026-07-24T01:49:33.889Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "vyBWjEvetR4",
+      "title": "LE TROTSKISTE SÉNILE MÉLENCHON CONFOND LA DROITE ET LA GAUCHE ! (Fin de carrière ?)",
+      "thumbnail": "https://i.ytimg.com/vi/vyBWjEvetR4/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vyBWjEvetR4",
+      "links": [
+        {
+          "label": "Antigone",
+          "author": "Sophocle",
+          "url": "https://amzn.to/4b2U3g9",
+          "type": "amazon"
+        },
+        {
+          "label": "Antigone",
+          "author": "Jean Anouilh",
+          "url": "https://amzn.to/4fsAsY2",
+          "type": "amazon"
+        },
+        {
+          "label": "Notre jeunesse",
+          "author": "Charles Péguy",
+          "url": "https://amzn.to/4puSr4K",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Homme qui rit",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4fmy3y4",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "9ARsS0PIqtE",
       "title": "CET INSUPPORTABLE BOBO SOJA DÉCONSTRUIT ESSAYE DE NOUS ÉDUQUER : C'EST UN NAUFRAGE ! (Plouf.)",
