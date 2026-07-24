@@ -785,9 +785,64 @@ code {
   }
 }
 
+.back-to-top {
+  position: fixed;
+  right: clamp(16px, 4vw, 40px);
+  bottom: clamp(16px, 4vw, 40px);
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-weight: 650;
+  font-size: 0.9rem;
+  color: var(--paper-strong);
+  background: linear-gradient(90deg, var(--shelf-dark), var(--shelf));
+  box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 250, 240, 0.16);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 220ms;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 250, 240, 0.24);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+.back-to-top span:first-child {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .skeleton-line::after,
   .skeleton-pill::after {
     animation: none;
+  }
+
+  .back-to-top {
+    transition: opacity 220ms linear;
+    transform: none;
+  }
+
+  .back-to-top.is-visible {
+    transform: none;
   }
 }
