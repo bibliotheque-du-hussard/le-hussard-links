@@ -1,11 +1,43 @@
 {
-  "generatedAt": "2026-07-24T01:49:33.889Z",
+  "generatedAt": "2026-07-27T01:10:27.077Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "nC8k9e_3zbM",
+      "title": "CE COLONEL ULTRA-DÉTER CLASHE MACRON ET SES PETITS COLLABOS ! (Ça part en révolution ?)",
+      "thumbnail": "https://i.ytimg.com/vi/nC8k9e_3zbM/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nC8k9e_3zbM",
+      "links": [
+        {
+          "label": "Le Déclin du courage",
+          "author": "Alexandre Soljenitsyne",
+          "url": "https://amzn.to/4vc6AGd",
+          "type": "amazon"
+        },
+        {
+          "label": "Quatrevingt-treize",
+          "author": "Victor Hugo",
+          "url": "https://amzn.to/4a0JfyA",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Chemin des morts",
+          "author": "François Sureau",
+          "url": "https://amzn.to/4a2npuJ",
+          "type": "amazon"
+        },
+        {
+          "label": "Inigo",
+          "author": "François Sureau",
+          "url": "https://amzn.to/4uEuadz",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "vyBWjEvetR4",
       "title": "LE TROTSKISTE SÉNILE MÉLENCHON CONFOND LA DROITE ET LA GAUCHE ! (Fin de carrière ?)",
