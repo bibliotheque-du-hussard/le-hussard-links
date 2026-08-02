@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-07-27T01:10:27.077Z",
+  "generatedAt": "2026-08-02T11:33:05.684Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "BKs7LiG7puc",
+      "title": "ON DÉCORTIQUE LES PLEURNICHERIES DE CETTE BOBO FÉMINISTE HORS-SOL ! (Avec bienveillance.)",
+      "thumbnail": "https://i.ytimg.com/vi/BKs7LiG7puc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=BKs7LiG7puc",
+      "links": [
+        {
+          "label": "La Source Vive",
+          "author": "Ayn Rand",
+          "url": "https://amzn.to/4uLxd3G",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Œuvre au noir",
+          "author": "Marguerite Yourcenar",
+          "url": "https://amzn.to/4fRNWP0",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Blé en herbe",
+          "author": "Colette",
+          "url": "https://amzn.to/3QDItkq",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "nC8k9e_3zbM",
       "title": "CE COLONEL ULTRA-DÉTER CLASHE MACRON ET SES PETITS COLLABOS ! (Ça part en révolution ?)",
