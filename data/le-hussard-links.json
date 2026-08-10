@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-08-02T11:33:05.684Z",
+  "generatedAt": "2026-08-09T20:12:19.922Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "U2ZbNg5AzYU",
+      "title": "POURQUOI TOUT LE MONDE DÉTESTE ALAIN FINKIELKRAUT ?",
+      "thumbnail": "https://i.ytimg.com/vi/U2ZbNg5AzYU/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=U2ZbNg5AzYU",
+      "links": [
+        {
+          "label": "Notre Jeunesse",
+          "author": "Charles Péguy",
+          "url": "https://amzn.to/4vaklo5",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Argent",
+          "author": "Charles Péguy",
+          "url": "https://amzn.to/4w9KPa9",
+          "type": "amazon"
+        },
+        {
+          "label": "Œuvres I",
+          "author": "Walter Benjamin",
+          "url": "https://amzn.to/44ugk2x",
+          "type": "amazon"
+        },
+        {
+          "label": "Sur le concept d'histoire",
+          "author": "Walter Benjamin",
+          "url": "https://amzn.to/3Sez9US",
+          "type": "amazon"
+        },
+        {
+          "label": "La Défaite de la pensée",
+          "author": "Alain Finkielkraut",
+          "url": "https://amzn.to/4eXAtEk",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "BKs7LiG7puc",
       "title": "ON DÉCORTIQUE LES PLEURNICHERIES DE CETTE BOBO FÉMINISTE HORS-SOL ! (Avec bienveillance.)",
