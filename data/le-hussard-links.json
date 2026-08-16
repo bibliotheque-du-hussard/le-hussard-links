@@ -1,11 +1,43 @@
 {
-  "generatedAt": "2026-08-09T20:12:19.922Z",
+  "generatedAt": "2026-08-16T14:18:02.585Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "JjsgWEAqDf0",
+      "title": "YANN MOIX INSULTE LA FRANCE ENTIÈRE : JE LE REMETS DANS L'AXE !",
+      "thumbnail": "https://i.ytimg.com/vi/JjsgWEAqDf0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JjsgWEAqDf0",
+      "links": [
+        {
+          "label": "La Grève",
+          "author": "Ayn Rand",
+          "url": "https://amzn.to/4wgJVs7",
+          "type": "amazon"
+        },
+        {
+          "label": "La Source vive",
+          "author": "Ayn Rand",
+          "url": "https://amzn.to/4p0iZuE",
+          "type": "amazon"
+        },
+        {
+          "label": "Guillaume Le Maréchal",
+          "author": "Georges Duby",
+          "url": "https://amzn.to/3QJEIKy",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Dimanche de Bouvines",
+          "author": "Georges Duby",
+          "url": "https://amzn.to/4f9xrwP",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "U2ZbNg5AzYU",
       "title": "POURQUOI TOUT LE MONDE DÉTESTE ALAIN FINKIELKRAUT ?",
