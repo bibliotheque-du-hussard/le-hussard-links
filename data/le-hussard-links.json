@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-08-16T14:18:02.585Z",
+  "generatedAt": "2026-08-24T07:46:23.796Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "bwVSVVWY-CQ",
+      "title": "LES BOBOS DE FRANCE CULTURE ESSAYENT D'ANALYSER LE RÉEL ! (C'est un échec.)",
+      "thumbnail": "https://i.ytimg.com/vi/bwVSVVWY-CQ/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bwVSVVWY-CQ",
+      "links": [
+        {
+          "label": "Les Chouans",
+          "author": "Honoré de Balzac",
+          "url": "https://amzn.to/4fjZIAW",
+          "type": "amazon"
+        },
+        {
+          "label": "Nord",
+          "author": "Louis-Ferdinand Céline",
+          "url": "https://amzn.to/3SHU1Ec",
+          "type": "amazon"
+        },
+        {
+          "label": "Chien blanc",
+          "author": "Romain Gary",
+          "url": "https://amzn.to/4ve4jcw",
+          "type": "amazon"
+        },
+        {
+          "label": "Citadelle",
+          "author": "Antoine de Saint-Exupéry",
+          "url": "https://amzn.to/44NXsfa",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Hussard sur le toit",
+          "author": "Jean Giono",
+          "url": "https://amzn.to/4eYCb7d",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "JjsgWEAqDf0",
       "title": "YANN MOIX INSULTE LA FRANCE ENTIÈRE : JE LE REMETS DANS L'AXE !",
