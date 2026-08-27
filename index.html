@@ -178,9 +178,41 @@
           <div class="controls">
             <label class="search-box">
               <span>Recherche</span>
-              <input id="searchInput" type="search" placeholder="Ex: titre, auteur, vidéo...">
+              <input id="searchInput" type="search" placeholder="Ex : aventure, fantasy, Hugo…">
             </label>
           </div>
+        </section>
+
+        <section class="giberne-showcase" aria-labelledby="giberneTitle">
+          <div class="giberne-header">
+            <div>
+              <p class="eyebrow">La maison d’édition du Hussard</p>
+              <h2 id="giberneTitle">Les livres de La Giberne</h2>
+              <p>Parcourez leur catalogue, puis ouvrez directement la fiche du livre qui vous tente.</p>
+            </div>
+            <div class="giberne-actions">
+              <button class="giberne-toggle" id="giberneToggle" type="button" aria-pressed="false">
+                <span class="giberne-pause-icon" aria-hidden="true">Ⅱ</span>
+                <span class="giberne-play-icon" aria-hidden="true">▶</span>
+                <span class="giberne-toggle-label">Mettre en pause</span>
+              </button>
+              <a
+                class="giberne-all-link"
+                href="https://www.lagiberne.fr/"
+                target="_blank"
+                rel="noreferrer"
+                data-track-destination-type="website"
+                data-track-destination="la_giberne"
+                data-track-surface="giberne_carousel"
+              >Voir tout le catalogue</a>
+            </div>
+          </div>
+          <div class="giberne-carousel" id="giberneCarousel" aria-label="Livres publiés par La Giberne">
+            <div class="giberne-track" id="giberneTrack"></div>
+          </div>
+          <p class="giberne-empty" id="giberneEmpty" hidden>
+            Aucun livre La Giberne ne correspond à cette recherche.
+          </p>
         </section>
 
         <section class="results-meta" aria-live="polite">

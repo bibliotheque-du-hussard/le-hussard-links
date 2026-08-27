@@ -1,5 +1,6 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { KEYWORD_TAXONOMY } from "../catalog-search.js";
 
 const channel = {
   name: "Le Hussard",
@@ -242,6 +243,31 @@ function validateLinks(videos) {
 
       if (isSuspiciousLabel(link.label, link.url)) {
         warnings.push(`${video.id}: suspicious label "${link.label}" for ${link.url}`);
+      }
+
+      if (!Array.isArray(link.keywords) || link.keywords.length !== 5) {
+        warnings.push(`${video.id}: expected exactly 5 keywords for "${link.label}"`);
+      } else {
+        const normalizedKeywords = link.keywords.map((keyword) =>
+          typeof keyword === "string" ? keyword.trim().toLocaleLowerCase("fr-FR") : "",
+        );
+
+        if (normalizedKeywords.some((keyword) => !keyword)) {
+          warnings.push(`${video.id}: keywords must be non-empty strings for "${link.label}"`);
+        }
+
+        if (new Set(normalizedKeywords).size !== normalizedKeywords.length) {
+          warnings.push(`${video.id}: keywords must be unique for "${link.label}"`);
+        }
+
+        if (normalizedKeywords.some((keyword, index) => keyword !== link.keywords[index])) {
+          warnings.push(`${video.id}: keywords must be lowercase and trimmed for "${link.label}"`);
+        }
+
+        const unknownKeywords = normalizedKeywords.filter((keyword) => !KEYWORD_TAXONOMY.has(keyword));
+        if (unknownKeywords.length > 0) {
+          warnings.push(`${video.id}: unknown keywords for "${link.label}": ${unknownKeywords.join(", ")}`);
+        }
       }
 
       seen.add(key);
@@ -495,6 +521,10 @@ function mergeLinks(existingLinks = [], incomingLinks = [], report, video) {
       }
     }
 
+    if (Array.isArray(link.keywords) && link.keywords.length > 0) {
+      current.keywords = [...link.keywords];
+    }
+
     current.type = link.type;
   }
 
@@ -598,6 +628,8 @@ function preserveReviewedLinkMetadata(existing, incoming) {
           label: refreshLabels ? link.label : existingLink.label,
           ...(existingLink.author && !refreshLabels ? { author: existingLink.author } : {}),
           ...(link.author ? { author: link.author } : {}),
+          ...(existingLink.keywords ? { keywords: existingLink.keywords } : {}),
+          ...(link.keywords ? { keywords: link.keywords } : {}),
         };
       }),
     })),
@@ -668,6 +700,7 @@ function normalizeReviewedPayload(payload) {
       links: video.links.map((link) => ({
         label: link.label,
         ...(link.author ? { author: link.author } : {}),
+        ...(link.keywords ? { keywords: link.keywords } : {}),
         url: link.url,
         type: link.type,
       })),

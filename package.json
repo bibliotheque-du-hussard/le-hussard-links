@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npx --yes serve .",
+    "test": "node --test",
     "update-data": "node scripts/update-data.mjs --mode=incremental",
     "update-data:full": "node scripts/update-data.mjs --mode=full",
     "update-data:incremental": "node scripts/update-data.mjs --mode=incremental",

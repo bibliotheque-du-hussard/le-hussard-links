@@ -1,3 +1,13 @@
+import {
+  dedupeBookLinks,
+  filterCatalogBooks,
+  getAmazonLinks,
+  matchesSearchQuery,
+  normalize,
+} from "./catalog-search.js";
+import { getLoopedScrollPosition } from "./carousel-loop.js";
+import { GIBERNE_BOOKS } from "./giberne-books.js";
+
 const dataUrl = "data/le-hussard-links.json";
 const searchDebounceMs = 350;
 const skeletonCardCount = 6;
@@ -12,18 +22,15 @@ const bookGrid = document.querySelector("#bookGrid");
 const resultCount = document.querySelector("#resultCount");
 const searchInput = document.querySelector("#searchInput");
 const template = document.querySelector("#bookCardTemplate");
+const giberneCarousel = document.querySelector("#giberneCarousel");
+const giberneTrack = document.querySelector("#giberneTrack");
+const giberneToggle = document.querySelector("#giberneToggle");
+const giberneEmpty = document.querySelector("#giberneEmpty");
 
 const formatDate = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "long",
   timeStyle: "short",
 });
-
-function normalize(value) {
-  return value
-    .toLocaleLowerCase("fr-FR")
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "");
-}
 
 function slugify(value) {
   return normalize(value)
@@ -53,37 +60,176 @@ function debounce(callback, delay) {
   };
 }
 
-function getAmazonLinks(data) {
-  return data.videos.flatMap((video) =>
-    video.links
-      .filter((link) => link.type === "amazon")
-      .map((link) => ({
-        ...link,
-        videoTitle: video.title,
-        videoUrl: video.youtubeUrl,
-      })),
+function createGiberneBookLink(book, duplicate = false) {
+  const link = document.createElement("a");
+  link.className = "giberne-book";
+  link.href = book.url;
+  link.target = "_blank";
+  link.rel = "noreferrer";
+  link.dataset.trackDestinationType = "website";
+  link.dataset.trackDestination = "la_giberne_book";
+  link.dataset.trackSurface = "giberne_carousel";
+  link.dataset.trackItemId = `la-giberne-${book.id}`;
+  link.dataset.trackItemTitle = book.title;
+  link.dataset.giberneBookId = String(book.id);
+  if (duplicate) {
+    link.tabIndex = -1;
+  }
+
+  const cover = document.createElement("img");
+  cover.src = book.cover;
+  cover.alt = duplicate ? "" : `Couverture de ${book.title}`;
+  cover.loading = "lazy";
+  cover.decoding = "async";
+
+  const copy = document.createElement("span");
+  copy.className = "giberne-book-copy";
+
+  const title = document.createElement("strong");
+  title.textContent = book.title;
+
+  const author = document.createElement("span");
+  author.textContent = book.author;
+
+  copy.append(title, author);
+  link.append(cover, copy);
+  return link;
+}
+
+function renderGiberneCarousel() {
+  const leadingSet = document.createElement("div");
+  leadingSet.className = "giberne-set";
+  leadingSet.setAttribute("aria-hidden", "true");
+  leadingSet.append(...GIBERNE_BOOKS.map((book) => createGiberneBookLink(book, true)));
+
+  const primarySet = document.createElement("div");
+  primarySet.className = "giberne-set";
+  primarySet.append(...GIBERNE_BOOKS.map((book) => createGiberneBookLink(book)));
+
+  const trailingSet = document.createElement("div");
+  trailingSet.className = "giberne-set";
+  trailingSet.setAttribute("aria-hidden", "true");
+  trailingSet.append(...GIBERNE_BOOKS.map((book) => createGiberneBookLink(book, true)));
+
+  giberneTrack.replaceChildren(leadingSet, primarySet, trailingSet);
+  return primarySet;
+}
+
+function startGiberneCarousel(primarySet) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let pausedByUser = false;
+  let pausedByInteraction = false;
+  let lastFrameTime = null;
+  let autoScrollPosition = primarySet.offsetLeft;
+  let filtered = false;
+  let resumeTimeoutId;
+
+  giberneCarousel.scrollLeft = autoScrollPosition;
+
+  function updateToggle() {
+    giberneToggle.setAttribute("aria-pressed", String(pausedByUser));
+    giberneToggle.querySelector(".giberne-toggle-label").textContent = pausedByUser
+      ? "Relancer le défilement"
+      : "Mettre en pause";
+  }
+
+  function pauseForInteraction() {
+    pausedByInteraction = true;
+    window.clearTimeout(resumeTimeoutId);
+  }
+
+  function resumeAfterInteraction(delay = 0) {
+    window.clearTimeout(resumeTimeoutId);
+    resumeTimeoutId = window.setTimeout(() => {
+      if (!giberneCarousel.matches(":hover") && !giberneCarousel.contains(document.activeElement)) {
+        pausedByInteraction = false;
+      }
+    }, delay);
+  }
+
+  function animate(timestamp) {
+    if (lastFrameTime === null) {
+      lastFrameTime = timestamp;
+    }
+
+    if (!filtered && !pausedByUser && !pausedByInteraction && !reducedMotion.matches && !document.hidden) {
+      const elapsed = Math.min(timestamp - lastFrameTime, 50);
+      autoScrollPosition += elapsed * 0.026;
+
+      const loopWidth = primarySet.offsetWidth;
+      autoScrollPosition = getLoopedScrollPosition(autoScrollPosition, loopWidth);
+
+      giberneCarousel.scrollLeft = autoScrollPosition;
+    } else {
+      autoScrollPosition = giberneCarousel.scrollLeft;
+    }
+
+    lastFrameTime = timestamp;
+    window.requestAnimationFrame(animate);
+  }
+
+  giberneToggle.addEventListener("click", () => {
+    pausedByUser = !pausedByUser;
+    updateToggle();
+  });
+  giberneCarousel.addEventListener("mouseenter", pauseForInteraction);
+  giberneCarousel.addEventListener("mouseleave", () => resumeAfterInteraction());
+  giberneCarousel.addEventListener("focusin", pauseForInteraction);
+  giberneCarousel.addEventListener("focusout", () => resumeAfterInteraction());
+  giberneCarousel.addEventListener("pointerdown", pauseForInteraction);
+  giberneCarousel.addEventListener("pointerup", () => resumeAfterInteraction(1800));
+  giberneCarousel.addEventListener("pointercancel", () => resumeAfterInteraction(1800));
+  giberneCarousel.addEventListener("scroll", () => {
+    if (filtered) {
+      return;
+    }
+
+    const currentPosition = giberneCarousel.scrollLeft;
+    const loopedPosition = getLoopedScrollPosition(currentPosition, primarySet.offsetWidth);
+
+    if (loopedPosition !== currentPosition) {
+      giberneCarousel.scrollLeft = loopedPosition;
+      autoScrollPosition = loopedPosition;
+    }
+  });
+
+  updateToggle();
+  window.requestAnimationFrame(animate);
+
+  return {
+    setFiltered(nextFiltered) {
+      filtered = nextFiltered;
+      autoScrollPosition = filtered ? 0 : primarySet.offsetLeft;
+      giberneCarousel.scrollLeft = autoScrollPosition;
+    },
+  };
+}
+
+function getFilteredGiberneBooks(query = state.query) {
+  return GIBERNE_BOOKS.filter((book) =>
+    matchesSearchQuery([book.title, book.author, book.keywords], query),
   );
 }
 
-function getBookKey(link) {
-  return normalize(`${link.label} ${link.author || ""}`.trim());
-}
+function updateGiberneSearch() {
+  const matches = getFilteredGiberneBooks();
+  const matchingIds = new Set(matches.map((book) => String(book.id)));
+  const hasQuery = state.query.trim().length > 0;
 
-function dedupeBookLinks(links) {
-  const seen = new Set();
-  const uniqueLinks = [];
+  for (const set of giberneTrack.querySelectorAll(".giberne-set")) {
+    const isDuplicateSet = set.hasAttribute("aria-hidden");
+    set.hidden = hasQuery && isDuplicateSet;
 
-  for (const link of links) {
-    const key = getBookKey(link);
-    if (seen.has(key)) {
-      continue;
+    for (const link of set.querySelectorAll(".giberne-book")) {
+      link.hidden = !matchingIds.has(link.dataset.giberneBookId);
     }
-
-    seen.add(key);
-    uniqueLinks.push(link);
   }
 
-  return uniqueLinks;
+  giberneCarousel.hidden = matches.length === 0;
+  giberneEmpty.hidden = matches.length > 0;
+  giberneToggle.hidden = hasQuery;
+  giberneCarouselController.setFiltered(hasQuery);
+  return matches.length;
 }
 
 function updateStats(data) {
@@ -96,26 +242,23 @@ function updateStats(data) {
 }
 
 function getFilteredLinks() {
-  const query = normalize(state.query.trim());
-  const amazonLinks = dedupeBookLinks(getAmazonLinks(state.data));
-
-  if (!query) {
-    return amazonLinks;
-  }
-
-  return amazonLinks.filter((link) => normalize(`${link.label} ${link.author || ""} ${link.videoTitle}`).includes(query));
+  return filterCatalogBooks(state.data, state.query);
 }
 
 function render() {
   const links = getFilteredLinks();
+  const giberneMatchCount = updateGiberneSearch();
+  const totalMatchCount = links.length + giberneMatchCount;
   bookGrid.removeAttribute("aria-busy");
   bookGrid.replaceChildren();
-  resultCount.textContent = `Plus de ${links.length} lien${links.length > 1 ? "s" : ""} Amazon disponible${links.length > 1 ? "s" : ""} !`;
+  resultCount.textContent = state.query.trim()
+    ? `${links.length} référence${links.length !== 1 ? "s" : ""} Amazon et ${giberneMatchCount} livre${giberneMatchCount !== 1 ? "s" : ""} La Giberne ${totalMatchCount === 1 ? "correspond" : "correspondent"} à votre recherche.`
+    : `Plus de ${links.length} lien${links.length > 1 ? "s" : ""} Amazon disponible${links.length > 1 ? "s" : ""} !`;
 
   if (links.length === 0) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = "Aucun livre ne correspond à cette recherche. Essayez un autre titre ou auteur.";
+    empty.textContent = "Aucun livre ne correspond à cette recherche. Essayez un autre titre, auteur ou genre.";
     bookGrid.append(empty);
     return;
   }
@@ -176,6 +319,8 @@ const applySearchQuery = debounce((query) => {
 
   if (state.data) {
     render();
+  } else {
+    updateGiberneSearch();
   }
 }, searchDebounceMs);
 
@@ -229,4 +374,5 @@ async function boot() {
   }
 }
 
+const giberneCarouselController = startGiberneCarousel(renderGiberneCarousel());
 boot();

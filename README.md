@@ -24,6 +24,10 @@ npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json
 
 The candidate file is reviewed with Codex before writing so new links can be normalized into `label` plus `author`. The incremental updater then reads the existing catalog, upserts reviewed videos and links, preserves existing labels by default, and reports label drift, author drift, or suspicious labels before writing.
 
+Each reviewed book must also contain exactly five lowercase `keywords` selected from recurring
+genres, forms and themes (for example `aventure`, `fantasy`, `roman historique`, `politique` or
+`philosophie`). The search indexes these keywords, and combines multiple search terms with AND.
+
 For a full rebuild:
 
 ```bash
