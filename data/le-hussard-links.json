@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-08-24T07:46:23.796Z",
+  "generatedAt": "2026-09-03T09:58:47.738Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "NM3cqC1mguQ",
+      "title": "LE JUNKY BEIGBEDER SE FAIT DÉMOLIR LE FIAK PAR FRANCE INTER ! (Même Guillaume Pley est choqué.)",
+      "thumbnail": "https://i.ytimg.com/vi/NM3cqC1mguQ/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NM3cqC1mguQ",
+      "links": [
+        {
+          "label": "American Psycho",
+          "author": "Bret Easton Ellis",
+          "keywords": [
+            "roman",
+            "société",
+            "psychologie",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://amzn.to/4pjpwQX",
+          "type": "amazon"
+        },
+        {
+          "label": "Gatsby le Magnifique",
+          "author": "F. Scott Fitzgerald",
+          "keywords": [
+            "roman",
+            "société",
+            "psychologie",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://amzn.to/4fzoe0U",
+          "type": "amazon"
+        },
+        {
+          "label": "Des souris et des hommes",
+          "author": "John Steinbeck",
+          "keywords": [
+            "roman",
+            "société",
+            "psychologie",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://amzn.to/3R8fZzM",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "bwVSVVWY-CQ",
       "title": "LES BOBOS DE FRANCE CULTURE ESSAYENT D'ANALYSER LE RÉEL ! (C'est un échec.)",
