@@ -1,5 +1,13 @@
 export const GIBERNE_BOOKS = [
   {
+    id: 17,
+    title: "La Vertu cardinale",
+    author: "Vivien Destro",
+    keywords: ["roman", "politique", "société", "française", "spiritualité"],
+    url: "https://www.lagiberne.fr/books/17",
+    cover: "https://www.lagiberne.fr/storage/books/W0BQbLJvIPIqgX5loed0aTuuJqUT7GCISmn40cXj.jpg",
+  },
+  {
     id: 16,
     title: "Légion",
     author: "Victor di Donatelis",

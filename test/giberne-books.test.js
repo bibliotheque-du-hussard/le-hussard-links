@@ -8,10 +8,10 @@ import { KEYWORD_TAXONOMY, matchesSearchQuery } from "../catalog-search.js";
 const styles = fs.readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 
 test("La Giberne carousel books have unique product pages and valid covers", () => {
-  assert.equal(GIBERNE_BOOKS.length, 16);
+  assert.equal(GIBERNE_BOOKS.length, 17);
   assert.deepEqual(
     GIBERNE_BOOKS.map((book) => book.id),
-    [16, 15, 14, 13, 9, 8, 7, 6, 5, 4, 3, 2, 1, 12, 11, 10],
+    [17, 16, 15, 14, 13, 9, 8, 7, 6, 5, 4, 3, 2, 1, 12, 11, 10],
   );
   assert.equal(new Set(GIBERNE_BOOKS.map((book) => book.id)).size, GIBERNE_BOOKS.length);
   assert.equal(new Set(GIBERNE_BOOKS.map((book) => book.url)).size, GIBERNE_BOOKS.length);
@@ -35,6 +35,7 @@ test("La Giberne books can be searched by title, author, or category", () => {
     GIBERNE_BOOKS.filter((book) => matchesSearchQuery([book.title, book.author, book.keywords], query));
 
   assert.deepEqual(search("objectif 23").map((book) => book.id), [7]);
+  assert.deepEqual(search("vivien destro").map((book) => book.id), [17]);
   assert.deepEqual(search("antoine albalat").map((book) => book.id), [12]);
   assert.ok(search("science-fiction dystopie").some((book) => book.id === 7));
   assert.ok(search("aventure fantasy").some((book) => book.id === 5));
