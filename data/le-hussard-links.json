@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-09-03T09:58:47.738Z",
+  "generatedAt": "2026-09-13T13:07:41.625Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "Zhyy0LLt8hI",
+      "title": "CETTE IMMIGRÉE VEUT RÉÉCRIRE L'HISTOIRE DE FRANCE ! (Avec vos impôts.)",
+      "thumbnail": "https://i.ytimg.com/vi/Zhyy0LLt8hI/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Zhyy0LLt8hI",
+      "links": [
+        {
+          "label": "Le Complot contre l'Amérique",
+          "author": "Philip Roth",
+          "keywords": [
+            "roman",
+            "politique",
+            "dystopie",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://amzn.to/3TucS5Q",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Insoutenable légèreté de l'être",
+          "author": "Milan Kundera",
+          "keywords": [
+            "roman",
+            "philosophie",
+            "psychologie",
+            "société",
+            "xxe siècle"
+          ],
+          "url": "https://amzn.to/3RNE7YC",
+          "type": "amazon"
+        },
+        {
+          "label": "Salammbô",
+          "author": "Gustave Flaubert",
+          "keywords": [
+            "roman historique",
+            "antiquité",
+            "aventure",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://amzn.to/4vBazeR",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "NM3cqC1mguQ",
       "title": "LE JUNKY BEIGBEDER SE FAIT DÉMOLIR LE FIAK PAR FRANCE INTER ! (Même Guillaume Pley est choqué.)",
