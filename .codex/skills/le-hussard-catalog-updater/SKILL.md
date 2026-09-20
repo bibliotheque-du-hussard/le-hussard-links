@@ -56,6 +56,7 @@ Use this workflow for the scheduled automation and whenever Julian asks for an a
    - Prefer `--report-out=/tmp/le-hussard-report.json --publish-gate` for the dry run so deterministic blockers are explicit and machine-readable.
    - A report status of `no_changes` is a normal no-op condition: report it and do not commit.
    - Keep LLM review responsible for title splitting and author normalization; do not rely on the script to infer those semantic fields.
+   - If the latest channel video is missing from the candidate payload or has zero extracted links, inspect the raw YouTube description before reporting no changes. Look especially for new affiliate host formats or redirected description links that the parser may not recognize yet.
 3. Publish without asking for approval only when all of these are true:
    - the dry run reports at least one new video or added link;
    - validation warnings are empty;
@@ -70,7 +71,7 @@ Use this workflow for the scheduled automation and whenever Julian asks for an a
    npm run update-data:incremental -- --reviewed=/tmp/le-hussard-reviewed.json
    ```
 
-7. Re-check the diff. Stage only `data/le-hussard-links.json`, commit with `Update Le Hussard catalog`, and push `main`:
+7. Re-check the diff. Stage only `data/le-hussard-links.json` for routine catalog updates. If a parser or skill fix was required to capture the new links, stage only those directly related files too, commit with `Update Le Hussard catalog`, and push `main`:
 
    ```bash
    git add data/le-hussard-links.json
@@ -121,6 +122,8 @@ npm run update-data:full -- --wait-ms=2000
 ## Label Rules
 
 Labels should read like book or reference titles, not calls to action and not `Author, Title` pairs when the author can be separated.
+
+Accepted Amazon affiliate host forms include `amzn.to`, `link.amazon`, and regional/direct Amazon hosts such as `amazon.fr`. If Le Hussard changes affiliate URL hosts again, update `scripts/update-data.mjs` and this skill in the same publish run before trusting a `no_changes` report.
 
 Good reviewed links:
 
