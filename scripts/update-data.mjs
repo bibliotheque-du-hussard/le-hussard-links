@@ -166,7 +166,14 @@ function prettifyLabel(line, rawUrl) {
 
 function linkType(url) {
   const host = new URL(url).hostname.replace(/^www\./, "");
-  if (/amzn\.to|amazon\./i.test(host)) {
+  if (
+    host === "amzn.to" ||
+    host.endsWith(".amzn.to") ||
+    host === "link.amazon" ||
+    host.endsWith(".link.amazon") ||
+    host.startsWith("amazon.") ||
+    host.includes(".amazon.")
+  ) {
     return "amazon";
   }
 

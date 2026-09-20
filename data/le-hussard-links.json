@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-09-13T13:07:41.625Z",
+  "generatedAt": "2026-09-20T18:36:28.331Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "-8JjWNezP9E",
+      "title": "CE PETIT KAPO POLITIQUE VEUT RÉÉDUQUER SA PROPRE MÈRE ! (Il l'envoie au goulag ?)",
+      "thumbnail": "https://i.ytimg.com/vi/-8JjWNezP9E/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-8JjWNezP9E",
+      "links": [
+        {
+          "label": "Une Chambre à soi",
+          "author": "Virginia Woolf",
+          "keywords": [
+            "essai",
+            "écriture",
+            "société",
+            "britannique",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B0fYsCTuG",
+          "type": "amazon"
+        },
+        {
+          "label": "Mort à crédit",
+          "author": "Louis-Ferdinand Céline",
+          "keywords": [
+            "roman",
+            "transgression",
+            "psychologie",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B07hRrBUg",
+          "type": "amazon"
+        },
+        {
+          "label": "Vipère au poing",
+          "author": "Hervé Bazin",
+          "keywords": [
+            "roman",
+            "société",
+            "psychologie",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B05UX8YEJ",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "Zhyy0LLt8hI",
       "title": "CETTE IMMIGRÉE VEUT RÉÉCRIRE L'HISTOIRE DE FRANCE ! (Avec vos impôts.)",
