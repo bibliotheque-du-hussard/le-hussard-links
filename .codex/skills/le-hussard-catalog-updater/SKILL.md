@@ -24,6 +24,7 @@ Le Hussard usually publishes on Wednesdays and Sundays. For routine updates, pre
    - New videos should match recent Le Hussard uploads.
    - Added links should be Amazon links from public YouTube descriptions.
    - Split each book reference into `label` as the book title and `author` as the author when the source text supports it.
+   - Give every reviewed link exactly five unique, lowercase `keywords` from the taxonomy in `catalog-search.js`. Choose useful genre, form, theme, national-literature, and era terms from the work and author; never guess a keyword outside the approved taxonomy. This is required for the catalog search and publish gate.
    - Leave `author` absent rather than guessing when the source text is ambiguous.
    - Keep `url` and `type` unchanged.
    - Remove temporary `sourceText` fields from the reviewed payload.
@@ -140,6 +141,7 @@ Good reviewed links:
 {
   "label": "Madame Bovary",
   "author": "Gustave Flaubert",
+  "keywords": ["roman", "société", "réalisme", "française", "xixe siècle"],
   "url": "https://amzn.to/example",
   "type": "amazon"
 }

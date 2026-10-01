@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T18:36:28.331Z",
+  "generatedAt": "2026-10-01T10:33:32.968Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
@@ -7,8 +7,128 @@
   },
   "videos": [
     {
+      "id": "iwiIHi2xXQc",
+      "title": "CE MINISTRE VOUS PIQUE 40 000 € PAR AN GRÂCE À SES HISTOIRES DE FlAK ! (La France est surendettée.)",
+      "thumbnail": "https://i.ytimg.com/vi/iwiIHi2xXQc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iwiIHi2xXQc",
+      "links": [
+        {
+          "label": "La Grève",
+          "author": "Ayn Rand",
+          "keywords": [
+            "dystopie",
+            "politique",
+            "société",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B08dt6cba",
+          "type": "amazon"
+        },
+        {
+          "label": "L’Œuvre",
+          "author": "Émile Zola",
+          "keywords": [
+            "roman",
+            "société",
+            "réalisme",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B021MAF2P",
+          "type": "amazon"
+        },
+        {
+          "label": "Les jours s’en vont comme des chevaux sauvages dans les collines",
+          "author": "Charles Bukowski",
+          "keywords": [
+            "poésie",
+            "lyrisme",
+            "littérature",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B0fXtHCPf",
+          "type": "amazon"
+        },
+        {
+          "label": "Journal d’un vieux dégueulasse",
+          "author": "Charles Bukowski",
+          "keywords": [
+            "roman",
+            "transgression",
+            "société",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B097lAmzz",
+          "type": "amazon"
+        }
+      ]
+    },
+    {
+      "id": "Cm5nAddw348",
+      "title": "CE JOURNALISTE DE QUOTIDIEN VEUT EXCUSER LES RACAILLES QUI ONT PERCUTÉ SA MÈRE ! (Elle est morte.)",
+      "thumbnail": "https://i.ytimg.com/vi/Cm5nAddw348/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Cm5nAddw348",
+      "links": [
+        {
+          "label": "Le Comte de Monte-Cristo",
+          "author": "Alexandre Dumas",
+          "keywords": [
+            "aventure",
+            "roman historique",
+            "cape et épée",
+            "voyage",
+            "héroïsme"
+          ],
+          "url": "https://amzn.to/4fkNKpm",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Misérables",
+          "author": "Victor Hugo",
+          "keywords": [
+            "roman",
+            "société",
+            "littérature",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://amzn.to/4vI0iNK",
+          "type": "amazon"
+        },
+        {
+          "label": "Hamlet",
+          "author": "William Shakespeare",
+          "keywords": [
+            "théâtre",
+            "drame",
+            "scène",
+            "britannique",
+            "classique"
+          ],
+          "url": "https://amzn.to/4wWWAku",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Colonel Chabert",
+          "author": "Honoré de Balzac",
+          "keywords": [
+            "roman",
+            "société",
+            "réalisme",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://amzn.to/4vKmSp0",
+          "type": "amazon"
+        }
+      ]
+    },
+    {
       "id": "-8JjWNezP9E",
-      "title": "CE PETIT KAPO POLITIQUE VEUT RÉÉDUQUER SA PROPRE MÈRE ! (Il l'envoie au goulag ?)",
+      "title": "CE GAUCHISTE EN CHEF VEUT RÉÉDUQUER SA PROPRE MÈRE ! (Il l’envoie au goulag ?)",
       "thumbnail": "https://i.ytimg.com/vi/-8JjWNezP9E/hqdefault.jpg",
       "youtubeUrl": "https://www.youtube.com/watch?v=-8JjWNezP9E",
       "links": [
