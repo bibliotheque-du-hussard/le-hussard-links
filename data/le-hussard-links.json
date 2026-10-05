@@ -1,11 +1,44 @@
 {
-  "generatedAt": "2026-10-01T10:33:32.968Z",
+  "generatedAt": "2026-10-05T07:51:50.030Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "Harf5V4ExR8",
+      "title": "CE PHILOSOPHE MÉDIATIQUE ET INCOMPÉTENT SE FAIT ÉCLATAX PAR CHAT GPT ! (Il a rien compris.)",
+      "thumbnail": "https://i.ytimg.com/vi/Harf5V4ExR8/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Harf5V4ExR8",
+      "links": [
+        {
+          "label": "Propos sur le bonheur",
+          "author": "Alain",
+          "keywords": [
+            "philosophie",
+            "sagesse",
+            "idées",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B09mYGhJb",
+          "type": "amazon"
+        },
+        {
+          "label": "La Bible de Jérusalem",
+          "keywords": [
+            "spiritualité",
+            "antiquité",
+            "mythologie",
+            "littérature",
+            "classique"
+          ],
+          "url": "https://link.amazon/B06Atir6B",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "iwiIHi2xXQc",
       "title": "CE MINISTRE VOUS PIQUE 40 000 € PAR AN GRÂCE À SES HISTOIRES DE FlAK ! (La France est surendettée.)",
