@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-10-05T07:51:50.030Z",
+  "generatedAt": "2026-10-13T20:25:32.637Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "l58uQi8tYQc",
+      "title": "LE ZADISTE DAMASIO DÉCOUVRE LE RÉEL : IL VIRE À DROITE ? (Va-t-il survivre ?)",
+      "thumbnail": "https://i.ytimg.com/vi/l58uQi8tYQc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=l58uQi8tYQc",
+      "links": [
+        {
+          "label": "La Zone du dehors",
+          "author": "Alain Damasio",
+          "keywords": [
+            "science-fiction",
+            "dystopie",
+            "politique",
+            "société",
+            "française"
+          ],
+          "url": "https://link.amazon/B0eQw5v1K",
+          "type": "amazon"
+        },
+        {
+          "label": "La Horde du Contrevent",
+          "author": "Alain Damasio",
+          "keywords": [
+            "science-fiction",
+            "fantasy",
+            "aventure",
+            "quête",
+            "française"
+          ],
+          "url": "https://link.amazon/B09aPB5cU",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Furtifs",
+          "author": "Alain Damasio",
+          "keywords": [
+            "science-fiction",
+            "dystopie",
+            "politique",
+            "société",
+            "française"
+          ],
+          "url": "https://link.amazon/B09gJ7mgX",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "Harf5V4ExR8",
       "title": "CE PHILOSOPHE MÉDIATIQUE ET INCOMPÉTENT SE FAIT ÉCLATAX PAR CHAT GPT ! (Il a rien compris.)",
