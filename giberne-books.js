@@ -1,5 +1,29 @@
 export const GIBERNE_BOOKS = [
   {
+    id: 20,
+    title: "La Formation du style",
+    author: "Antoine Albalat",
+    keywords: ["écriture", "essai", "littérature", "langue", "classique"],
+    url: "https://www.lagiberne.fr/livre?id=20",
+    cover: "https://www.lagiberne.fr/storage/books/cover-la-formation-du-style-c1-94c3cc8f.jpg",
+  },
+  {
+    id: 19,
+    title: "Considérations sur la France",
+    author: "Joseph de Maistre",
+    keywords: ["essai", "politique", "histoire", "philosophie", "classique"],
+    url: "https://www.lagiberne.fr/livre?id=19",
+    cover: "https://www.lagiberne.fr/storage/books/cover-considerations-sur-la-france-c1-05d8d3d3.jpg",
+  },
+  {
+    id: 18,
+    title: "La Révolte des masses",
+    author: "José Ortega y Gasset",
+    keywords: ["essai", "philosophie", "société", "espagnole", "xxe siècle"],
+    url: "https://www.lagiberne.fr/livre?id=18",
+    cover: "https://www.lagiberne.fr/storage/books/cover-la-revolte-des-masses-c1-f9d7ab8b.jpg",
+  },
+  {
     id: 17,
     title: "La Vertu cardinale",
     author: "Vivien Destro",

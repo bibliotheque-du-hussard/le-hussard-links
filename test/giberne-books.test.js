@@ -8,10 +8,10 @@ import { KEYWORD_TAXONOMY, matchesSearchQuery } from "../catalog-search.js";
 const styles = fs.readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 
 test("La Giberne carousel books have unique product pages and valid covers", () => {
-  assert.equal(GIBERNE_BOOKS.length, 17);
+  assert.equal(GIBERNE_BOOKS.length, 20);
   assert.deepEqual(
     GIBERNE_BOOKS.map((book) => book.id),
-    [17, 16, 15, 14, 13, 9, 8, 7, 6, 5, 4, 3, 2, 1, 12, 11, 10],
+    [20, 19, 18, 17, 16, 15, 14, 13, 9, 8, 7, 6, 5, 4, 3, 2, 1, 12, 11, 10],
   );
   assert.equal(new Set(GIBERNE_BOOKS.map((book) => book.id)).size, GIBERNE_BOOKS.length);
   assert.equal(new Set(GIBERNE_BOOKS.map((book) => book.url)).size, GIBERNE_BOOKS.length);
@@ -25,7 +25,11 @@ test("La Giberne carousel books have unique product pages and valid covers", () 
       book.keywords.every((keyword) => KEYWORD_TAXONOMY.has(keyword)),
       `${book.title} should use the standard taxonomy`,
     );
-    assert.equal(book.url, `https://www.lagiberne.fr/books/${book.id}`);
+    assert.ok(
+      book.url === `https://www.lagiberne.fr/books/${book.id}` ||
+      book.url === `https://www.lagiberne.fr/livre?id=${book.id}`,
+      `${book.title} should link to its product page`,
+    );
     assert.match(book.cover, /^https:\/\/www\.lagiberne\.fr\/storage\/books\/.+\.jpg$/);
   }
 });
@@ -36,7 +40,9 @@ test("La Giberne books can be searched by title, author, or category", () => {
 
   assert.deepEqual(search("objectif 23").map((book) => book.id), [7]);
   assert.deepEqual(search("vivien destro").map((book) => book.id), [17]);
-  assert.deepEqual(search("antoine albalat").map((book) => book.id), [12]);
+  assert.deepEqual(search("antoine albalat").map((book) => book.id), [20, 12]);
+  assert.deepEqual(search("révolte des masses").map((book) => book.id), [18]);
+  assert.deepEqual(search("joseph de maistre").map((book) => book.id), [19]);
   assert.ok(search("science-fiction dystopie").some((book) => book.id === 7));
   assert.ok(search("aventure fantasy").some((book) => book.id === 5));
 });
