@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-10-13T20:25:32.637Z",
+  "generatedAt": "2026-10-22T22:51:00.656Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "Mwj1irlxdlc",
+      "title": "CES WOKES MUSULMANS INVENTENT LA \"HALAL ROMANCE\" : J'AI MENÉ L'ENQUÊTE ! (C'est... Chelou.)",
+      "thumbnail": "https://i.ytimg.com/vi/Mwj1irlxdlc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Mwj1irlxdlc",
+      "links": [
+        {
+          "label": "Le Rouge et le Noir",
+          "author": "Stendhal",
+          "keywords": [
+            "roman",
+            "réalisme",
+            "société",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B09MsKwi4",
+          "type": "amazon"
+        },
+        {
+          "label": "La Chartreuse de Parme",
+          "author": "Stendhal",
+          "keywords": [
+            "roman",
+            "politique",
+            "société",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B098PIYcg",
+          "type": "amazon"
+        },
+        {
+          "label": "Sous le soleil de Satan",
+          "author": "Georges Bernanos",
+          "keywords": [
+            "roman",
+            "spiritualité",
+            "psychologie",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B05z3uBes",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "l58uQi8tYQc",
       "title": "LE ZADISTE DAMASIO DÉCOUVRE LE RÉEL : IL VIRE À DROITE ? (Va-t-il survivre ?)",
