@@ -1,11 +1,58 @@
 {
-  "generatedAt": "2026-10-27T13:39:25.295Z",
+  "generatedAt": "2026-10-27T17:33:26.843Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "BTjNdF0P02Y",
+      "title": "CE CHAD PAYSAN FRANÇAIS DÉMOLIT LA FRANCE À MACRON ! (Vous devez le lire.)",
+      "thumbnail": "https://i.ytimg.com/vi/BTjNdF0P02Y/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=BTjNdF0P02Y",
+      "links": [
+        {
+          "label": "Le Pape des escargots",
+          "author": "Henri Vincenot",
+          "keywords": [
+            "roman",
+            "française",
+            "xxe siècle",
+            "société",
+            "aventure"
+          ],
+          "url": "https://link.amazon/B0aFbkbHI",
+          "type": "amazon"
+        },
+        {
+          "label": "La Billebaude",
+          "author": "Henri Vincenot",
+          "keywords": [
+            "littérature",
+            "française",
+            "xxe siècle",
+            "mémoire",
+            "société"
+          ],
+          "url": "https://link.amazon/B0dtsamtJ",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Maître des abeilles",
+          "author": "Henri Vincenot",
+          "keywords": [
+            "roman",
+            "française",
+            "xxe siècle",
+            "société",
+            "aventure"
+          ],
+          "url": "https://link.amazon/B04GH7jFM",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "-3pbVaA243Y",
       "title": "CE LIBANAIS CRITIQUE CE QUE LA FRANCE EST DEVENUE ! (Il a le droit ?)",
