@@ -1,11 +1,97 @@
 {
-  "generatedAt": "2026-10-22T22:51:00.656Z",
+  "generatedAt": "2026-10-27T13:39:25.295Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "-3pbVaA243Y",
+      "title": "CE LIBANAIS CRITIQUE CE QUE LA FRANCE EST DEVENUE ! (Il a le droit ?)",
+      "thumbnail": "https://i.ytimg.com/vi/-3pbVaA243Y/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-3pbVaA243Y",
+      "links": [
+        {
+          "label": "Les croisades vues par les Arabes",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "histoire",
+            "moyen âge",
+            "guerre",
+            "littérature",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B0in776uF",
+          "type": "amazon"
+        },
+        {
+          "label": "Léon l'Africain",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "roman",
+            "histoire",
+            "voyage",
+            "moyen âge",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B0akSVIoJ",
+          "type": "amazon"
+        },
+        {
+          "label": "Samarcande",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "roman",
+            "histoire",
+            "aventure",
+            "voyage",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B03nQYBj5",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Jardin de lumière",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "roman",
+            "histoire",
+            "antiquité",
+            "voyage",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B01B95iF0",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Premier siècle après Béatrice",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "roman",
+            "dystopie",
+            "société",
+            "politique",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B00BUvlK5",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Rocher de Tanios",
+          "author": "Amin Maalouf",
+          "keywords": [
+            "roman",
+            "histoire",
+            "aventure",
+            "francophone",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B02djDawi",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "Mwj1irlxdlc",
       "title": "CES WOKES MUSULMANS INVENTENT LA \"HALAL ROMANCE\" : J'AI MENÉ L'ENQUÊTE ! (C'est... Chelou.)",
