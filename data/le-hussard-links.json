@@ -1,11 +1,131 @@
 {
-  "generatedAt": "2026-10-27T17:33:26.843Z",
+  "generatedAt": "2026-11-11T09:30:02.991Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "B5AyLJhHB18",
+      "title": "VOUS N'AVEZ RIEN COMPRIS À L'AFFAIRE THÉLYSON ORÉLIEN ! (Mes révélations exclusives.)",
+      "thumbnail": "https://i.ytimg.com/vi/B5AyLJhHB18/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=B5AyLJhHB18",
+      "links": [
+        {
+          "label": "Le Devoir de violence",
+          "author": "Yambo Ouologuem",
+          "keywords": [
+            "roman",
+            "politique",
+            "société",
+            "afrique",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B09H7llpq",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Fables",
+          "author": "Jean de La Fontaine",
+          "keywords": [
+            "poésie",
+            "satire",
+            "classique",
+            "française",
+            "société"
+          ],
+          "url": "https://link.amazon/B09uP3qJh",
+          "type": "amazon"
+        },
+        {
+          "label": "La Place de l'étoile",
+          "author": "Patrick Modiano",
+          "keywords": [
+            "roman",
+            "satire",
+            "société",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B07pR3i57",
+          "type": "amazon"
+        },
+        {
+          "label": "Rue des boutiques obscures",
+          "author": "Patrick Modiano",
+          "keywords": [
+            "roman",
+            "enquête",
+            "mémoire",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B045SBzob",
+          "type": "amazon"
+        }
+      ]
+    },
+    {
+      "id": "jc-cdOeX_YQ",
+      "title": "LE PIRE BOOMER AFFRONTE UNE JOURNALISTE SUBVENTIONNÉE : ÇA DONNE QUOI ?",
+      "thumbnail": "https://i.ytimg.com/vi/jc-cdOeX_YQ/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jc-cdOeX_YQ",
+      "links": [
+        {
+          "label": "Propos sur le bonheur",
+          "author": "Alain",
+          "keywords": [
+            "essai",
+            "philosophie",
+            "sagesse",
+            "française",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B01xGp8WD",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Misérables",
+          "author": "Victor Hugo",
+          "keywords": [
+            "roman",
+            "histoire",
+            "société",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B0bCWzQPl",
+          "type": "amazon"
+        },
+        {
+          "label": "L'Homme qui rit",
+          "author": "Victor Hugo",
+          "keywords": [
+            "roman",
+            "société",
+            "politique",
+            "française",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B08V4X7c1",
+          "type": "amazon"
+        },
+        {
+          "label": "De la démocratie en Amérique",
+          "author": "Alexis de Tocqueville",
+          "keywords": [
+            "essai",
+            "politique",
+            "philosophie",
+            "société",
+            "xixe siècle"
+          ],
+          "url": "https://link.amazon/B03aGVMvn",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "BTjNdF0P02Y",
       "title": "CE CHAD PAYSAN FRANÇAIS DÉMOLIT LA FRANCE À MACRON ! (Vous devez le lire.)",
