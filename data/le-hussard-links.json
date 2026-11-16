@@ -1,11 +1,97 @@
 {
-  "generatedAt": "2026-11-11T09:30:02.991Z",
+  "generatedAt": "2026-11-16T01:58:04.879Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "oHDi68lhEJ8",
+      "title": "CE COSMOPOLITE DE DAVOS A UN PLAN POUR SAUVER LA DÉMOCRATIE ! (Je pleure de rire.)",
+      "thumbnail": "https://i.ytimg.com/vi/oHDi68lhEJ8/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=oHDi68lhEJ8",
+      "links": [
+        {
+          "label": "La Vérité sur l'affaire Harry Québert",
+          "author": "Joël Dicker",
+          "keywords": [
+            "roman",
+            "enquête",
+            "mystère",
+            "société",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B06PGp4EL",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Chien jaune",
+          "author": "Georges Simenon",
+          "keywords": [
+            "policier",
+            "enquête",
+            "mystère",
+            "francophone",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B06m5BjQL",
+          "type": "amazon"
+        },
+        {
+          "label": "Le Train",
+          "author": "Georges Simenon",
+          "keywords": [
+            "roman",
+            "guerre",
+            "société",
+            "francophone",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B08ml4jVO",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Inconnus dans la maison",
+          "author": "Georges Simenon",
+          "keywords": [
+            "roman",
+            "policier",
+            "enquête",
+            "société",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B0epb8dbl",
+          "type": "amazon"
+        },
+        {
+          "label": "Les Fiançailles de M. Hire",
+          "author": "Georges Simenon",
+          "keywords": [
+            "policier",
+            "enquête",
+            "mystère",
+            "psychologie",
+            "francophone"
+          ],
+          "url": "https://link.amazon/B0196A9Tc",
+          "type": "amazon"
+        },
+        {
+          "label": "La Grève",
+          "author": "Ayn Rand",
+          "keywords": [
+            "dystopie",
+            "politique",
+            "société",
+            "américaine",
+            "xxe siècle"
+          ],
+          "url": "https://link.amazon/B0ijaYUiT",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "B5AyLJhHB18",
       "title": "VOUS N'AVEZ RIEN COMPRIS À L'AFFAIRE THÉLYSON ORÉLIEN ! (Mes révélations exclusives.)",
