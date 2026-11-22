@@ -1,11 +1,71 @@
 {
-  "generatedAt": "2026-11-16T01:58:04.879Z",
+  "generatedAt": "2026-11-22T16:19:00.868Z",
   "channel": {
     "name": "Le Hussard",
     "handle": "@LeHussard",
     "url": "https://www.youtube.com/@LeHussard"
   },
   "videos": [
+    {
+      "id": "j-FtLtN4TJ8",
+      "title": "CETTE 10/10 MACRONISTE T'EXPLIQUE COMMENT ELLE T'A MANIPULÉ ! (Tu es pitoyable.)",
+      "thumbnail": "https://i.ytimg.com/vi/j-FtLtN4TJ8/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=j-FtLtN4TJ8",
+      "links": [
+        {
+          "label": "Les Caractères",
+          "author": "Jean de La Bruyère",
+          "keywords": [
+            "classique",
+            "française",
+            "satire",
+            "société",
+            "littérature"
+          ],
+          "url": "https://link.amazon/B0ifBjevc",
+          "type": "amazon"
+        },
+        {
+          "label": "Oraisons funèbres",
+          "author": "Jacques-Bénigne Bossuet",
+          "keywords": [
+            "classique",
+            "française",
+            "spiritualité",
+            "histoire",
+            "écriture"
+          ],
+          "url": "https://link.amazon/B0g0vObsv",
+          "type": "amazon"
+        },
+        {
+          "label": "Mémoires",
+          "author": "Louis de Rouvroy, duc de Saint-Simon",
+          "keywords": [
+            "classique",
+            "française",
+            "mémoires",
+            "politique",
+            "histoire"
+          ],
+          "url": "https://link.amazon/B0aEIiNSo",
+          "type": "amazon"
+        },
+        {
+          "label": "De la démocratie en Amérique",
+          "author": "Alexis de Tocqueville",
+          "keywords": [
+            "essai",
+            "politique",
+            "américaine",
+            "société",
+            "idées"
+          ],
+          "url": "https://link.amazon/B0gNyzbq4",
+          "type": "amazon"
+        }
+      ]
+    },
     {
       "id": "oHDi68lhEJ8",
       "title": "CE COSMOPOLITE DE DAVOS A UN PLAN POUR SAUVER LA DÉMOCRATIE ! (Je pleure de rire.)",
